@@ -18,14 +18,12 @@
       </a>
       <nav class="main-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
-        <a href="check.html">Check My Data</a>
         <a href="breaches.html">Breaches</a>
         <a href="companies.html">Companies</a>
         <a href="faq.html" aria-current="page">FAQ &amp; Ethics</a>
       </nav>
     </div>
   </header>
-
 <main id="main-content">
   <div class="page-container">
     <h1>FAQ, methodology &amp; ethics</h1>
@@ -70,11 +68,7 @@
       <h2>Privacy &amp; ethics</h2>
       <details class="faq-item">
         <summary>Do you store any of my personal data?</summary>
-        <p>No. This site has no backend server and no database. The "Check My Data" page runs entirely in your browser: your selections are compared against the local <code>data/breaches.json</code> file already downloaded to your device, and nothing is ever transmitted anywhere. We do not use analytics that track individual identity document details, and we never ask for actual ID or passport numbers.</p>
-      </details>
-      <details class="faq-item">
-        <summary>Why don't you let me search by my actual passport number?</summary>
-        <p>Doing so safely would require a backend service, secure hashing infrastructure, and a trustworthy way to compare against real breach corpora &mdash; none of which is possible on free static GitHub Pages hosting without introducing new privacy risks. Asking users to type sensitive document numbers into a web form, even a "client-side only" one, creates a dangerous norm and phishing risk. Instead, we use a coarser, safer model: matching by <em>company/service used</em> and <em>document type</em>, which conveys the same practical risk information without ever handling sensitive identifiers.</p>
+        <p>No. This site has no backend server and no database. It only reads pre-generated public data files and displays them; it does not collect, store, or process any personal information from visitors, and we never ask for actual ID or passport numbers.</p>
       </details>
       <details class="faq-item">
         <summary>Are you trying to scare people away from age verification?</summary>
@@ -107,7 +101,6 @@
       </details>
     </section>
   </div>
-
 </main>
   <footer class="site-footer">
     <div class="footer-inner">
@@ -119,12 +112,10 @@
         <a href="index.html">Home</a>
         <a href="breaches.html">Breaches</a>
         <a href="companies.html">Companies</a>
-        <a href="check.html">Check My Data</a>
         <a href="faq.html">FAQ</a>
       </div>
     </div>
   </footer>
-
 <script src="main.js" defer></script>
 </body>
 </html>

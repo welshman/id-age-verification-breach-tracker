@@ -215,69 +215,10 @@ function renderCompanyList(companies, breaches) {
   }).join('');
 }
 
-async function initCheckPage() {
-  const form = document.getElementById('check-form');
-  if (!form) return;
-  const [{ companies }, { breaches }] = await Promise.all([loadData('companies'), loadData('breaches')]);
-  const companyGrid = document.getElementById('company-checkboxes');
-  companies.slice().sort((a, b) => a.name.localeCompare(b.name)).forEach(c => {
-    companyGrid.insertAdjacentHTML('beforeend', `<label class="checkbox-item"><input type="checkbox" name="company" value="${escapeHtml(c.id)}"> ${escapeHtml(c.name)}</label>`);
-  });
-  form.addEventListener('submit', (e) => { e.preventDefault(); runCheck(companies, breaches); });
-}
-
-function runCheck(companies, breaches) {
-  const resultsEl = document.getElementById('check-results');
-  const selectedCompanies = [...document.querySelectorAll('#company-checkboxes input:checked')].map(i => i.value);
-  const idType = document.getElementById('id-type').value;
-  const region = document.getElementById('id-region').value;
-  if (selectedCompanies.length === 0) {
-    resultsEl.innerHTML = `<div class="result-banner warn">Please select at least one company or service you've used before checking.</div>`;
-    resultsEl.scrollIntoView({ behavior: 'smooth' });
-    return;
-  }
-  const matchedBreaches = breaches.filter(b =>
-    b.companies.some(cid => selectedCompanies.includes(cid)) &&
-    (idType === 'any' || b.data_types.includes(idType)) &&
-    (region === 'any' || b.affected_regions.includes('global') || b.affected_regions.includes(region))
-  );
-  const selectedNames = selectedCompanies.map(id => companyNameById(companies, id));
-  if (matchedBreaches.length === 0) {
-    resultsEl.innerHTML = `
-      <div class="result-banner ok">Good news — we found no publicly documented breaches matching your selection (${escapeHtml(selectedNames.join(', '))}) for the criteria you chose.</div>
-      <p>This does not guarantee your data was never exposed — many incidents are never publicly disclosed. See our <a href="faq.html">FAQ</a> for general steps you can take to protect your identity documents.</p>
-    `;
-  } else {
-    const items = matchedBreaches.map(b => `
-      <article class="breach-card">
-        <div class="breach-card-top"><h3>${escapeHtml(b.title)}</h3>${severityBadge(b.severity)}</div>
-        <p class="summary">${escapeHtml(b.summary)}</p>
-        <p><strong>Data types exposed:</strong> ${b.data_types.map(titleCase).join(', ')}</p>
-        <p><a href="breaches.html#${escapeHtml(b.id)}">View full breach details →</a></p>
-      </article>
-    `).join('');
-    resultsEl.innerHTML = `
-      <div class="result-banner warn">We found ${matchedBreaches.length} known breach${matchedBreaches.length === 1 ? '' : 'es'} matching companies you selected (${escapeHtml(selectedNames.join(', '))}).</div>
-      <div class="breach-list">${items}</div>
-      <h3>What you should do next</h3>
-      <ul class="guidance-list">
-        <li>Check whether the affected company has contacted you directly with specific guidance.</li>
-        <li>Monitor for signs of identity theft, such as unfamiliar accounts, credit inquiries, or loan applications in your name.</li>
-        <li>Consider a credit freeze or fraud alert with credit bureaus in your country, if available.</li>
-        <li>If a government-issued ID (passport, driver's license, national ID) was exposed, contact the issuing authority to ask about reissuance or flagging.</li>
-        <li>Be alert to phishing attempts that reference the breach to appear legitimate.</li>
-        <li>Avoid reusing the same identity documents for verification with high-risk or unfamiliar services in the future where possible.</li>
-      </ul>
-    `;
-  }
-  resultsEl.scrollIntoView({ behavior: 'smooth' });
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   initHomepage();
   initBreachesPage();
   initCompaniesPage();
-  initCheckPage();
   const yearEl = document.getElementById('footer-year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 });
