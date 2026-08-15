@@ -7,6 +7,15 @@
 <meta name="description" content="How the Global ID & Age Verification Breach Tracker collects data, protects privacy, and its limitations.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%231d4ed8%22/><text x=%2250%22 y=%2265%22 font-size=%2250%22 fill=%22white%22 text-anchor=%22middle%22 font-family=%22sans-serif%22>ID</text></svg>">
 <link rel="stylesheet" href="styles.css">
+<script>
+(function() {
+  try {
+    var stored = localStorage.getItem('id-breach-tracker-theme');
+    var theme = stored === 'dark' || stored === 'light' ? stored : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -16,14 +25,21 @@
         <span class="brand-mark" aria-hidden="true">ID</span>
         <span>ID Breach Tracker</span>
       </a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="breaches.html">Breaches</a>
-        <a href="companies.html">Companies</a>
-        <a href="faq.html" aria-current="page">FAQ &amp; Ethics</a>
-      </nav>
+      <div class="header-right">
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="breaches.html">Breaches</a>
+          <a href="companies.html">Companies</a>
+          <a href="faq.html" aria-current="page">FAQ &amp; Ethics</a>
+        </nav>
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">
+          <span class="icon" aria-hidden="true">🌙</span>
+          <span class="label">Dark mode</span>
+        </button>
+      </div>
     </div>
   </header>
+
 <main id="main-content">
   <div class="page-container">
     <h1>FAQ, methodology &amp; ethics</h1>
@@ -101,6 +117,7 @@
       </details>
     </section>
   </div>
+
 </main>
   <footer class="site-footer">
     <div class="footer-inner">
@@ -116,6 +133,7 @@
       </div>
     </div>
   </footer>
+
 <script src="main.js" defer></script>
 </body>
 </html>
