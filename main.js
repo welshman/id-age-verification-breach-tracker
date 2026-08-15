@@ -1,14 +1,48 @@
-// Global ID & Age Verification Breach Tracker — main.js (v2)
-const DATA_PATHS = { breaches: 'data/breaches.json', companies: 'data/companies.json', sources: 'data/sources.json' };
+// Global ID & Age Verification Breach Tracker — main.js (v6)
+const DATA_PATHS = {
+  breaches: 'data/breaches.json',
+  companies: 'data/companies.json',
+  sources: 'data/sources.json',
+  breachesBatch3: 'data/batch3-breaches.json',
+  companiesBatch3: 'data/batch3-companies.json'
+};
 const _cache = {};
 
+async function loadJson(path) {
+  if (_cache[path]) return _cache[path];
+  try {
+    const res = await fetch(path, { cache: 'no-store' });
+    if (!res.ok) return null;
+    const json = await res.json();
+    _cache[path] = json;
+    return json;
+  } catch (e) {
+    return null;
+  }
+}
+
+function dedupeById(list) {
+  const seen = new Map();
+  list.forEach(item => { if (item && item.id) seen.set(item.id, item); });
+  return Array.from(seen.values());
+}
+
 async function loadData(key) {
-  if (_cache[key]) return _cache[key];
-  const res = await fetch(DATA_PATHS[key], { cache: 'no-store' });
-  if (!res.ok) throw new Error('Failed to load ' + key);
-  const json = await res.json();
-  _cache[key] = json;
-  return json;
+  if (key === 'breaches') {
+    const [main, extra] = await Promise.all([loadJson(DATA_PATHS.breaches), loadJson(DATA_PATHS.breachesBatch3)]);
+    const mainList = (main && main.breaches) ? main.breaches : [];
+    const extraList = Array.isArray(extra) ? extra : [];
+    return { breaches: dedupeById([...mainList, ...extraList]) };
+  }
+  if (key === 'companies') {
+    const [main, extra] = await Promise.all([loadJson(DATA_PATHS.companies), loadJson(DATA_PATHS.companiesBatch3)]);
+    const mainList = (main && main.companies) ? main.companies : [];
+    const extraList = Array.isArray(extra) ? extra : [];
+    return { companies: dedupeById([...mainList, ...extraList]) };
+  }
+  const data = await loadJson(DATA_PATHS[key]);
+  if (!data) throw new Error('Failed to load ' + key);
+  return data;
 }
 
 function escapeHtml(str) {
