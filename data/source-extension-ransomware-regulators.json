@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "added_at": "2026-08-16",
+  "real_time_sources": [
+    {"name": "ransomware.live API", "url": "https://api.ransomware.live/v2/victims", "type": "json", "notes": "Passive public ransomware-victim listing aggregator. Use only as a lead source; never access or redistribute leaked data."},
+    {"name": "ransomware.live RSS", "url": "https://www.ransomware.live/rss.xml", "type": "rss", "notes": "Public RSS of ransomware group/victim activity; keyword-filter and require corroboration."},
+    {"name": "RecentBreaches ransomware leaks", "url": "https://recentbreaches.com/api/leaks", "type": "json", "notes": "Public ransomware/extortion listing endpoint; candidate-only discovery."},
+    {"name": "Vysion Ransomware Feed API", "url": "https://developers.vysion.ai/api/feeds/", "type": "api_documentation", "notes": "Daily structured ransomware-victim feed; may require API credentials or subscription."},
+    {"name": "Senserva Exploited Vulnerability Feeds", "url": "https://senserva.com/feeds.html", "type": "json_rss", "notes": "Free exploited-in-the-wild and KEV-related feeds; monitor identity-provider dependencies and ransomware flags."}
+  ],
+  "regulatory_sources": [
+    {"name": "Australia OAIC Notifiable Data Breaches", "url": "https://www.oaic.gov.au/privacy/notifiable-data-breaches/notifiable-data-breaches-publications", "type": "regulatory_reports", "notes": "Official Australian Notifiable Data Breaches statistics and reports; use for historical backfill and trend monitoring."},
+    {"name": "Australia OAIC NDB news", "url": "https://www.oaic.gov.au/news/media-centre/data-breach-notifications-increase-to-all-time-high-in-2025,-new-ndb-stats-show", "type": "regulatory_news", "notes": "Official Australian privacy regulator breach-notification updates."},
+    {"name": "Canada OPC RSS", "url": "https://www.priv.gc.ca/en/rss-feeds/", "type": "rss_directory", "notes": "Office of the Privacy Commissioner of Canada RSS feeds for PIPEDA findings, investigations, and privacy decisions."}
+  ],
+  "safety": "Ransomware sources are discovery-only and must never be used to access, download, host, or distribute illicitly obtained data. Every candidate needs credible corroboration before publication."
+}
