@@ -6,7 +6,7 @@
 <title>All Known ID & Age Verification Breaches</title>
 <meta name="description" content="Searchable, filterable list of all publicly documented identity-verification and age-verification data breaches worldwide.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%231d4ed8%22/><text x=%2250%22 y=%2265%22 font-size=%2250%22 fill=%22white%22 text-anchor=%22middle%22 font-family=%22sans-serif%22>ID</text></svg>">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=v2">
 <script>
 (function() {
   try {
@@ -55,7 +55,7 @@
       <div class="filter-field"><label for="filter-datatype">Data type</label><select id="filter-datatype"><option value="">All data types</option></select></div>
       <div class="filter-field"><label for="filter-sort">Sort by</label>
         <select id="filter-sort">
-          <option value="date-desc">Newest first</option>
+          <option value="date-desc" selected>Newest first</option>
           <option value="date-asc">Oldest first</option>
           <option value="severity-desc">Severity (high to low)</option>
           <option value="title-asc">Title (A–Z)</option>
@@ -82,6 +82,6 @@
     </div>
   </footer>
 
-<script src="main.js" defer></script>
+<script src="main.js?v=v2" defer></script>
 </body>
 </html>
