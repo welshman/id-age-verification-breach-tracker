@@ -1,0 +1,25 @@
+{
+  "audit_date":"2026-08-15",
+  "purpose":"Deep audit of worldwide real-time, historical, regulatory, and identity-specific sources for breach candidate discovery.",
+  "realtime_discovery":[
+    {"name":"PenDoc Security Feed","url":"https://feed.pendoc.org/api/v1/feed","coverage":"40+ open security sources; breach, exploit, malware, research and intelligence items","access":"Public API"},
+    {"name":"RecentBreaches","url":"https://recentbreaches.com/api/breaches","coverage":"Latest breach data, ransomware leak feed, CISA KEV context","access":"Public JSON and RSS"},
+    {"name":"HIBP","url":"https://haveibeenpwned.com/API/v3","coverage":"Public breach metadata and data classes","access":"API key for expanded querying"},
+    {"name":"XposedOrNot","url":"https://xposedornot.com/our-repository","coverage":"Global breach repository and historical statistics","access":"Public repository"}
+  ],
+  "identity_specific":[
+    {"name":"Identity Week","url":"https://identityweek.net/feed/","coverage":"Digital identity, biometrics, eID wallets, border and identity verification"},
+    {"name":"BiometricUpdate","url":"https://www.biometricupdate.com","coverage":"Biometric identity, eID, government identity and verification vendor reporting"},
+    {"name":"Identity at the Core","url":"https://www.identityatcore.org/breaches","coverage":"Identity and access management relevant breach aggregation"},
+    {"name":"OWASP Threat Intelligence","url":"https://api.owasp.org/ast10/threats","coverage":"Identity, authorization and implementation vulnerabilities"}
+  ],
+  "historical_sources":[
+    {"name":"DataBreach.com","url":"https://databreach.com/breach","coverage":"Historical searchable breach archive"},
+    {"name":"FreeDatabreaches","url":"https://github.com/doormanBreach/FreeDatabreaches","coverage":"Open historical breach archive; requires source validation"},
+    {"name":"Privacy Rights Clearinghouse","url":"https://privacyrights.org/data-breaches","coverage":"75,000+ historical breach notices from government sources"},
+    {"name":"ITRC Breach Alert","url":"https://www.idtheftcenter.org/breach-alert/","coverage":"US publicly reported breach database since 2005"}
+  ],
+  "official_registers":["California Attorney General Data Security Breach List","Washington State Attorney General Data Breach Resource Center","Maine Attorney General Data Security Breaches","Texas Attorney General Data Security Breach Reports","Ireland Public Sector Data Breach Register","UK ICO enforcement and breach-reporting information","European Data Protection Board national authority notification directory"],
+  "cert_network":"Configured feeds span US, UK, EU, Canada, Australia, Brazil, Belgium, Finland, Netherlands, Portugal, Ukraine, Bangladesh, Hong Kong, Austria, Estonia, Croatia, Egypt, Switzerland, Israel, Italy and Czech Republic public CERT/CSIRT sources.",
+  "safety":"Every discovery source is lead-only. Public tracker entries require credible reporting or direct disclosure and remain human-reviewed before publication."
+}
