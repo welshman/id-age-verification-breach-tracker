@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ, Methodology & Ethics</title>
+<meta name="description" content="How the Global ID & Age Verification Breach Tracker collects data, protects privacy, and its limitations.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%231d4ed8%22/><text x=%2250%22 y=%2265%22 font-size=%2250%22 fill=%22white%22 text-anchor=%22middle%22 font-family=%22sans-serif%22>ID</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">ID</span>
+        <span>ID Breach Tracker</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="check.html">Check My Data</a>
+        <a href="breaches.html">Breaches</a>
+        <a href="companies.html">Companies</a>
+        <a href="faq.html" aria-current="page">FAQ &amp; Ethics</a>
+      </nav>
+    </div>
+  </header>
+
+<main id="main-content">
+  <div class="page-container">
+    <h1>FAQ, methodology &amp; ethics</h1>
+    <section>
+      <h2>What this site is</h2>
+      <details class="faq-item" open>
+        <summary>What does this site do?</summary>
+        <p>It tracks <strong>publicly reported</strong> data breaches involving identity documents (passports, national ID cards, driver's licences) and the companies that process them for identity verification, Know Your Customer (KYC) compliance, or age verification. It is inspired by Have I Been Pwned but is entirely independent, not affiliated with HIBP, and focused specifically on identity/age-verification data rather than emails and passwords.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What this site is <em>not</em></summary>
+        <ul class="guidance-list">
+          <li>It is not a way to check whether your specific passport or ID <em>number</em> has leaked &mdash; we never collect or process actual document numbers.</li>
+          <li>It is not affiliated with, endorsed by, or built using non-public data from any government, verification vendor, or Have I Been Pwned.</li>
+          <li>It is not a complete record of every breach that has ever happened &mdash; many incidents are never publicly disclosed.</li>
+          <li>It is not intended to shame any individual company; the goal is public awareness, not fear-mongering.</li>
+        </ul>
+      </details>
+    </section>
+    <section>
+      <h2>How data is collected and updated</h2>
+      <details class="faq-item">
+        <summary>Where does the breach data come from?</summary>
+        <p>Every breach listed is sourced from public reporting: investigative journalism (e.g. 404 Media, TechCrunch, Cybernews), established security researchers (e.g. Schneier on Security, EFF), or direct statements from the affected companies. Each breach entry links to its original sources so you can verify the claim yourself.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How is the site updated without manual editing?</summary>
+        <p>A scheduled GitHub Actions workflow (<code>.github/workflows/update-data.yml</code>) runs periodically and:</p>
+        <ul class="guidance-list">
+          <li>Scans configured security-news RSS feeds and (optionally) the Have I Been Pwned API for new items matching identity/age-verification keywords defined in <code>data/update-config.json</code>.</li>
+          <li>Writes any new candidate matches to <code>data/pending-review.json</code> rather than publishing them directly, since automated keyword matching can produce false positives on a topic this sensitive.</li>
+          <li>Opens or updates a GitHub Issue summarizing new candidates so a maintainer can confirm details and merge them into <code>breaches.json</code> / <code>companies.json</code> via a normal pull request.</li>
+        </ul>
+        <p>This means new <em>candidates</em> are discovered automatically, while final publication of a claimed breach still passes through lightweight human confirmation &mdash; a deliberate design choice to avoid publishing unverified rumors about real companies and real victims.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Why not fully auto-publish every match with zero human involvement?</summary>
+        <p>Falsely claiming a company suffered a data breach can cause real reputational and legal harm, and keyword-matched news feeds regularly produce false positives (e.g. articles that merely mention a company's name near the word "breach"). We treat accuracy as more important than being 100% "hands-off," so the pipeline automates discovery and drafting, while a lightweight review step protects against publishing incorrect claims.</p>
+      </details>
+    </section>
+    <section>
+      <h2>Privacy &amp; ethics</h2>
+      <details class="faq-item">
+        <summary>Do you store any of my personal data?</summary>
+        <p>No. This site has no backend server and no database. The "Check My Data" page runs entirely in your browser: your selections are compared against the local <code>data/breaches.json</code> file already downloaded to your device, and nothing is ever transmitted anywhere. We do not use analytics that track individual identity document details, and we never ask for actual ID or passport numbers.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Why don't you let me search by my actual passport number?</summary>
+        <p>Doing so safely would require a backend service, secure hashing infrastructure, and a trustworthy way to compare against real breach corpora &mdash; none of which is possible on free static GitHub Pages hosting without introducing new privacy risks. Asking users to type sensitive document numbers into a web form, even a "client-side only" one, creates a dangerous norm and phishing risk. Instead, we use a coarser, safer model: matching by <em>company/service used</em> and <em>document type</em>, which conveys the same practical risk information without ever handling sensitive identifiers.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Are you trying to scare people away from age verification?</summary>
+        <p>No. The goal is informed awareness, not alarmism. Age and identity verification serve legitimate purposes (child safety, fraud prevention, regulatory compliance). This site simply documents that any system storing or transmitting identity documents carries breach risk, so users and policymakers can make informed choices about which services to trust and what safeguards to demand.</p>
+      </details>
+    </section>
+    <section>
+      <h2>Limitations</h2>
+      <details class="faq-item">
+        <summary>What are the known limitations of this tracker?</summary>
+        <ul class="guidance-list">
+          <li><strong>Incomplete coverage:</strong> Many breaches, especially outside major English-language media markets, are never publicly reported or are disclosed only to regulators.</li>
+          <li><strong>Reporting lag:</strong> Some breaches (e.g. the IDMerit exposure) are discovered privately months before public disclosure, so our timeline reflects disclosure dates, not necessarily when an incident began.</li>
+          <li><strong>Company inclusion &ne; wrongdoing:</strong> Most companies listed on the <a href="companies.html">companies page</a> have no known breach; they're included to provide a comprehensive picture of the identity-verification industry.</li>
+          <li><strong>Severity ratings are editorial judgments</strong> based on data sensitivity and scale, not an official industry standard.</li>
+        </ul>
+      </details>
+    </section>
+    <section>
+      <h2>Protecting yourself</h2>
+      <details class="faq-item">
+        <summary>General steps if your ID document may have been exposed</summary>
+        <ul class="guidance-list">
+          <li>Watch for notification emails from services you've used, and verify their authenticity before clicking links.</li>
+          <li>Monitor bank and credit accounts for unfamiliar activity, and consider a credit freeze or fraud alert where available in your country.</li>
+          <li>If your passport, driver's licence, or national ID was exposed, contact the issuing government authority to ask about reissuance, flagging, or monitoring options.</li>
+          <li>Be cautious about which services you upload ID documents to in the future; check whether a company has a history of breaches on this site first.</li>
+          <li>Be alert to identity-theft attempts using your exposed data, such as new accounts, loan applications, or SIM-swap attempts.</li>
+        </ul>
+      </details>
+    </section>
+  </div>
+
+</main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p><strong>ID &amp; Age Verification Breach Tracker</strong> &mdash; an independent, non-commercial awareness project.</p>
+        <p>&copy; <span id="footer-year">2026</span>. Not affiliated with any identity-verification vendor, government, or Have I Been Pwned. Data sourced from public reporting; see <a href="faq.html">FAQ</a> for methodology.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="breaches.html">Breaches</a>
+        <a href="companies.html">Companies</a>
+        <a href="check.html">Check My Data</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </div>
+  </footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>
