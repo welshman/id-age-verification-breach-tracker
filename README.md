@@ -10,6 +10,10 @@ specifically on identity and age-verification breaches rather than email/passwor
 **Live demo:** enable GitHub Pages on this repo (see Deployment below) and
 your site will be available at `https://<your-username>.github.io/<repo-name>/`.
 
+## Demo
+
+https://welshman.github.io/id-age-verification-breach-tracker/
+
 ## Features
 
 - **Homepage** with live stats (total breaches, total companies, most recent breach) and a timeline.
