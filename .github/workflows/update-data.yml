@@ -1,0 +1,110 @@
+name: Update ID/Age Verification Breach Data
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install --quiet requests feedparser
+
+      - name: Run breach discovery script
+        id: discover
+        env:
+          HIBP_API_KEY: ${{ secrets.HIBP_API_KEY }}
+        run: python scripts/fetch_candidates.py
+
+      - name: Check for new candidates
+        id: check_changes
+        run: |
+          if [ -s data/pending-review.json ] && [ "$(jq 'length' data/pending-review.json)" -gt 0 ]; then
+            echo "has_candidates=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_candidates=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit pending review file
+        if: steps.check_changes.outputs.has_candidates == 'true'
+        run: |
+          git config user.name "id-breach-tracker-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/pending-review.json data/last-run.json
+          git diff --cached --quiet || git commit -m "chore(data): update pending-review candidates [automated]"
+          git push
+
+      - name: Commit run metadata (no new candidates)
+        if: steps.check_changes.outputs.has_candidates == 'false'
+        run: |
+          git config user.name "id-breach-tracker-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/last-run.json
+          git diff --cached --quiet || git commit -m "chore(data): record automated run, no new candidates [automated]"
+          git push
+
+      - name: Open/update review issue
+        if: steps.check_changes.outputs.has_candidates == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const candidates = JSON.parse(fs.readFileSync('data/pending-review.json', 'utf8'));
+            const body = [
+              '### New candidate breach/company entries found by the automated pipeline',
+              '',
+              'These were discovered by keyword-matching public RSS feeds and/or the HIBP API against',
+              '`data/update-config.json`. **They have not been added to `breaches.json` or `companies.json`.**',
+              'Please verify each item against its source link, then manually merge confirmed entries',
+              'into the appropriate JSON file via a pull request.',
+              '',
+              '```json',
+              JSON.stringify(candidates, null, 2).slice(0, 60000),
+              '```',
+              '',
+              '_This issue was created automatically by `.github/workflows/update-data.yml`._'
+            ].join('\n');
+
+            const title = 'Automated: new breach/company candidates for review';
+            const { data: existing } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'automated-review'
+            });
+            const openIssue = existing.find(i => i.title === title);
+
+            if (openIssue) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: openIssue.number,
+                body
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: ['automated-review']
+              });
+            }
