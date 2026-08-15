@@ -215,7 +215,51 @@ function renderCompanyList(companies, breaches) {
   }).join('');
 }
 
+/* ---------- Theme toggle (dark/light mode) ---------- */
+const THEME_KEY = 'id-breach-tracker-theme';
+
+function getPreferredTheme() {
+  const stored = localStorage.getItem(THEME_KEY);
+  if (stored === 'dark' || stored === 'light') return stored;
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  const toggleBtn = document.getElementById('theme-toggle');
+  if (toggleBtn) {
+    const icon = toggleBtn.querySelector('.icon');
+    const label = toggleBtn.querySelector('.label');
+    if (theme === 'dark') {
+      if (icon) icon.textContent = '☀️';
+      if (label) label.textContent = 'Light mode';
+      toggleBtn.setAttribute('aria-pressed', 'true');
+    } else {
+      if (icon) icon.textContent = '🌙';
+      if (label) label.textContent = 'Dark mode';
+      toggleBtn.setAttribute('aria-pressed', 'false');
+    }
+  }
+}
+
+function initThemeToggle() {
+  const theme = getPreferredTheme();
+  applyTheme(theme);
+  const toggleBtn = document.getElementById('theme-toggle');
+  if (!toggleBtn) return;
+  toggleBtn.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+    const next = current === 'dark' ? 'light' : 'dark';
+    localStorage.setItem(THEME_KEY, next);
+    applyTheme(next);
+  });
+}
+
+// Apply theme immediately (before DOMContentLoaded) to avoid a flash of the wrong theme.
+applyTheme(getPreferredTheme());
+
 document.addEventListener('DOMContentLoaded', () => {
+  initThemeToggle();
   initHomepage();
   initBreachesPage();
   initCompaniesPage();
