@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Archived discovery-source inventory restored after cleanup; entries are not automatically active polling sources.",
+  "source_groups": {
+    "ransomware_and_regulators": "Restored from prior source-extension-ransomware-regulators.json commit.",
+    "security_research_and_open_data": "Restored from prior source-extension-final.json commit.",
+    "privacy_financial_and_psirt": "Restored from prior source-extension-finance-privacy.json commit."
+  },
+  "recovery_commits": ["58d210a6e57c0e61982bdd233b391962bd16bc68", "5537bd47fc8cb8e98e28c3af10684acd7b2fa987"],
+  "note": "Full original records remain retrievable from the listed Git commits. This archive identifies the restored inventory groups pending exact re-integration."
+}
