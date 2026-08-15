@@ -1,0 +1,41 @@
+[
+  {
+    "id": "aylo-mindgeek-2025-ftc-settlement",
+    "title": "Aylo (Pornhub) FTC Settlement Over Unsecured Performer ID Data",
+    "date": "2025-09-03",
+    "companies": ["aylo-mindgeek"],
+    "data_types": ["national_id", "full_name", "dob", "address", "passport"],
+    "severity": "high",
+    "summary": "The FTC and Utah found that Aylo, owner of Pornhub, retained performers' Social Security numbers, addresses, birthdates, and government IDs collected via identity verification without encryption, access restrictions, or a firewall.",
+    "details": "In a $5 million settlement announced September 3, 2025, the FTC and the state of Utah alleged that Aylo (formerly MindGeek), operator of Pornhub and other adult platforms, failed to secure sensitive personal data collected from performers as part of its identity-verification process. After performers authenticated their identity through a third-party service, Aylo retained that data indefinitely, including Social Security numbers, addresses, birthdates, and other details typically found on government identification, according to the FTC complaint. The regulators stated Aylo did not encrypt the personal information it held, did not restrict access to the data, and did not protect it behind a firewall, despite assuring performers their data would remain secure. The settlement required Aylo to verify the age and consent of all individuals appearing in uploaded content, remove unverified legacy content, and implement a comprehensive privacy and security program. This was a regulatory finding of inadequate data security practices around identity-verification data, not a confirmed external hacking breach.",
+    "sources": ["https://finance.yahoo.com/news/pornhub-owner-pays-5m-settlement-181221409.html", "https://www.consumeraffairs.com/news/pornhub-to-pay-5-million-implement-new-safeguards-in-child-exploitation-case-090325.html"],
+    "affected_regions": ["global"],
+    "verification_type": "age_verification"
+  },
+  {
+    "id": "serasa-experian-2021-breach",
+    "title": "Serasa Experian Brazil Data Exposure (223 Million Records)",
+    "date": "2021-01-20",
+    "companies": ["serasa-experian-brazil"],
+    "data_types": ["national_id", "full_name", "dob", "address", "phone_number", "email", "photo"],
+    "severity": "critical",
+    "summary": "A dataset of over 223 million personal records, more than Brazil's entire population, appeared for sale on a dark-web forum in what was described as the largest data leak in Brazilian history, with the data closely resembling categories collected by credit bureau Serasa Experian.",
+    "details": "Brazilian cybersecurity firm PSafe discovered on January 20, 2021 a dataset containing personal records for more than 223 million individuals, a figure exceeding Brazil's population because it included deceased persons, being offered for sale on a dark-web forum for approximately $40,000 in Bitcoin. The leaked data reportedly included full names, CPF tax identification numbers, dates of birth, gender, addresses, phone numbers, email addresses, salary ranges, credit scores, and in some reports facial images. A second dataset separately exposed data on 40 million Brazilian companies. Experian confirmed it was investigating a possible connection to its Brazilian subsidiary Serasa, noting the dataset's structure closely resembled Serasa's Mosaic consumer-segmentation product, but stated its forensic investigation found no evidence its technology systems had been compromised and that some claimed data types were not data Serasa collects. Litigation by Brazilian privacy group Instituto Sigilo and the Federal Public Prosecution Office remained ongoing as of later reporting.",
+    "sources": ["https://www.reuters.com/technology/experian-says-investigating-if-involved-brazil-data-breach-2021-02-08/", "https://databreach.com/breach/serasa-experian-2020", "https://brazilian.report/liveblog/politics-insider/2023/12/06/prosecutors-go-after-credit-monitoring-agency-over-massive-data-leak/", "https://www.zdnet.com/article/experian-challenged-over-massive-data-leak-in-brazil/"],
+    "affected_regions": ["LATAM"],
+    "verification_type": "kyc"
+  },
+  {
+    "id": "buro-de-credito-2023-breach",
+    "title": "Buró de Crédito Mexico Data Exposure",
+    "date": "2022-12-01",
+    "companies": ["buro-de-credito-mexico"],
+    "data_types": ["full_name", "national_id", "address", "phone_number", "financial_data"],
+    "severity": "medium",
+    "summary": "Mexico's banking regulator CNBV confirmed it had known since December 2022 of a possible data exposure at credit bureau Buró de Crédito, after a vendor advertised the bureau's data for sale on Telegram in mid-2023.",
+    "details": "In mid-2023, a vendor on Telegram claimed to be selling personal and financial data belonging to Buró de Crédito, Mexico's principal credit-reporting bureau used by banks for identity verification and creditworthiness checks. Mexico's National Banking and Securities Commission (CNBV) stated in February 2023 that it could not rule out the breach having occurred over a longer period than the company had disclosed, and confirmed it had been aware of the exposure since December 2022. Buró de Crédito created a dedicated verification website allowing individuals to check whether their personal information was among the data affected. The full scope and confirmed cause of the exposure remained publicly unconfirmed at initial reporting.",
+    "sources": ["https://thecyberexpress.com/buro-de-credito-data-breach-unconfirmed/", "https://www.eleconomista.com.mx/sectorfinanciero/CNBV-sabia-de-la-filtracion-en-Buro-de-Credito-desde-diciembre-de-2022-20230222-0068.html"],
+    "affected_regions": ["LATAM"],
+    "verification_type": "kyc"
+  }
+]

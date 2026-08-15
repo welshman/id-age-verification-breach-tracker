@@ -1,0 +1,42 @@
+[
+  {
+    "id": "aylo-mindgeek",
+    "name": "Aylo (formerly MindGeek)",
+    "website": "https://www.aylo.com",
+    "region": "global",
+    "type": "age_verification",
+    "description": "Operator of major adult-content platforms including Pornhub, YouPorn, and RedTube, using third-party identity verification (Yoti) for content uploaders and various age-assurance methods for viewers depending on jurisdiction.",
+    "known_breaches": ["aylo-mindgeek-2025-ftc-settlement"],
+    "notes": "Not a dedicated identity-verification vendor; included because it retained performers' identity documents and Social Security numbers collected through its verification process."
+  },
+  {
+    "id": "serasa-experian-brazil",
+    "name": "Serasa Experian (Brazil)",
+    "website": "https://www.serasaexperian.com.br",
+    "region": "LATAM",
+    "type": "kyc",
+    "description": "Brazilian subsidiary of global credit bureau Experian, providing credit scoring, identity verification, and KYC data products to Brazilian businesses.",
+    "known_breaches": ["serasa-experian-2021-breach"],
+    "notes": "Experian disputes that its own systems were breached, but the leaked dataset closely resembled Serasa data categories and was widely attributed to the company in Brazilian reporting and litigation."
+  },
+  {
+    "id": "buro-de-credito-mexico",
+    "name": "Buró de Crédito (Mexico)",
+    "website": "https://www.burodecredito.com.mx",
+    "region": "LATAM",
+    "type": "kyc",
+    "description": "Mexico's principal credit-reporting bureau, used by banks and lenders for identity verification and creditworthiness checks nationwide.",
+    "known_breaches": ["buro-de-credito-2023-breach"],
+    "notes": "Mexico's banking regulator CNBV was notified of a possible data exposure in 2022-2023; full scope and attribution remained publicly unconfirmed at initial reporting."
+  },
+  {
+    "id": "eguwallet",
+    "name": "EguWallet",
+    "website": "https://eguwallet.eu",
+    "region": "EU",
+    "type": "id_verification",
+    "description": "eIDAS 2.0-certified European Digital Identity Wallet developed by IT Eguilde SRL, allowing citizens to store and present ID cards, driving licences, diplomas, and qualified signatures from a mobile device.",
+    "known_breaches": [],
+    "notes": "No confirmed public breach identified as of research date."
+  }
+]
