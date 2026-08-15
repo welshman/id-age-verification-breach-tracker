@@ -1,4 +1,4 @@
-// Global ID & Age Verification Breach Tracker — main.js
+// Global ID & Age Verification Breach Tracker — main.js (v2)
 const DATA_PATHS = { breaches: 'data/breaches.json', companies: 'data/companies.json', sources: 'data/sources.json' };
 const _cache = {};
 
@@ -70,19 +70,37 @@ async function initHomepage() {
 let _allBreaches = [];
 let _allCompanies = [];
 
+function sortBreaches(list, sortKey) {
+  const severityRank = { low: 0, medium: 1, high: 2, critical: 3 };
+  const copy = list.slice();
+  copy.sort((a, b) => {
+    if (sortKey === 'date-asc') return a.date < b.date ? -1 : (a.date > b.date ? 1 : 0);
+    if (sortKey === 'severity-desc') return severityRank[b.severity] - severityRank[a.severity];
+    if (sortKey === 'title-asc') return a.title.localeCompare(b.title);
+    return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0);
+  });
+  return copy;
+}
+
 async function initBreachesPage() {
   const listEl = document.getElementById('breach-list');
   if (!listEl) return;
   const [{ breaches }, { companies }] = await Promise.all([loadData('breaches'), loadData('companies')]);
   _allBreaches = breaches; _allCompanies = companies;
   populateFilterOptions(breaches, companies);
+
+  const sortSelect = document.getElementById('filter-sort');
+  if (sortSelect && !sortSelect.value) sortSelect.value = 'date-desc';
+
   document.getElementById('filter-region').addEventListener('change', applyBreachFilters);
   document.getElementById('filter-severity').addEventListener('change', applyBreachFilters);
   document.getElementById('filter-company').addEventListener('change', applyBreachFilters);
   document.getElementById('filter-datatype').addEventListener('change', applyBreachFilters);
   document.getElementById('filter-sort').addEventListener('change', applyBreachFilters);
   document.getElementById('filter-search').addEventListener('input', applyBreachFilters);
+
   applyBreachFilters();
+
   if (location.hash) {
     const target = document.querySelector(location.hash);
     if (target) {
@@ -110,8 +128,9 @@ function applyBreachFilters() {
   const severity = document.getElementById('filter-severity').value;
   const company = document.getElementById('filter-company').value;
   const dataType = document.getElementById('filter-datatype').value;
-  const sort = document.getElementById('filter-sort').value;
+  const sort = document.getElementById('filter-sort').value || 'date-desc';
   const search = document.getElementById('filter-search').value.trim().toLowerCase();
+
   let filtered = _allBreaches.filter(b => {
     if (region && !b.affected_regions.includes(region)) return false;
     if (severity && b.severity !== severity) return false;
@@ -123,13 +142,8 @@ function applyBreachFilters() {
     }
     return true;
   });
-  const severityRank = { low: 0, medium: 1, high: 2, critical: 3 };
-  filtered.sort((a, b) => {
-    if (sort === 'date-asc') return a.date < b.date ? -1 : 1;
-    if (sort === 'severity-desc') return severityRank[b.severity] - severityRank[a.severity];
-    if (sort === 'title-asc') return a.title.localeCompare(b.title);
-    return a.date < b.date ? 1 : -1;
-  });
+
+  filtered = sortBreaches(filtered, sort);
   renderBreachList(filtered, _allCompanies);
 }
 
