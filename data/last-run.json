@@ -1,8 +1,9 @@
 {
-  "last_run_at": null,
-  "rss_candidates_found": 0,
-  "hibp_candidates_found": 0,
-  "new_candidates_this_run": 0,
-  "total_pending_review": 0,
-  "note": "This file is updated automatically by .github/workflows/update-data.yml on each scheduled run."
+  "last_run_at": "2026-08-15T23:37:22.416418+00:00",
+  "configured_rss_feeds": 49,
+  "configured_api_sources": 8,
+  "candidates_found": 61,
+  "new_candidates_this_run": 61,
+  "total_pending_review": 61,
+  "source_policy": "Candidates require review before publication."
 }

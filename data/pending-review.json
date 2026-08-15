@@ -1,1 +1,676 @@
-[]
+[
+  {
+    "type": "rss_candidate",
+    "suggested_id": "ringcentral-data-breach-exposed-info-of-1-6-million-accounts",
+    "title": "RingCentral data breach exposed info of 1.6 million accounts",
+    "source_url": "https://www.bleepingcomputer.com/news/security/ringcentral-data-breach-exposed-info-of-16-million-accounts/",
+    "feed": "https://www.bleepingcomputer.com/feed/",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:28.845847+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "scattered-spider-hackers-plead-guilty-on-day-1-of-trial",
+    "title": "Scattered Spider Hackers Plead Guilty on Day 1 of Trial",
+    "source_url": "https://krebsonsecurity.com/2026/06/scattered-spider-hackers-plead-guilty-on-day-1-of-trial/",
+    "feed": "https://krebsonsecurity.com/feed/",
+    "matched_keywords": [
+      "SPID"
+    ],
+    "discovered_at": "2026-08-15T23:36:28.997202+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "kr-sogang-university-data-breach-exposes-180-000-student-staff-accounts",
+    "title": "KR: Sogang University data breach exposes 180,000 student, staff accounts",
+    "source_url": "https://databreaches.net/2026/08/15/kr-sogang-university-data-breach-exposes-180000-student-staff-accounts/",
+    "feed": "https://www.databreaches.net/feed/",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:29.118447+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "nhs-admits-data-breach-by-sending-patient-data-via-pagers",
+    "title": "NHS admits data breach by sending patient data via pagers",
+    "source_url": "https://databreaches.net/2026/08/14/nhs-admits-data-breach-by-sending-patient-data-via-pagers/",
+    "feed": "https://www.databreaches.net/feed/",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:29.118615+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "clinical-trials-how-personal-information-for-thousands-of-australians-was-expose",
+    "title": "Clinical Trials: How Personal Information for Thousands of Australians was Exposed | UpGuard",
+    "source_url": "https://www.upguard.com/breaches/data-leak-neoclinical-australia-new-zealand",
+    "feed": "https://upguard.com/breaches/rss.xml",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:29.388403+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "identity-and-access-misstep-how-an-amazon-engineer-exposed-credentials-and-more-",
+    "title": "Identity and Access Misstep: How an Amazon Engineer Exposed Credentials and More | UpGuard",
+    "source_url": "https://www.upguard.com/breaches/identity-and-access-misstep-how-an-amazon-engineer-exposed-credentials-and-more",
+    "feed": "https://upguard.com/breaches/rss.xml",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:29.388535+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "the-chicago-way-an-electronic-voting-firm-exposes-1-8m-chicagoans-upguard",
+    "title": "The Chicago Way: An Electronic Voting Firm Exposes 1.8M Chicagoans | UpGuard",
+    "source_url": "https://www.upguard.com/breaches/cloud-leak-chicago-voters",
+    "feed": "https://upguard.com/breaches/rss.xml",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:29.388679+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "block-buster-how-a-private-intelligence-platform-leaked-48-million-personal-data",
+    "title": "Block Buster: How A Private Intelligence Platform Leaked 48 Million Personal Data Records | UpGuard",
+    "source_url": "https://www.upguard.com/breaches/s3-localblox",
+    "feed": "https://upguard.com/breaches/rss.xml",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:29.388783+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "cloud-leak-how-a-verizon-partner-exposed-millions-of-customer-accounts-upguard",
+    "title": "Cloud Leak: How A Verizon Partner Exposed Millions of Customer Accounts | UpGuard",
+    "source_url": "https://www.upguard.com/breaches/verizon-cloud-leak",
+    "feed": "https://upguard.com/breaches/rss.xml",
+    "matched_keywords": [
+      "Verizon"
+    ],
+    "discovered_at": "2026-08-15T23:36:29.388976+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "double-indemnity-how-an-insurer-exposed-its-customers-upguard",
+    "title": "Double Indemnity: How An Insurer Exposed Its Customers | UpGuard",
+    "source_url": "https://www.upguard.com/breaches/nas-leak-mdjia",
+    "feed": "https://upguard.com/breaches/rss.xml",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:29.389022+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "learning-curve-how-personal-data-for-one-million-individuals-was-exposed-upguard",
+    "title": "Learning Curve: How Personal Data for One Million Individuals Was Exposed | UpGuard",
+    "source_url": "https://www.upguard.com/breaches/rsync-tdm",
+    "feed": "https://upguard.com/breaches/rss.xml",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:29.389075+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "home-economics-how-life-in-123-million-american-households-was-exposed-online-up",
+    "title": "Home Economics: How Life in 123 Million American Households Was Exposed Online | UpGuard",
+    "source_url": "https://www.upguard.com/breaches/cloud-leak-alteryx",
+    "feed": "https://upguard.com/breaches/rss.xml",
+    "matched_keywords": [
+      "Persona",
+      "Experian"
+    ],
+    "discovered_at": "2026-08-15T23:36:29.389182+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "mobile-data-how-a-quiz-app-exposed-account-details-for-millions-upguard",
+    "title": "Mobile Data: How a Quiz App Exposed Account Details for Millions | UpGuard",
+    "source_url": "https://www.upguard.com/breaches/tvsmiles-european-mobile-advertising-app-personal-data",
+    "feed": "https://upguard.com/breaches/rss.xml",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:29.389420+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "debt-collection-how-an-unsecured-elasticsearch-instance-exposed-thousands-of-bor",
+    "title": "Debt Collection: How an Unsecured ElasticSearch Instance Exposed Thousands of Borrowers | UpGuard",
+    "source_url": "https://www.upguard.com/breaches/encollect",
+    "feed": "https://upguard.com/breaches/rss.xml",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:29.389492+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "student-applications-how-an-education-software-company-exposed-millions-of-files",
+    "title": "Student Applications: How an Education Software Company Exposed Millions of Files | UpGuard",
+    "source_url": "https://www.upguard.com/breaches/smarterselect",
+    "feed": "https://upguard.com/breaches/rss.xml",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:29.389544+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "the-medibank-data-breach-complete-timeline-of-events-upguard",
+    "title": "The Medibank Data Breach (Complete Timeline of Events) | UpGuard",
+    "source_url": "https://www.upguard.com/breaches/medibank-data-leak",
+    "feed": "https://upguard.com/breaches/rss.xml",
+    "matched_keywords": [
+      "Medibank"
+    ],
+    "discovered_at": "2026-08-15T23:36:29.389634+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "bad-influence-how-a-marketing-startup-exposed-thousands-of-social-media-stars-up",
+    "title": "Bad Influence: How A Marketing Startup Exposed Thousands of Social Media Stars | UpGuard",
+    "source_url": "https://www.upguard.com/breaches/cloud-leak-octoly",
+    "feed": "https://upguard.com/breaches/rss.xml",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:29.389679+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "brinks-home-732-162-breached-accounts",
+    "title": "Brinks Home - 732,162 breached accounts",
+    "source_url": "https://haveibeenpwned.com/Breach/BrinksHome",
+    "feed": "https://feeds.feedburner.com/HaveIBeenPwnedLatestBreaches",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:29.522559+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "exact-sciences-10-869-543-breached-accounts",
+    "title": "Exact Sciences - 10,869,543 breached accounts",
+    "source_url": "https://haveibeenpwned.com/Breach/ExactSciences",
+    "feed": "https://feeds.feedburner.com/HaveIBeenPwnedLatestBreaches",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:29.522649+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "houston-city-college-831-642-breached-accounts",
+    "title": "Houston City College - 831,642 breached accounts",
+    "source_url": "https://haveibeenpwned.com/Breach/HoustonCityCollege",
+    "feed": "https://feeds.feedburner.com/HaveIBeenPwnedLatestBreaches",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:29.522786+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "moody-bible-institute-2-303-416-breached-accounts",
+    "title": "Moody Bible Institute - 2,303,416 breached accounts",
+    "source_url": "https://haveibeenpwned.com/Breach/MoodyBibleInstitute",
+    "feed": "https://feeds.feedburner.com/HaveIBeenPwnedLatestBreaches",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:29.523106+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "madison-square-garden-sports-9-796-738-breached-accounts",
+    "title": "Madison Square Garden Sports - 9,796,738 breached accounts",
+    "source_url": "https://haveibeenpwned.com/Breach/MadisonSquareGardenSports",
+    "feed": "https://feeds.feedburner.com/HaveIBeenPwnedLatestBreaches",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:29.523256+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "jcpenney-368-418-breached-accounts",
+    "title": "JCPenney - 368,418 breached accounts",
+    "source_url": "https://haveibeenpwned.com/Breach/JCPenney",
+    "feed": "https://feeds.feedburner.com/HaveIBeenPwnedLatestBreaches",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:29.523325+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "unlimited-technology-systems-data-breach-exposes-data-of-3-8-million-healthcare-",
+    "title": "Unlimited Technology Systems Data Breach Exposes Data of 3.8 Million Healthcare Patients",
+    "source_url": "https://securityaffairs.com/196843/data-breach/unlimited-technology-systems-data-breach-exposes-data-of-3-8-million-healthcare-patients.html",
+    "feed": "https://securityaffairs.com/category/data-breach/feed",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:30.318631+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "dentaquest-disclosed-a-data-breach-that-impacted-23-million-individuals",
+    "title": "DentaQuest disclosed a data breach that impacted +23 million individuals",
+    "source_url": "https://securityaffairs.com/196100/data-breach/dentaquest-disclosed-a-data-breach-that-impacted-23-million-individuals.html",
+    "feed": "https://securityaffairs.com/category/data-breach/feed",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:30.318913+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "ai-sends-global-crime-syndicates-into-fraud-nirvana",
+    "title": "AI Sends Global Crime Syndicates Into Fraud Nirvana",
+    "source_url": "https://www.darkreading.com/threat-intelligence/ai-global-crime-syndicates-fraud-nirvana",
+    "feed": "https://www.darkreading.com/rss.xml",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:30.643389+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "smoke-screen-rmm-takeover-gambit-exposes-threat-actor-playbook",
+    "title": "Smoke#Screen RMM Takeover Gambit Exposes Threat Actor Playbook",
+    "source_url": "https://www.darkreading.com/cyberattacks-data-breaches/latest-rmm-fueled-phishing-attack-exposes-threat-actor-playbook",
+    "feed": "https://www.darkreading.com/rss.xml",
+    "matched_keywords": [
+      "Aylo"
+    ],
+    "discovered_at": "2026-08-15T23:36:30.643558+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "737-chrome-vpn-extensions-caught-routing-traffic-through-proxies-check-if-you-ha",
+    "title": "737 Chrome VPN Extensions Caught Routing Traffic Through Proxies. Check If You Have One",
+    "source_url": "https://thehackernews.com/2026/08/737-chrome-vpn-extensions-caught.html",
+    "feed": "https://feeds.feedburner.com/TheHackersNews",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:30.763022+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "nearly-800-malicious-npm-packages-deliver-cross-platform-rat-and-infostealer",
+    "title": "Nearly 800 Malicious npm Packages Deliver Cross-Platform RAT and Infostealer",
+    "source_url": "https://thehackernews.com/2026/08/nearly-800-malicious-npm-packages.html",
+    "feed": "https://feeds.feedburner.com/TheHackersNews",
+    "matched_keywords": [
+      "Aylo"
+    ],
+    "discovered_at": "2026-08-15T23:36:30.764461+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "clickfix-attacks-deliver-macos-stealer-that-can-drain-crypto-wallets",
+    "title": "ClickFix Attacks Deliver macOS Stealer That Can Drain Crypto Wallets",
+    "source_url": "https://thehackernews.com/2026/08/clickfix-attacks-deliver-macos-stealer.html",
+    "feed": "https://feeds.feedburner.com/TheHackersNews",
+    "matched_keywords": [
+      "Aylo"
+    ],
+    "discovered_at": "2026-08-15T23:36:30.764505+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "unc6671-vishing-attacks-target-personal-phones-to-steal-saas-data",
+    "title": "UNC6671 Vishing Attacks Target Personal Phones to Steal SaaS Data",
+    "source_url": "https://thehackernews.com/2026/08/unc6671-vishing-attacks-target-personal.html",
+    "feed": "https://feeds.feedburner.com/TheHackersNews",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:30.764547+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "foul-play-fake-fifa-websites-target-soccer-fans-looking-for-world-cup-tickets-me",
+    "title": "Foul play: Fake FIFA websites target soccer fans looking for World Cup tickets, merchandise",
+    "source_url": "https://www.welivesecurity.com/en/cybersecurity/foul-play-fake-fifa-world-cup-websites-tickets/",
+    "feed": "https://www.welivesecurity.com/feed/",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:31.133244+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "this-month-in-security-with-tony-anscombe-april-2026-edition",
+    "title": "This month in security with Tony Anscombe – April 2026 edition",
+    "source_url": "https://www.welivesecurity.com/en/videos/month-security-tony-anscombe-april-2026/",
+    "feed": "https://www.welivesecurity.com/feed/",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:31.133479+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "1-in-every-100-identity-check-failures-involves-deepfake-media",
+    "title": "1 in every 100 identity check failures involves deepfake media",
+    "source_url": "https://identityweek.net/1-in-every-100-identity-check-failures-involves-deepfake-media/",
+    "feed": "https://identityweek.net/feed/",
+    "matched_keywords": [
+      "LexisNexis"
+    ],
+    "discovered_at": "2026-08-15T23:36:31.305805+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "xmrig-covert-ops-the-cryptomining-campaign-that-abuses-trusted-access-and-deploy",
+    "title": "XMRig Covert Ops: The Cryptomining Campaign That Abuses Trusted Access and Deploys Forensic Smokescreens",
+    "source_url": "https://www.group-ib.com/blog/xmrig-covert-linux-pam-abuse/",
+    "feed": "https://www.group-ib.com/blog/rss.xml",
+    "matched_keywords": [
+      "Aylo"
+    ],
+    "discovered_at": "2026-08-15T23:36:34.262656+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "the-scam-will-go-on-beware-of-fake-offers-for-celine-dion-concert-tickets",
+    "title": "The Scam Will Go On: Beware of Fake Offers for Celine Dion Concert Tickets",
+    "source_url": "https://www.group-ib.com/blog/fake-concert-ticket-scam-celine-dion/",
+    "feed": "https://www.group-ib.com/blog/rss.xml",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:34.262859+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "connecting-scattered-spider-defining-a-cybercrime-collective-through-shared-ttps",
+    "title": "Connecting Scattered Spider: Defining A Cybercrime Collective Through Shared TTPs",
+    "source_url": "https://www.group-ib.com/blog/connecting-scattered-spider/",
+    "feed": "https://www.group-ib.com/blog/rss.xml",
+    "matched_keywords": [
+      "SPID"
+    ],
+    "discovered_at": "2026-08-15T23:36:34.262966+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "phishing-in-the-balkans-fake-traffic-fines-real-losses",
+    "title": "Phishing in the Balkans: Fake Traffic Fines, Real Losses",
+    "source_url": "https://www.group-ib.com/blog/balkans-fake-traffic-fines-phishing/",
+    "feed": "https://www.group-ib.com/blog/rss.xml",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:34.263007+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "sniper-s-nest-from-brand-impersonation-to-browser-hijacking-and-cpa-fraud",
+    "title": "Sniper’s Nest: From Brand Impersonation to Browser Hijacking and CPA Fraud",
+    "source_url": "https://www.group-ib.com/blog/inside-sniperdz-phaas-ecosystem/",
+    "feed": "https://www.group-ib.com/blog/rss.xml",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:34.263260+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "error-524-decoy-unmasking-a-global-smishing-operation-hiding-behind-error-pages",
+    "title": "Error 524 Decoy: Unmasking a Global Smishing Operation Hiding Behind Error Pages",
+    "source_url": "https://www.group-ib.com/blog/error-524-decoy-smishing/",
+    "feed": "https://www.group-ib.com/blog/rss.xml",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:34.263362+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "the-ghost-stadium-score-billions-at-stake-at-the-world-s-largest-football-tourna",
+    "title": "The GHOST STADIUM Score: Billions At Stake At The World’s Largest Football Tournament",
+    "source_url": "https://www.group-ib.com/blog/ghost-stadium-football-fraud/",
+    "feed": "https://www.group-ib.com/blog/rss.xml",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:34.263469+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "the-architecture-of-deception-how-a-187-million-fraud-ecosystem-exploits-trust-a",
+    "title": "The Architecture of Deception: How a $187 Million Fraud Ecosystem Exploits Trust Across Australia and the United States",
+    "source_url": "https://www.group-ib.com/blog/architecture-deception-investment-crypto-fraud/",
+    "feed": "https://www.group-ib.com/blog/rss.xml",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:34.263700+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "the-docusign-impersonation-wave-with-real-time-customizable-logokit",
+    "title": "The DocuSign Impersonation Wave with Real-Time Customizable LogoKit",
+    "source_url": "https://www.group-ib.com/blog/docusign-impersonation-logokit/",
+    "feed": "https://www.group-ib.com/blog/rss.xml",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:34.264448+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "choose-your-fighter-a-new-stage-in-the-evolution-of-android-sms-stealers-in-uzbe",
+    "title": "Choose Your Fighter: A New Stage in the Evolution of Android SMS Stealers in Uzbekistan",
+    "source_url": "https://www.group-ib.com/blog/mobile-malware-uzbekistan/",
+    "feed": "https://www.group-ib.com/blog/rss.xml",
+    "matched_keywords": [
+      "Aylo"
+    ],
+    "discovered_at": "2026-08-15T23:36:34.264526+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "bloody-wolf-a-blunt-crowbar-threat-to-justice",
+    "title": "Bloody Wolf: A Blunt Crowbar Threat To Justice",
+    "source_url": "https://www.group-ib.com/blog/bloody-wolf/",
+    "feed": "https://www.group-ib.com/blog/rss.xml",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:34.264711+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "framework-loses-customer-data-in-metabase-zero-day-attack",
+    "title": "Framework loses customer data in Metabase zero-day attack",
+    "source_url": "https://www.theregister.com/personal-tech/2026/08/10/framework-loses-customer-data-in-metabase-zero-day-attack/5285302",
+    "feed": "https://www.theregister.com/security/headlines.atom",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:34.890048+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "akira-ransomware-reboots-into-windows-safe-mode-to-knock-edr-offline",
+    "title": "Akira ransomware reboots into Windows Safe Mode to knock EDR offline",
+    "source_url": "https://www.csoonline.com/article/4209606/akira-ransomware-reboots-into-windows-safe-mode-to-knock-edr-offline.html",
+    "feed": "https://www.csoonline.com/feed/",
+    "matched_keywords": [
+      "Aylo"
+    ],
+    "discovered_at": "2026-08-15T23:36:35.141310+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "the-cybersecurity-backlog-is-not-a-security-problem",
+    "title": "The cybersecurity backlog is not a security problem",
+    "source_url": "https://www.csoonline.com/article/4209334/the-cybersecurity-backlog-is-not-a-security-problem.html",
+    "feed": "https://www.csoonline.com/feed/",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:35.142141+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "attackers-target-zero-day-vulnerability-in-geospatial-data-platform-geoserver",
+    "title": "Attackers target zero-day vulnerability in geospatial data platform GeoServer",
+    "source_url": "https://www.csoonline.com/article/4209388/attackers-target-zero-day-vulnerability-in-geospatial-data-platform-geoserver.html",
+    "feed": "https://www.csoonline.com/feed/",
+    "matched_keywords": [
+      "Aylo"
+    ],
+    "discovered_at": "2026-08-15T23:36:35.143449+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "researcher-bypasses-microsoft-defender-security-patch-seizing-control",
+    "title": "Researcher bypasses Microsoft Defender security patch, seizing control",
+    "source_url": "https://www.csoonline.com/article/4208760/researcher-bypasses-microsoft-defender-security-patch-seizing-control.html",
+    "feed": "https://www.csoonline.com/feed/",
+    "matched_keywords": [
+      "LexisNexis",
+      "Aylo"
+    ],
+    "discovered_at": "2026-08-15T23:36:35.145958+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "fake-ccleaner-downloads-turn-chrome-into-a-credential-stealing-surveillance-tool",
+    "title": "Fake CCleaner downloads turn Chrome into a credential-stealing surveillance tool",
+    "source_url": "https://www.csoonline.com/article/4208565/fake-ccleaner-downloads-turn-chrome-into-a-credential-stealing-surveillance-tool.html",
+    "feed": "https://www.csoonline.com/feed/",
+    "matched_keywords": [
+      "Persona",
+      "Aylo"
+    ],
+    "discovered_at": "2026-08-15T23:36:35.146322+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "metabase-sqli-exploit-grants-attackers-total-access",
+    "title": "Metabase SQLi exploit grants attackers total access",
+    "source_url": "https://www.csoonline.com/article/4208307/metabase-sqli-exploit-grants-attackers-total-access.html",
+    "feed": "https://www.csoonline.com/feed/",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:35.150198+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "zoom-zero-click-rce-flaws-allow-attackers-to-compromise-meeting-participants",
+    "title": "Zoom zero-click RCE flaws allow attackers to compromise meeting participants",
+    "source_url": "https://www.csoonline.com/article/4208223/zoom-zero-click-rce-flaws-allow-attackers-to-compromise-meeting-participants.html",
+    "feed": "https://www.csoonline.com/feed/",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:35.151326+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "cryptominer-abuses-linux-pam-to-hide-from-soc-analysts",
+    "title": "Cryptominer Abuses Linux PAM to Hide From SOC Analysts",
+    "source_url": "https://www.infosecurity-magazine.com/news/xmrig-linux-pam-forensic/",
+    "feed": "https://www.infosecurity-magazine.com/rss/news/",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:35.509459+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "ukrainian-police-raid-94-fraudulent-call-centers-seize-2-million",
+    "title": "Ukrainian police raid 94 fraudulent call centers, seize $2 million",
+    "source_url": "https://www.helpnetsecurity.com/2026/08/14/ukraine-fraudulent-call-centers-shut-down/",
+    "feed": "https://www.helpnetsecurity.com/feed/",
+    "matched_keywords": [
+      "Persona"
+    ],
+    "discovered_at": "2026-08-15T23:36:35.592639+00:00"
+  },
+  {
+    "type": "rss_candidate",
+    "suggested_id": "datagrout-helps-enterprises-control-ai-usage-governance-and-llm-costs",
+    "title": "DataGrout helps enterprises control AI usage, governance and LLM costs",
+    "source_url": "https://www.helpnetsecurity.com/2026/08/13/selecthub-datagrout-llm-inference-optimization/",
+    "feed": "https://www.helpnetsecurity.com/feed/",
+    "matched_keywords": [
+      "Aylo"
+    ],
+    "discovered_at": "2026-08-15T23:36:35.593062+00:00"
+  },
+  {
+    "type": "api_candidate",
+    "suggested_id": "serruya-private-equity-listed-by-coinbasecartel-ransomware-group",
+    "title": "Serruya private equity Listed by coinbasecartel Ransomware Group",
+    "source_url": "https://recentbreaches.com/breach/serruya-private-equity-coinbasecartel-2026-08",
+    "feed": "https://recentbreaches.com/api/breaches",
+    "matched_keywords": [
+      "Coinbase"
+    ],
+    "discovered_at": "2026-08-15T23:37:20.930745+00:00"
+  },
+  {
+    "type": "api_candidate",
+    "suggested_id": "serruya-private-equity-new-listed-by-coinbase-cartel-ransomware-group",
+    "title": "Serruya private equity NEW Listed by Coinbase Cartel Ransomware Group",
+    "source_url": "https://recentbreaches.com/breach/serruya-private-equity-new-coinbase-cartel-2026-08",
+    "feed": "https://recentbreaches.com/api/breaches",
+    "matched_keywords": [
+      "Coinbase"
+    ],
+    "discovered_at": "2026-08-15T23:37:20.930995+00:00"
+  },
+  {
+    "type": "api_candidate",
+    "suggested_id": "sweet-water-holdings-new-listed-by-coinbase-cartel-ransomware-group",
+    "title": "Sweet Water Holdings NEW Listed by Coinbase Cartel Ransomware Group",
+    "source_url": "https://recentbreaches.com/breach/sweet-water-holdings-new-coinbase-cartel-2026-08",
+    "feed": "https://recentbreaches.com/api/breaches",
+    "matched_keywords": [
+      "Coinbase"
+    ],
+    "discovered_at": "2026-08-15T23:37:20.931272+00:00"
+  },
+  {
+    "type": "api_candidate",
+    "suggested_id": "turner-and-townsend-listed-by-coinbasecartel-ransomware-group",
+    "title": "Turner and Townsend Listed by coinbasecartel Ransomware Group",
+    "source_url": "https://recentbreaches.com/breach/turner-and-townsend-coinbasecartel-2026-08",
+    "feed": "https://recentbreaches.com/api/breaches",
+    "matched_keywords": [
+      "Coinbase"
+    ],
+    "discovered_at": "2026-08-15T23:37:20.931305+00:00"
+  },
+  {
+    "type": "api_candidate",
+    "suggested_id": "sweet-water-holdings-listed-by-coinbasecartel-ransomware-group",
+    "title": "Sweet Water Holdings Listed by coinbasecartel Ransomware Group",
+    "source_url": "https://recentbreaches.com/breach/sweet-water-holdings-coinbasecartel-2026-08",
+    "feed": "https://recentbreaches.com/api/breaches",
+    "matched_keywords": [
+      "Coinbase"
+    ],
+    "discovered_at": "2026-08-15T23:37:20.931338+00:00"
+  }
+]
