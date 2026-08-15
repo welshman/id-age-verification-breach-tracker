@@ -1,0 +1,53 @@
+{
+  "rss_feeds": [
+    {
+      "name": "OWASP Threat Intelligence Feed",
+      "url": "https://owasp.org/www-project-agentic-skills-top-10/threat-intelligence.xml",
+      "notes": "OWASP-maintained threat intelligence RSS feed and related API; monitor for identity and authorization vulnerabilities affecting verification infrastructure."
+    },
+    {
+      "name": "ESET WeLiveSecurity",
+      "url": "https://www.welivesecurity.com/feed/",
+      "notes": "ESET research and threat-intelligence publication; monitor for breach, malware, and identity-fraud investigations."
+    },
+    {
+      "name": "Identity Week",
+      "url": "https://identityweek.net/feed/",
+      "notes": "Digital identity, biometrics, border-control, and identity-wallet industry coverage; useful for provider and government eID incident discovery."
+    },
+    {
+      "name": "Identity at the Core Breach Feed",
+      "url": "https://www.identityatcore.org/breaches",
+      "notes": "Identity-focused aggregated breach/advisory feed combining sources such as CISA, Krebs, and BleepingComputer, filtered for IAM relevance."
+    }
+  ],
+  "apis": [
+    {
+      "name": "GitHub Advisory Database REST API",
+      "url": "https://api.github.com/advisories",
+      "notes": "Free API for global CVEs and GitHub-originated security advisories. Use for security vulnerabilities in open-source identity/verification SDKs, not as proof that a company was breached."
+    },
+    {
+      "name": "OWASP Threat Intelligence API",
+      "url": "https://api.owasp.org/ast10/threats",
+      "notes": "Machine-readable OWASP threat intelligence endpoint for monitoring emerging vulnerabilities that could affect identity-verification implementations."
+    }
+  ],
+  "regulatory_and_public_sources": [
+    {
+      "name": "Ghana National Identification Authority",
+      "url": "https://nia.gov.gh",
+      "notes": "Official source for Ghana Card and national biometric identity system updates."
+    },
+    {
+      "name": "Uganda NIRA",
+      "url": "https://www.nira.go.ug",
+      "notes": "Official source for Uganda's National Identification Register and biometric ID updates."
+    },
+    {
+      "name": "Android Developer Verification",
+      "url": "https://developer.android.com/developer-verification",
+      "notes": "Official Google documentation for the global developer identity verification rollout; monitor for security and privacy disclosures."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "eu-age-verification-app-2026-bypass",
+    "title": "EU Age Verification App Security Bypass",
+    "date": "2026-04-16",
+    "companies": ["eu-age-verification-app"],
+    "data_types": [],
+    "severity": "medium",
+    "summary": "Researchers demonstrated that the European Commission's prototype age-verification app could be bypassed within minutes by exploiting a locally stored encrypted PIN that was not bound to the user's identity vault.",
+    "details": "In April 2026, security researchers reported that they could bypass the European Commission's prototype age-verification application within minutes. The application was designed around European Digital Identity Wallet technology to let users prove they were over 18 while disclosing minimal personal information. Researchers found that while the app stored an encrypted PIN locally, the encryption was not cryptographically bound to the identity vault containing sensitive verification data. This allowed a straightforward method to bypass the app's age-check protections. No public report indicated that user identity documents or personal data were exposed; this entry documents a security control failure in an age-verification system rather than a data breach.",
+    "sources": ["https://cybernews.com/security/eu-age-verification-app-hack/"],
+    "affected_regions": ["EU"],
+    "verification_type": "age_verification"
+  }
+]
