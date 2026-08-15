@@ -13,7 +13,6 @@ import feedparser
 ROOT=Path(__file__).resolve().parent.parent
 DATA=ROOT/'data'
 CONFIG=DATA/'update-config.json'
-EXTENSION=DATA/'source-extension-ransomware-regulators.json'
 BREACHES=DATA/'breaches.json'
 PENDING=DATA/'pending-review.json'
 LAST=DATA/'last-run.json'
@@ -33,8 +32,19 @@ def fetch(url):
 
 def slug(value):return re.sub(r'[^a-z0-9]+','-',value.lower().strip()).strip('-')[:80]
 
+_word_re_cache = {}
 def matches(text,keys):
-    text=text.lower();return [k for k in keys if k.lower() in text]
+    text=text.lower()
+    found=[]
+    for k in keys:
+        kl=k.lower()
+        pattern=_word_re_cache.get(kl)
+        if pattern is None:
+            pattern=re.compile(r'(?<![a-z0-9])'+re.escape(kl)+r'(?![a-z0-9])')
+            _word_re_cache[kl]=pattern
+        if pattern.search(text):
+            found.append(k)
+    return found
 
 def discover_rss(urls,keys,seen):
     result=[]
@@ -84,13 +94,12 @@ def discover_hibp(config,ids):
 
 def main():
     config=load(CONFIG,{})
-    extension=load(EXTENSION,{})
     breaches=load(BREACHES,{'breaches':[]}).get('breaches',[])
     pending=load(PENDING,[])
     seen={s for b in breaches for s in b.get('sources',[])}|{x.get('source_url') for x in pending if x.get('source_url')}
     keys=config.get('company_keywords',[])+config.get('breach_keywords',[])
-    feeds=list(dict.fromkeys(config.get('rss_feeds',[])+config.get('cert_rss_feeds',[])+[x.get('url') for x in extension.get('real_time_sources',[]) if x.get('type')=='rss']))
-    apis=config.get('api_sources',[])+[x for x in extension.get('real_time_sources',[]) if x.get('type')=='json']
+    feeds=list(dict.fromkeys(config.get('rss_feeds',[])+config.get('cert_rss_feeds',[])))
+    apis=config.get('api_sources',[])
     candidates=discover_rss(feeds,keys,seen)+discover_json_apis(apis,keys,seen)+discover_hibp(config,{b.get('id') for b in breaches})
     existing={x.get('source_url') for x in pending};new=[]
     for c in candidates:
@@ -99,4 +108,5 @@ def main():
     save(PENDING,pending+new)
     save(LAST,{'last_run_at':datetime.now(timezone.utc).isoformat(),'configured_rss_feeds':len(feeds),'configured_api_sources':len(apis),'candidates_found':len(candidates),'new_candidates_this_run':len(new),'total_pending_review':len(pending)+len(new),'source_policy':'Candidates require review before publication.'})
     print(f'Feeds: {len(feeds)} | APIs: {len(apis)} | New candidates: {len(new)}')
+
 if __name__=='__main__':main()
