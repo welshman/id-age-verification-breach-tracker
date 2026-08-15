@@ -1,11 +1,50 @@
 {
   "schema_version": "1.0",
-  "purpose": "Archived discovery-source inventory restored after cleanup; entries are not automatically active polling sources.",
+  "purpose": "Archived discovery-source inventory. Entries are candidate-discovery sources and are not automatically active polling sources.",
+  "restored_at": "2026-08-16",
   "source_groups": {
-    "ransomware_and_regulators": "Restored from prior source-extension-ransomware-regulators.json commit.",
-    "security_research_and_open_data": "Restored from prior source-extension-final.json commit.",
-    "privacy_financial_and_psirt": "Restored from prior source-extension-finance-privacy.json commit."
+    "ransomware_and_regulators": [
+      {"name":"ransomware.live API","url":"https://api.ransomware.live/v2/victims","type":"json","notes":"Passive public ransomware-victim listing aggregator. Use only as a lead source; never access or redistribute leaked data."},
+      {"name":"ransomware.live RSS","url":"https://www.ransomware.live/rss.xml","type":"rss","notes":"Public RSS of ransomware group/victim activity; keyword-filter and require corroboration."},
+      {"name":"RecentBreaches ransomware leaks","url":"https://recentbreaches.com/api/leaks","type":"json","notes":"Public ransomware/extortion listing endpoint; candidate-only discovery."},
+      {"name":"Vysion Ransomware Feed API","url":"https://developers.vysion.ai/api/feeds/","type":"api_documentation","notes":"Daily structured ransomware-victim feed; may require API credentials or subscription."},
+      {"name":"Senserva Exploited Vulnerability Feeds","url":"https://senserva.com/feeds.html","type":"json_rss","notes":"Free exploited-in-the-wild and KEV-related feeds; monitor identity-provider dependencies and ransomware flags."},
+      {"name":"Australia OAIC Notifiable Data Breaches","url":"https://www.oaic.gov.au/privacy/notifiable-data-breaches/notifiable-data-breaches-publications","type":"regulatory_reports","notes":"Official Australian Notifiable Data Breaches statistics and reports; use for historical backfill and trend monitoring."},
+      {"name":"Australia OAIC NDB news","url":"https://www.oaic.gov.au/news/media-centre/data-breach-notifications-increase-to-all-time-high-in-2025,-new-ndb-stats-show","type":"regulatory_news","notes":"Official Australian privacy regulator breach-notification updates."},
+      {"name":"Canada OPC RSS","url":"https://www.priv.gc.ca/en/rss-feeds/","type":"rss_directory","notes":"Office of the Privacy Commissioner of Canada RSS feeds for PIPEDA findings, investigations, and privacy decisions."}
+    ],
+    "security_research_and_open_data": [
+      {"name":"Washington State Data Breach Notifications JSON","url":"https://data.wa.gov/api/views/s6ka-2aeh/rows.json?accessType=DOWNLOAD","type":"json_dataset","notes":"Official open-data dataset of breach notifications affecting Washington residents, including personal information categories; suitable for periodic historical backfill/diffing."},
+      {"name":"Ontario MCYS Privacy Breaches CSV","url":"https://open.canada.ca/data/en/dataset/9683ba3d-20d2-4014-af0c-afbe95b17488","type":"open_dataset","notes":"Official Canadian open-data portal record for Ontario Ministry of Children and Youth Services privacy breaches; use for public-sector historical backfill."},
+      {"name":"Ireland Public Sector Data Breach Register","url":"https://datacatalogue.gov.ie/dataset/data-breach-register","type":"open_dataset","notes":"Open public-sector breach register with dates, departments, incident detail, actions, and risk outcomes."},
+      {"name":"Zero Day Initiative Upcoming Advisories","url":"https://www.zerodayinitiative.com/rss/upcoming/","type":"rss","notes":"Vendor-notified vulnerabilities before public release; lead source for flaws in identity/verification infrastructure."},
+      {"name":"Zero Day Initiative Published Advisories","url":"https://www.zerodayinitiative.com/rss/published/","type":"rss","notes":"Published vulnerability advisories, useful for identity provider and SDK dependency monitoring."},
+      {"name":"Zero Day Initiative Research","url":"https://www.zerodayinitiative.com/rss/research/","type":"rss","notes":"Technical research on emerging vulnerabilities and exploit chains."},
+      {"name":"Cisco Talos Intelligence","url":"https://blog.talosintelligence.com/rss/","type":"rss","notes":"Cisco Talos threat research, campaigns, ransomware and vulnerability analysis."},
+      {"name":"Microsoft Security Response Center","url":"https://msrc.microsoft.com/blog/feed/","type":"rss","notes":"Microsoft security advisories, mitigations, and vulnerability research relevant to enterprise identity infrastructure."},
+      {"name":"Cisco Security Newsroom","url":"https://newsroom.cisco.com/api/v1/newsroom/rss","type":"rss_or_json","notes":"Cisco security research and incident reporting."},
+      {"name":"Malwarebytes Labs","url":"https://www.malwarebytes.com/blog/feed","type":"rss","notes":"Malware, fraud, data exposure, ransomware, and consumer privacy research."},
+      {"name":"McAfee Labs","url":"https://www.mcafee.com/blogs/other-blogs/mcafee-labs/feed/","type":"rss","notes":"Threat research, ransomware, malware, fraud, and consumer security findings."},
+      {"name":"Recorded Future Blog","url":"https://www.recordedfuture.com/feed","type":"rss","notes":"Threat intelligence research and cybercrime investigations."},
+      {"name":"Trend Micro Simply Security","url":"https://www.trendmicro.com/en_us/research/rss.xml","type":"rss","notes":"Threat research, vulnerabilities, fraud, and ransomware intelligence."},
+      {"name":"Google Threat Analysis Group","url":"https://blog.google/threat-analysis-group/rss/","type":"rss","notes":"Google threat intelligence covering state-backed activity, spyware, phishing, and exploit campaigns."}
+    ],
+    "privacy_financial_and_psirt": [
+      {"name":"US Federal Trade Commission RSS","url":"https://www.ftc.gov/stay-connected/rss","type":"rss_directory","notes":"Use the consumer protection, privacy and enforcement news feeds to discover actions involving mishandled identity, biometric, or personal data."},
+      {"name":"Hong Kong Privacy Commissioner for Personal Data RSS","url":"https://www.pcpd.org.hk/english/rss/rss.html","type":"rss_directory","notes":"Official Hong Kong privacy regulator RSS feeds, including enforcement, investigation, guidance, and news releases."},
+      {"name":"SEC 8-K Material Cybersecurity Incident Monitor","url":"https://github.com/pancak3lullz/SECurityTr8Ker","type":"open_source_monitor","notes":"Open-source monitor for SEC 8-K cybersecurity incident disclosures. Use the SEC's own EDGAR filing data as the authoritative underlying document and extract Item 1.05 filings for candidate review."},
+      {"name":"SEC EDGAR Company Filings API","url":"https://data.sec.gov/submissions/CIK##########.json","type":"official_api_pattern","notes":"Official SEC company-submissions endpoint; use it with a declared User-Agent and identify Item 1.05 8-K filings for material cybersecurity incidents."},
+      {"name":"UK NCSC consolidated RSS","url":"https://www.ncsc.gov.uk/api/1/services/v1/all-rss-feed.xml","type":"rss","notes":"Official UK National Cyber Security Centre consolidated news and advisory feed."},
+      {"name":"FortiGuard Incident Response RSS","url":"https://www.fortinet.com/blog/threat-research.rss","type":"rss","notes":"Fortinet threat research and incident-response reports."},
+      {"name":"CISA Cybersecurity Advisories","url":"https://www.cisa.gov/cybersecurity-advisories/all.xml","type":"rss","notes":"Official consolidated CISA cybersecurity advisory feed; retained as a direct canonical endpoint alongside existing CISA source entries."}
+    ]
   },
-  "recovery_commits": ["58d210a6e57c0e61982bdd233b391962bd16bc68", "5537bd47fc8cb8e98e28c3af10684acd7b2fa987"],
-  "note": "Full original records remain retrievable from the listed Git commits. This archive identifies the restored inventory groups pending exact re-integration."
+  "implementation_notes": [
+    "Source listings identify candidates only and do not establish a confirmed breach.",
+    "Ransomware sources must never be used to access, download, host, or distribute illicitly obtained data.",
+    "SEC disclosures must be linked to the primary filing and attributed to the filing entity.",
+    "Deduplicate CISA and NCSC canonical URLs against live configuration before enabling polling.",
+    "Every candidate requires credible corroboration before publication."
+  ],
+  "recovery_commits": ["58d210a6e57c0e61982bdd233b391962bd16bc68","5537bd47fc8cb8e98e28c3af10684acd7b2fa987","64a2d17f1fe85479ddc823702683e13dba21612f"]
 }
