@@ -1,15 +1,11 @@
-// Global ID & Age Verification Breach Tracker — main.js (v8)
+// Global ID & Age Verification Breach Tracker — main.js (v9)
+// Master data plus reviewed research batches are merged client-side by ID.
 const DATA_PATHS = {
   breaches: 'data/breaches.json',
   companies: 'data/companies.json',
-  sources: 'data/sources.json',
-  breachesBatch3: 'data/batch3-breaches.json',
-  companiesBatch3: 'data/batch3-companies.json',
-  breachesBatch4: 'data/batch4-breaches.json',
-  companiesBatch4: 'data/batch4-companies.json',
-  breachesBatch5: 'data/batch5-breaches.json',
-  companiesBatch5: 'data/batch5-companies.json'
+  sources: 'data/sources.json'
 };
+const RESEARCH_BATCHES = ['batch3', 'batch4', 'batch5', 'batch6'];
 const _cache = {};
 
 async function loadJson(path) {
@@ -32,27 +28,14 @@ function dedupeById(list) {
 }
 
 async function loadData(key) {
-  if (key === 'breaches') {
-    const [main, extra3, extra4, extra5] = await Promise.all([
-      loadJson(DATA_PATHS.breaches),
-      loadJson(DATA_PATHS.breachesBatch3),
-      loadJson(DATA_PATHS.breachesBatch4),
-      loadJson(DATA_PATHS.breachesBatch5)
-    ]);
-    const mainList = (main && main.breaches) ? main.breaches : [];
-    const lists = [extra3, extra4, extra5].map(x => Array.isArray(x) ? x : []);
-    return { breaches: dedupeById([...mainList, ...lists.flat()]) };
-  }
-  if (key === 'companies') {
-    const [main, extra3, extra4, extra5] = await Promise.all([
-      loadJson(DATA_PATHS.companies),
-      loadJson(DATA_PATHS.companiesBatch3),
-      loadJson(DATA_PATHS.companiesBatch4),
-      loadJson(DATA_PATHS.companiesBatch5)
-    ]);
-    const mainList = (main && main.companies) ? main.companies : [];
-    const lists = [extra3, extra4, extra5].map(x => Array.isArray(x) ? x : []);
-    return { companies: dedupeById([...mainList, ...lists.flat()]) };
+  if (key === 'breaches' || key === 'companies') {
+    const master = await loadJson(DATA_PATHS[key]);
+    const field = key;
+    const masterList = (master && Array.isArray(master[field])) ? master[field] : [];
+    const batchPaths = RESEARCH_BATCHES.map(batch => `data/${batch}-${key}.json`);
+    const batchResults = await Promise.all(batchPaths.map(loadJson));
+    const batchLists = batchResults.map(result => Array.isArray(result) ? result : []);
+    return { [field]: dedupeById([...masterList, ...batchLists.flat()]) };
   }
   const data = await loadJson(DATA_PATHS[key]);
   if (!data) throw new Error('Failed to load ' + key);
