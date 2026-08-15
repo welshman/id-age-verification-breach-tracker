@@ -13,9 +13,6 @@ your site will be available at `https://<your-username>.github.io/<repo-name>/`.
 ## Features
 
 - **Homepage** with live stats (total breaches, total companies, most recent breach) and a timeline.
-- **Check My Data** — a privacy-preserving check: select the companies you've used and document
-  type, and the site (entirely client-side, no data leaves your browser) tells you about any
-  matching known breaches and what to do next.
 - **Breaches directory** — searchable, filterable (region, severity, company, data type, sort order)
   list of every tracked breach, each with full details and linked sources.
 - **Companies directory** — searchable, filterable directory of identity-verification, KYC, and
@@ -30,12 +27,11 @@ your site will be available at `https://<your-username>.github.io/<repo-name>/`.
 ```
 /
 ├── index.html              Homepage
-├── check.html               "Check your data" page
 ├── breaches.html            List of all ID/age-verification breaches
 ├── companies.html           List of all monitored companies
 ├── faq.html                 FAQ / how it works / ethics
 ├── styles.css                Shared stylesheet
-├── main.js                   Client-side logic (fetches JSON, renders UI, runs the check tool)
+├── main.js                   Client-side logic (fetches JSON, renders UI, filters and search)
 ├── data/
 │   ├── breaches.json          Structured breach data (hand-curated, research-backed)
 │   ├── companies.json         Structured company/service data
@@ -147,9 +143,9 @@ Do **not** hand-edit `breaches.json` to add speculative entries. Instead:
 ## Privacy & ethics
 
 This site never asks users for actual passport numbers, ID numbers, or other sensitive
-identifiers, has no backend server, and the "Check My Data" tool runs entirely client-side —
-nothing you enter is ever transmitted anywhere. See `faq.html` for the full ethics and
-methodology statement, including known limitations of the dataset.
+identifiers, has no backend server, and no database. It only reads pre-generated public JSON
+data files and renders them client-side. See `faq.html` for the full ethics and methodology
+statement, including known limitations of the dataset.
 
 ## License
 
