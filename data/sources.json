@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-08-15",
+  "sources": [
+    {"name": "Have I Been Pwned (HIBP) API", "url": "https://haveibeenpwned.com/API/v3", "description": "Public breach metadata API. Used to cross-check whether a company name appears as a tracked general breach. Requires an API key for full querying; this project only uses the free, unauthenticated 'breach list' style public data where available and never submits user-supplied personal data to it.", "license_notes": "Subject to HIBP API Terms of Use. This project does not redistribute HIBP's data verbatim; it only checks for name matches against our manually curated ID/age-verification breach list."},
+    {"name": "404 Media", "url": "https://www.404media.co", "description": "Investigative technology journalism outlet that broke the AU10TIX credential exposure story and other identity-verification security incidents.", "license_notes": "Used for attribution and summary only; original reporting linked, not reproduced."},
+    {"name": "EFF Deeplinks", "url": "https://www.eff.org/deeplinks", "description": "Electronic Frontier Foundation's blog covering digital privacy, including analysis of age-verification-related security incidents.", "license_notes": "Used for attribution and summary only."},
+    {"name": "Cybernews", "url": "https://cybernews.com", "description": "Security research and news outlet that discovered and reported the IDMerit MongoDB exposure.", "license_notes": "Used for attribution and summary only."},
+    {"name": "TechCrunch", "url": "https://techcrunch.com", "description": "Technology news outlet reporting on the Tea app data breaches.", "license_notes": "Used for attribution and summary only."},
+    {"name": "Schneier on Security", "url": "https://www.schneier.com/blog/", "description": "Security researcher Bruce Schneier's blog, used as a source for the PuffPal/cannabis-club passport exposure.", "license_notes": "Used for attribution and summary only."},
+    {"name": "Company breach disclosures", "url": "", "description": "Direct statements published by affected companies (e.g., AU10TIX's own incident blog post, Discord's user notifications) are used where available as the most authoritative account.", "license_notes": "Quoted briefly with attribution; full statements linked at source."}
+  ],
+  "methodology_notes": [
+    "This project only includes breaches with substantive public reporting from at least one credible news, security-research, or company-disclosure source.",
+    "Companies with no confirmed public breach are still listed (marked with an empty known_breaches array) to provide comprehensive coverage of the ID/age-verification industry, consistent with the project's goal of tracking the sector as a whole.",
+    "Severity ratings are an editorial judgment based on the number of records affected, sensitivity of data types, and duration/scope of exposure. They are not an official industry standard.",
+    "The automation pipeline (GitHub Actions) proposes new candidate entries by keyword-matching company names and breach-related terms in RSS/news feeds; it does not auto-publish claims without a human-reviewable pull request, to avoid propagating unverified rumors as fact."
+  ]
+}
