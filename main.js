@@ -76,13 +76,13 @@ async function initBreachesPage() {
   const [{ breaches }, { companies }] = await Promise.all([loadData('breaches'), loadData('companies')]);
   _allBreaches = breaches; _allCompanies = companies;
   populateFilterOptions(breaches, companies);
-  renderBreachList(breaches, companies);
   document.getElementById('filter-region').addEventListener('change', applyBreachFilters);
   document.getElementById('filter-severity').addEventListener('change', applyBreachFilters);
   document.getElementById('filter-company').addEventListener('change', applyBreachFilters);
   document.getElementById('filter-datatype').addEventListener('change', applyBreachFilters);
   document.getElementById('filter-sort').addEventListener('change', applyBreachFilters);
   document.getElementById('filter-search').addEventListener('input', applyBreachFilters);
+  applyBreachFilters();
   if (location.hash) {
     const target = document.querySelector(location.hash);
     if (target) {
@@ -217,15 +217,6 @@ function renderCompanyList(companies, breaches) {
 
 /* ---------- Theme toggle (dark/light mode) ---------- */
 const THEME_KEY = 'id-breach-tracker-theme';
-
-function getStoredTheme() {
-  try {
-    const stored = localStorage.getItem(THEME_KEY);
-    return stored === 'dark' || stored === 'light' ? stored : null;
-  } catch (e) {
-    return null;
-  }
-}
 
 function getCurrentTheme() {
   return document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
