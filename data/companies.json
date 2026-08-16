@@ -2,119 +2,1221 @@
   "schema_version": "1.0",
   "last_updated": "2026-08-15",
   "companies": [
-    {"id": "yoti", "name": "Yoti", "website": "https://www.yoti.com", "region": "UK", "type": "id_verification", "description": "UK-based digital identity and age verification provider offering ID document checks, facial age estimation, and reusable digital ID.", "known_breaches": [], "notes": "No major public breach identified as of research date; included for completeness given prominent role in UK age-verification market (Online Safety Act compliance)."},
-    {"id": "onfido", "name": "Onfido (an Entrust company)", "website": "https://onfido.com", "region": "global", "type": "id_verification", "description": "Global identity verification platform providing document verification and biometric facial matching, acquired by Entrust in 2024.", "known_breaches": [], "notes": "No major public breach identified as of research date; monitored due to scale of ID document processing."},
-    {"id": "veriff", "name": "Veriff", "website": "https://www.veriff.com", "region": "global", "type": "id_verification", "description": "Estonian-founded global identity verification company serving fintech, crypto, mobility and marketplace clients.", "known_breaches": [], "notes": "No major public breach identified as of research date."},
-    {"id": "jumio", "name": "Jumio", "website": "https://www.jumio.com", "region": "global", "type": "id_verification", "description": "US-based identity verification and eKYC company using AI-driven document and biometric verification.", "known_breaches": [], "notes": "No major public breach identified as of research date."},
-    {"id": "id-me", "name": "ID.me", "website": "https://www.id.me", "region": "US", "type": "kyc", "description": "US identity verification network used by government agencies (IRS, state unemployment offices) and private sector for identity proofing.", "known_breaches": [], "notes": "Faced congressional scrutiny over facial recognition and identity-proofing practices, but no confirmed large-scale data breach identified as of research date."},
-    {"id": "sumsub", "name": "Sumsub", "website": "https://sumsub.com", "region": "global", "type": "kyc", "description": "Global KYC/AML and identity verification provider widely used by cryptocurrency exchanges and fintechs.", "known_breaches": ["sumsub-2024-2026-disclosure"], "notes": "Disclosed in February 2026 that an intrusion dating back to July 2024 went undetected for roughly 18 months."},
-    {"id": "trulioo", "name": "Trulioo", "website": "https://www.trulioo.com", "region": "global", "type": "kyc", "description": "Canadian global identity verification network (GlobalGateway) aggregating data sources for KYC/AML compliance.", "known_breaches": [], "notes": "No major public breach identified as of research date."},
-    {"id": "persona", "name": "Persona", "website": "https://withpersona.com", "region": "US", "type": "id_verification", "description": "US-based configurable identity verification and KYC platform used by fintech, marketplaces, and crypto companies.", "known_breaches": [], "notes": "No major public breach identified as of research date."},
-    {"id": "agechecked", "name": "AgeChecked", "website": "https://agechecked.com", "region": "UK", "type": "age_verification", "description": "UK-based age verification service used for age-restricted online sales and access control.", "known_breaches": [], "notes": "Included for completeness given role in UK/EU age-verification compliance; no confirmed breach identified as of research date."},
-    {"id": "verifymyage", "name": "VerifyMy (VerifyMyAge)", "website": "https://verifymy.io", "region": "UK", "type": "age_verification", "description": "UK-based age assurance provider offering age estimation and age verification for online platforms.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "idnow", "name": "IDnow", "website": "https://www.idnow.io", "region": "EU", "type": "kyc", "description": "German identity verification provider offering video identification and automated eKYC across the EU.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "webid", "name": "WebID", "website": "https://www.webid-solutions.de", "region": "EU", "type": "kyc", "description": "German provider of video identification and eSignature identity verification services.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "idology", "name": "IDology (a GBG company)", "website": "https://www.idology.com", "region": "US", "type": "kyc", "description": "US identity verification and fraud prevention company, part of GBG Group, serving financial services and age-restricted commerce.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "lexisnexis-risk", "name": "LexisNexis Risk Solutions", "website": "https://risk.lexisnexis.com", "region": "US", "type": "kyc", "description": "US risk-management and identity-data aggregator offering KYC/AML and ID verification products (ThreatMetrix, InstantID) and healthcare patient identity management.", "known_breaches": [], "notes": "No confirmed direct breach of ID-verification data identified as of research date; monitored given scale of identity data holdings."},
-    {"id": "experian", "name": "Experian (Identity/KYC products)", "website": "https://www.experian.com", "region": "global", "type": "kyc", "description": "Global credit bureau offering identity verification and KYC data products alongside credit reporting, including patient identity verification for healthcare.", "known_breaches": [], "notes": "Experian has had unrelated consumer data-exposure incidents historically; no ID-verification-specific breach confirmed as of research date."},
-    {"id": "au10tix", "name": "AU10TIX", "website": "https://www.au10tix.com", "region": "global", "type": "id_verification", "description": "Israeli identity-verification technology vendor providing document and biometric verification behind the scenes for major platforms including TikTok, Uber, X, and LinkedIn.", "known_breaches": ["au10tix-2024-credential-exposure"], "notes": "Admin credentials to a logging platform were exposed online for over a year, reported by 404 Media in June 2024."},
-    {"id": "idmerit", "name": "IDMerit", "website": "https://www.idmerit.com", "region": "global", "type": "kyc", "description": "California-based AI-powered identity verification provider serving financial services and fintech platforms across 200+ countries.", "known_breaches": ["idmerit-2025-2026-mongodb-exposure"], "notes": "An unsecured MongoDB database was discovered exposed to the public internet in November 2025, disclosed publicly in February 2026."},
-    {"id": "fractal-id", "name": "Fractal ID", "website": "https://fractal.id", "region": "EU", "type": "kyc", "description": "Web3-focused KYC/identity verification provider used by crypto exchanges and DeFi platforms.", "known_breaches": ["fractal-id-2024-api-breach"], "notes": "Confirmed unauthorized API access in July 2024 affecting roughly 0.5% of its user base."},
-    {"id": "signzy", "name": "Signzy", "website": "https://www.signzy.com", "region": "APAC", "type": "kyc", "description": "India-based (Bengaluru) provider of digital KYC and identity-verification infrastructure for banks and fintechs.", "known_breaches": ["signzy-2024-malware-incident"], "notes": "Confirmed infostealer malware incident in late 2024; major banking clients stated their customer data was unaffected."},
-    {"id": "discord-trust-safety", "name": "Discord (Age Verification / Trust & Safety vendor)", "website": "https://discord.com", "region": "global", "type": "age_verification", "description": "Global chat and community platform; not a dedicated ID-verification vendor, but processes government ID images for age verification via third-party support tooling.", "known_breaches": ["discord-2025-zendesk-breach"], "notes": "Breach occurred via a compromised third-party customer-support (Zendesk) system, not Discord's core infrastructure."},
-    {"id": "mygiftcardsupply", "name": "MyGiftCardSupply", "website": "https://mygiftcardsupply.com", "region": "US", "type": "kyc", "description": "US online gift-card retailer that collects customer ID documents to comply with anti-money-laundering (KYC) rules.", "known_breaches": ["mygiftcardsupply-2024-exposed-storage"], "notes": "Not a dedicated identity-verification vendor, but included because it directly stored KYC identity documents that were exposed."},
-    {"id": "transak-kyc-vendor", "name": "Transak (third-party KYC vendor incident)", "website": "https://transak.com", "region": "global", "type": "kyc", "description": "Fiat-to-crypto payment gateway whose third-party KYC vendor was compromised via a phishing attack.", "known_breaches": ["transak-2025-kyc-vendor-breach"], "notes": "The breach originated at a third-party KYC vendor used by Transak, not at a named public identity-verification brand."},
-    {"id": "nefos-puffpal", "name": "Nefos (PuffPal)", "website": "https://www.nefos.eu", "region": "EU", "type": "age_verification", "description": "European platform (PuffPal) providing membership management and age verification for cannabis social clubs and retailers.", "known_breaches": ["puffpal-2026-passport-exposure"], "notes": "Systems hosting age-verification documents for cannabis-club members were left unprotected on the public internet."},
-    {"id": "tea-app", "name": "Tea (Tea Dating Advice app)", "website": "https://teadatingadvice.com", "region": "US", "type": "age_verification", "description": "US women's dating-safety app that required selfie and government-ID verification at signup.", "known_breaches": ["tea-app-2025-breach"], "notes": "Not a dedicated identity-verification vendor; included because it directly collected and exposed verification selfies and ID photos."},
-    {"id": "incode", "name": "Incode", "website": "https://incode.com", "region": "US", "type": "id_verification", "description": "US-based identity verification platform offering biometric onboarding, liveness detection, and reusable digital identity for fintech, gig-economy, healthcare, and government clients.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "socure", "name": "Socure", "website": "https://www.socure.com", "region": "US", "type": "id_verification", "description": "US identity verification and fraud-prevention platform combining data intelligence, document verification, and machine learning risk scoring.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "mitek", "name": "Mitek Systems", "website": "https://www.miteksystems.com", "region": "US", "type": "id_verification", "description": "US provider of mobile document capture and biometric identity verification technology (Mobile Verify) used by banks and fintechs worldwide.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "gbg", "name": "GBG (GB Group)", "website": "https://www.gbgplc.com", "region": "UK", "type": "kyc", "description": "UK-headquartered global identity data intelligence company providing identity verification, fraud, and location data services; parent of IDology.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "idemia", "name": "IDEMIA", "website": "https://www.idemia.com", "region": "EU", "type": "id_verification", "description": "French multinational providing biometric identity solutions, secure ID documents (passports, national IDs), and border control systems for governments worldwide.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "thales-digital-identity", "name": "Thales Group (Digital Identity & Security)", "website": "https://www.thalesgroup.com", "region": "EU", "type": "id_verification", "description": "French multinational technology group providing biometric passports, national eID cards, and digital identity infrastructure for governments and enterprises.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "equifax", "name": "Equifax", "website": "https://www.equifax.com", "region": "US", "type": "kyc", "description": "US credit bureau offering identity verification and KYC data products alongside credit reporting services.", "known_breaches": ["equifax-2017-breach"], "notes": "Included primarily for its major 2017 breach exposing SSNs and identity data used in KYC/credit-verification contexts, and its ongoing identity-verification product line."},
-    {"id": "transunion", "name": "TransUnion", "website": "https://www.transunion.com", "region": "US", "type": "kyc", "description": "US credit bureau providing identity verification, fraud analytics, and KYC data solutions alongside credit reporting.", "known_breaches": ["transunion-2025-breach"], "notes": "Disclosed a 2025 breach affecting millions of US customer records via a third-party application."},
-    {"id": "innovatrics", "name": "Innovatrics", "website": "https://www.innovatrics.com", "region": "EU", "type": "id_verification", "description": "Slovakia-based biometric and identity verification technology provider offering facial recognition, fingerprint, and document verification products.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "intellicheck", "name": "Intellicheck", "website": "https://www.intellicheck.com", "region": "US", "type": "id_verification", "description": "US identity verification company specializing in ID document authentication for retail, financial services, and law enforcement use cases.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "signicat", "name": "Signicat", "website": "https://www.signicat.com", "region": "EU", "type": "kyc", "description": "Norwegian digital identity and e-signature platform serving European banks and fintechs with KYC/AML and identity orchestration.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "securekey", "name": "SecureKey Technologies", "website": "https://securekey.com", "region": "global", "type": "id_verification", "description": "Identity verification and digital credential network provider, part of Avast/Gen Digital ecosystem, offering privacy-preserving identity verification.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "hyperverge", "name": "HyperVerge", "website": "https://hyperverge.co", "region": "APAC", "type": "id_verification", "description": "India-based AI identity verification platform offering document verification, face matching, and liveness detection for fintech and telecom clients globally.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "idenfy", "name": "iDenfy", "website": "https://idenfy.com", "region": "EU", "type": "kyc", "description": "Lithuanian identity verification and KYC/KYB platform supporting over 200 countries and thousands of document types.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "seon", "name": "SEON", "website": "https://seon.io", "region": "EU", "type": "kyc", "description": "Hungarian digital fraud-intelligence platform building risk profiles from email, phone, IP, and device signals, often paired with KYC workflows.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "complyadvantage", "name": "ComplyAdvantage", "website": "https://complyadvantage.com", "region": "UK", "type": "kyc", "description": "UK-based AML-focused compliance platform with proprietary risk-intelligence data covering sanctions, PEPs, and adverse media across 200+ countries.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "identomat", "name": "Identomat", "website": "https://identomat.com", "region": "US", "type": "id_verification", "description": "AI-powered KYC/AML platform supporting 8,800+ document types across 193+ countries with passive and active liveness detection.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "focal-mozn", "name": "Focal (by Mozn)", "website": "https://mozn.ai", "region": "global", "type": "kyc", "description": "MENA-region-focused KYC/KYB/AML compliance platform (Focal) built by Saudi AI company Mozn, handling 50,000+ verifications daily.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "togggle", "name": "Togggle", "website": "https://togggle.io", "region": "EU", "type": "id_verification", "description": "Privacy-focused decentralized KYC and reusable digital identity platform.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "complycube", "name": "ComplyCube", "website": "https://www.complycube.com", "region": "UK", "type": "kyc", "description": "UK-based identity verification and AML compliance platform offering document verification, biometric checks, and ongoing monitoring.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "berbix", "name": "Berbix (Socure)", "website": "https://www.berbix.com", "region": "US", "type": "id_verification", "description": "US identity verification company acquired by Socure, providing ID document and selfie verification for marketplaces and sharing-economy platforms.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "alloy", "name": "Alloy", "website": "https://www.alloy.com", "region": "US", "type": "kyc", "description": "US identity risk and KYC/KYB decisioning platform used by banks and fintechs to orchestrate multiple verification data sources.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "ondato", "name": "Ondato", "website": "https://ondato.com", "region": "EU", "type": "kyc", "description": "Lithuanian cloud-based KYC/KYB identity verification platform serving regulated fintechs and SaaS platforms across Europe.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "passbase", "name": "Passbase", "website": "https://passbase.com", "region": "EU", "type": "id_verification", "description": "European identity verification API provider offering document and biometric verification for developers.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "k-id", "name": "k-ID", "website": "https://www.k-id.com", "region": "global", "type": "age_verification", "description": "Age assurance and parental-consent platform used by gaming and social platforms to comply with child-safety regulations worldwide.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "oneid", "name": "OneID", "website": "https://oneid.uk", "region": "UK", "type": "age_verification", "description": "UK Open Banking-based age verification provider, FCA-regulated and DIATF-certified, used for Online Safety Act compliance.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "oneverify", "name": "OneVerify", "website": "https://www.oneverify.co.uk", "region": "UK", "type": "age_verification", "description": "UK age verification platform for gambling, adult content, alcohol, tobacco, and cannabis websites, marketed as storing no user data.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "bouncer-digital", "name": "Bouncer Digital", "website": "https://bouncer.digital", "region": "LATAM", "type": "age_verification", "description": "Age verification provider using facial recognition and QR-code checks for gaming platforms and vending machines, focused on LATAM markets.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "privately", "name": "Privately", "website": "https://avpassociation.com/member/privately/", "region": "EU", "type": "age_verification", "description": "Age verification provider using facial and voice age estimation for social media, dating, gambling, and e-commerce platforms.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "truora", "name": "Truora", "website": "https://www.truora.com", "region": "LATAM", "type": "kyc", "description": "Latin America-focused identity verification and background-check platform serving fintechs and marketplaces across the region.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "idfy", "name": "IDfy", "website": "https://idfy.com", "region": "APAC", "type": "kyc", "description": "India-based identity verification and background-check platform offering employment, KYC, and document verification services.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "uqudo", "name": "Uqudo", "website": "https://uqudo.com", "region": "global", "type": "kyc", "description": "UAE-based digital identity verification company serving the Middle East and Africa (MEA), validating 156+ passport types and national IDs across 22 countries.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "iidentifii", "name": "iiDENTIFii", "website": "https://iidentifii.com", "region": "global", "type": "id_verification", "description": "Face-authentication and identity verification platform designed for enterprises across Africa and the Middle East.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "smile-id", "name": "Smile ID", "website": "https://usesmileid.com", "region": "global", "type": "kyc", "description": "Pan-African identity verification and KYC platform supporting document and biometric checks across dozens of African countries.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "dojah", "name": "Dojah", "website": "https://dojah.io", "region": "global", "type": "kyc", "description": "Nigeria-based identity verification API provider offering KYC, KYB, and biometric checks across African markets.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "identitypass", "name": "IdentityPass (Prembly)", "website": "https://prembly.com", "region": "global", "type": "kyc", "description": "African identity verification and compliance platform (by Prembly) offering KYC, KYB, and AML screening across Nigeria and other African markets.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "verifyme-africa", "name": "VerifyMe (Africa)", "website": "https://verifyme.ng", "region": "global", "type": "kyc", "description": "Nigeria-based identity verification platform offering KYC checks against national identity databases (BVN, NIN) across Africa. Distinct from UK's VerifyMy/VerifyMyAge.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date; name similarity to UK VerifyMy is coincidental."},
-    {"id": "yesid", "name": "yes:id", "website": "https://www.yesid.io", "region": "global", "type": "kyc", "description": "African digital identity verification platform validating government IDs across 150+ countries with cross-checks against Sub-Saharan and East African ID authorities.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "vove-id", "name": "Vove ID", "website": "https://voveid.com", "region": "global", "type": "kyc", "description": "Morocco/US-based biometric KYC and AML startup providing reusable digital identity verification across Africa and the Middle East.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "biometrida", "name": "Biometrida", "website": "https://biometridafrica.com", "region": "global", "type": "id_verification", "description": "African identity platform offering biometric verification, liveness detection, document verification, and AML/CFT controls across 248 territories.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "facetec", "name": "FaceTec", "website": "https://www.facetec.com", "region": "US", "type": "id_verification", "description": "US-based 3D face biometrics and liveness-detection technology provider used in digital ID programs including MENA government projects.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "iproov", "name": "iProov", "website": "https://www.iproov.com", "region": "UK", "type": "id_verification", "description": "UK-based biometric face-verification and liveness-detection provider used by governments, banks, and healthcare organizations for high-assurance identity checks.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "binance", "name": "Binance", "website": "https://www.binance.com", "region": "global", "type": "kyc", "description": "Global cryptocurrency exchange requiring KYC identity verification (passports, IDs, selfies) for account tiers and regulatory compliance.", "known_breaches": ["binance-2019-kyc-leak"], "notes": "Not a dedicated identity-verification vendor; included because it directly collected and had KYC images leaked via a third-party vendor breach."},
-    {"id": "coinbase", "name": "Coinbase", "website": "https://www.coinbase.com", "region": "US", "type": "kyc", "description": "US-based cryptocurrency exchange requiring KYC verification including government IDs, selfies, and addresses for account compliance.", "known_breaches": ["coinbase-2024-2025-breach"], "notes": "Not a dedicated identity-verification vendor; included because a bribed third-party support contractor exfiltrated KYC and personal data."},
-    {"id": "france-titres", "name": "France Titres (ANTS)", "website": "https://www.ants.gouv.fr", "region": "EU", "type": "id_verification", "description": "French national government agency operating the database of identity documents (passports, national ID cards, driving licences) for French citizens.", "known_breaches": ["france-titres-2026-breach"], "notes": "Government identity-document authority, not a private vendor; included due to the scale of the 2026 breach affecting a third of France's adult population."},
-    {"id": "eurail", "name": "Eurail / Interrail (Eurail Group)", "website": "https://www.eurail.com", "region": "EU", "type": "kyc", "description": "European rail-pass provider that collects passport numbers and personal data from travellers for identity verification and pass issuance.", "known_breaches": ["eurail-2025-2026-breach"], "notes": "Not a dedicated identity-verification vendor; included because it directly stored passport data that was exposed in a breach."},
-    {"id": "uk-visa-portal", "name": "UK Visa Portal (ETA-Pass)", "website": "", "region": "UK", "type": "id_verification", "description": "Third-party website (also known as UK Visit / ETA-Pass) that processed UK visa/ETA applications requiring passport and selfie uploads.", "known_breaches": ["uk-visa-portal-2026-breach"], "notes": "Not an official UK government service; a commercial third-party site processing visa applications and identity documents."},
-    {"id": "renaper-argentina", "name": "RENAPER (Argentina)", "website": "https://www.renaper.gob.ar", "region": "LATAM", "type": "id_verification", "description": "Argentina's National Registry of Persons, the government agency responsible for issuing national ID cards (DNI) and maintaining the national identity database.", "known_breaches": ["renaper-2021-breach"], "notes": "Government identity authority; included due to the scale of the breach affecting nearly all Argentine citizens."},
-    {"id": "aadhaar-uidai", "name": "Aadhaar (UIDAI, India)", "website": "https://uidai.gov.in", "region": "APAC", "type": "id_verification", "description": "India's Unique Identification Authority, operator of the Aadhaar biometric national ID system used for identity verification across government and private services.", "known_breaches": ["aadhaar-2018-leaks"], "notes": "Government biometric ID authority; included due to multiple large-scale reported data exposures linked to the Aadhaar ecosystem."},
-    {"id": "sweden-bankid-cgi", "name": "BankID (Sweden) / CGI", "website": "https://www.bankid.com", "region": "EU", "type": "id_verification", "description": "Sweden's dominant bank-backed digital identity and authentication system (BankID), with supporting infrastructure built by IT contractor CGI.", "known_breaches": ["sweden-bankid-cgi-2026-breach"], "notes": "Not a single company; included because a breach of contractor CGI's Swedish division exposed source code and data related to BankID authentication infrastructure."},
-    {"id": "nid-bangladesh", "name": "National ID (Bangladesh)", "website": "", "region": "APAC", "type": "id_verification", "description": "Bangladesh's National Identity Registration Wing database, storing citizen identity records used for government and financial services verification.", "known_breaches": ["bangladesh-nid-2023-leak"], "notes": "Government identity database; included due to a large-scale reported public exposure of citizen NID data."},
-    {"id": "vouched", "name": "Vouched", "website": "https://www.vouched.id", "region": "US", "type": "id_verification", "description": "US AI-powered identity verification platform specializing in healthcare (Know Your Patient), document authentication, and biometric analysis, integrated with Epic's MyChart.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "microblink", "name": "Microblink", "website": "https://microblink.com", "region": "EU", "type": "id_verification", "description": "Croatian-founded identity verification and document-capture platform, the only vendor to meet all thresholds in the US DHS RIVR evaluation as of March 2026, serving healthcare and telehealth intake.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "clear-secure", "name": "CLEAR (CLEAR Secure)", "website": "https://www.clearme.com", "region": "US", "type": "id_verification", "description": "US biometric identity platform best known for airport/venue expedited screening (CLEAR Plus), also offering CLEAR1 healthcare identity verification integrated with Epic.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "digidentity", "name": "Digidentity", "website": "https://www.digidentity.eu", "region": "EU", "type": "id_verification", "description": "Dutch digital identity provider offering secure authentication and identity verification for healthcare, government, and enterprise sectors across Europe.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "identos", "name": "IDENTOS", "website": "https://www.identos.com", "region": "global", "type": "id_verification", "description": "Identity verification platform offering government-strength biometric and document verification toolsets for healthcare patient and proxy identity checks.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "verifinow", "name": "VerifiNow", "website": "https://www.verifinow.com", "region": "US", "type": "id_verification", "description": "US biometric identity verification vendor offering PatientVerifi, a voice/facial/liveness platform for telehealth patient authentication integrated with Zoom and Microsoft Teams.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "worldcoin-tfh", "name": "Worldcoin (Tools for Humanity)", "website": "https://world.org", "region": "global", "type": "id_verification", "description": "Biometric iris-scanning digital identity project (World ID) developed by Tools for Humanity, aiming to provide proof-of-personhood verification globally.", "known_breaches": [], "notes": "No confirmed data breach identified as of research date; included given scale of biometric data collection and ongoing regulatory scrutiny in multiple countries."},
-    {"id": "clear-plus-airport", "name": "CLEAR Plus", "website": "https://www.clearme.com", "region": "US", "type": "id_verification", "description": "CLEAR's consumer-facing biometric expedited-screening product used at US airports and stadiums, verifying identity via fingerprint and iris/facial scans.", "known_breaches": [], "notes": "Distinct entry from CLEAR's healthcare (CLEAR1) product line to reflect its separate consumer identity database; no confirmed public breach identified as of research date."},
-    {"id": "nec-corporation", "name": "NEC Corporation", "website": "https://www.nec.com", "region": "APAC", "type": "id_verification", "description": "Japanese multinational technology company offering biometric identity verification (facial, iris, fingerprint recognition) via its NEC Identity Cloud Service for governments, financial institutions, and enterprises across Asia-Pacific.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "megvii", "name": "Megvii", "website": "https://en.megvii.com", "region": "APAC", "type": "id_verification", "description": "Chinese AI company (developer of Face++) providing facial recognition and biometric identity verification technology used in Chinese and regional identity-verification deployments.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "sensetime", "name": "SenseTime", "website": "https://www.sensetime.com", "region": "APAC", "type": "id_verification", "description": "Chinese AI company providing facial recognition and biometric identity verification technology, partnering regionally to extend smart-city and identity verification services across Asia-Pacific.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "ongrid", "name": "OnGrid", "website": "https://www.ongrid.in", "region": "APAC", "type": "kyc", "description": "India-based background verification and KYC platform offering digital identity checks for employment and financial-services onboarding.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "trusting-social", "name": "Trusting Social", "website": "https://trustingsocial.com", "region": "APAC", "type": "id_verification", "description": "Singapore-headquartered digital identity company (Trust Vision) offering facial recognition eKYC, selfie-to-ID matching, and cross-database identity verification across Southeast Asia.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "cynopsis-solutions", "name": "Cynopsis Solutions", "website": "https://www.cynopsis-solutions.com", "region": "APAC", "type": "kyc", "description": "Singapore-based RegTech company offering KYC, AML screening, and compliance automation for financial institutions in Southeast Asia.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "surepass", "name": "SurePass", "website": "https://surepass.io", "region": "APAC", "type": "kyc", "description": "India-based identity verification API provider offering Aadhaar, PAN, and document-based KYC verification for Indian fintechs.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "accura-scan", "name": "Accura Scan", "website": "https://accurascan.com", "region": "APAC", "type": "id_verification", "description": "India-based identity verification vendor offering on-device document scanning, liveness detection, and biometric matching SDKs.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "data-zoo", "name": "Data Zoo", "website": "https://datazoo.com", "region": "APAC", "type": "kyc", "description": "Australia/Wales-based identity verification platform processing sensitive customer information for KYC compliance and onboarding across global enterprises.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "authbridge", "name": "AuthBridge", "website": "https://authbridge.com", "region": "APAC", "type": "kyc", "description": "India's largest background-verification and identity-authentication company, serving over 3,000 clients across 140 countries for employee onboarding and customer KYC.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "onespan", "name": "OneSpan", "website": "https://www.onespan.com", "region": "US", "type": "id_verification", "description": "US digital-agreement security company offering identity verification, biometric comparison, and e-signature authentication (OneSpan Sign) for banking and financial services.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "acuant-gbg", "name": "Acuant (a GBG company)", "website": "https://www.acuant.com", "region": "US", "type": "id_verification", "description": "US identity verification and document authentication provider, acquired by GB Group (GBG) in 2021 and integrated into GBG's identity verification offerings.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "biovertify", "name": "BioVerify", "website": "https://www.bioverify.me", "region": "APAC", "type": "kyc", "description": "New Zealand-based biometric AML/CFT identity verification provider offering safe-harbour data-source coverage for New Zealand and Australia.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "cyberlinks", "name": "Cyberlinks", "website": "https://www.cyberlinks.co.jp", "region": "APAC", "type": "id_verification", "description": "Japanese company operating the country's official public personal authentication platform using government-issued ID cards for eKYC, with a dominant position in Japan's digital identity market.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "duc-app", "name": "Duc App (Duales)", "website": "https://duc.app", "region": "LATAM", "type": "kyc", "description": "Toronto-based Canadian fintech money-transfer app (Duc) serving immigrant communities, requiring driver's licenses, passports, and selfies for KYC identity verification.", "known_breaches": ["duc-app-2026-breach"], "notes": "Not a dedicated identity-verification vendor; included because it directly stored and exposed customer KYC identity documents."},
-    {"id": "paytel-communications", "name": "Pay Tel Communications", "website": "https://www.pay-tel.com", "region": "US", "type": "id_verification", "description": "US corrections-industry vendor providing phone, tablet, and communications services to jail and prison inmates, requiring ID document uploads from those wishing to communicate with inmates.", "known_breaches": ["paytel-2026-breach"], "notes": "Not a dedicated identity-verification vendor; included because it directly stored and exposed government ID documents submitted for its identity-verification process."},
-    {"id": "tabiq-hotel-checkin", "name": "Tabiq", "website": "", "region": "APAC", "type": "id_verification", "description": "Hotel check-in system used at multiple hotels in Japan, relying on facial recognition and passport/ID document scanning to verify guest identity at check-in.", "known_breaches": ["tabiq-2026-breach"], "notes": "Not a dedicated identity-verification vendor; included because it directly collected and exposed guest passports and driver's licenses via a misconfigured cloud storage bucket."},
-    {"id": "nyc-health-hospitals", "name": "NYC Health + Hospitals", "website": "https://www.nychealthandhospitals.org", "region": "US", "type": "kyc", "description": "The largest public municipal healthcare system in the United States, requiring identity documents and biometric enrollment (fingerprints) for patient and employee identity verification.", "known_breaches": ["nyc-health-hospitals-2026-breach"], "notes": "Not a dedicated identity-verification vendor; included because a third-party vendor breach exposed patients' and employees' government IDs and biometric fingerprint/palm-print data."},
-    {"id": "discord-persona-5ca", "name": "Persona Identities / 5CA (Discord vendor)", "website": "https://withpersona.com", "region": "global", "type": "age_verification", "description": "Third-party age-verification vendor chain used by Discord, involving identity verification software (Persona Identities) and outsourced support provider 5CA.", "known_breaches": ["discord-5ca-2025-breach"], "notes": "Distinct entry documenting the specific third-party vendor (5CA) blamed for the original October 2025 Discord breach, as clarified in later reporting; not to be confused with the main Discord entry already tracked."},
-    {"id": "uae-pass", "name": "UAE Pass", "website": "https://uaepass.ae", "region": "global", "type": "id_verification", "description": "United Arab Emirates' national digital identity system offering biometric (face) login and a single sign-on used across more than 6,000 government and private services, with over 5 million users.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "saudi-nafath-absher", "name": "Nafath / Absher (Saudi Arabia)", "website": "https://www.absher.sa", "region": "global", "type": "id_verification", "description": "Saudi Arabia's national single sign-on and digital identity system (Nafath, built on the Absher platform), combining national ID, OTP, and facial recognition for over 530 integrated government and private services with 3 billion-plus logins.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."},
-    {"id": "gosuslugi-esia", "name": "Gosuslugi / ESIA (Russia)", "website": "https://www.gosuslugi.ru", "region": "global", "type": "id_verification", "description": "Russia's federal public-services portal (Gosuslugi) and its underlying Unified Identification and Authentication System (ESIA), used for passport applications, tax filings, and identity verification against a national Unified Biometric System.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date; included given its status as Russia's mandated domestic digital-ID system following a 2023 ban on foreign ID verification services."},
-    {"id": "marriott-starwood", "name": "Marriott International / Starwood Hotels", "website": "https://www.marriott.com", "region": "US", "type": "kyc", "description": "Global hotel chain that acquired Starwood Hotels & Resorts in 2016; Starwood's guest reservation database stored passport numbers and personal data collected to comply with local hotel-registration laws in various countries.", "known_breaches": ["marriott-starwood-2018-breach"], "notes": "Not a dedicated identity-verification vendor; included because its Starwood guest database directly stored and exposed millions of passport numbers."},
-    {"id": "t-mobile-us", "name": "T-Mobile US", "website": "https://www.t-mobile.com", "region": "US", "type": "kyc", "description": "Major US wireless telecommunications carrier that collects Social Security numbers and driver's license/ID numbers from customers and applicants for account verification and credit checks.", "known_breaches": ["t-mobile-2021-breach"], "notes": "Not a dedicated identity-verification vendor; included because its systems directly stored and exposed customer SSNs and driver's license numbers used for identity verification during account signup."},
-    {"id": "optus", "name": "Optus (Singtel)", "website": "https://www.optus.com.au", "region": "APAC", "type": "kyc", "description": "Australia's second-largest telecommunications carrier, owned by Singapore's Singtel, that collects passport numbers, driver's licence numbers, and Medicare details from customers for identity verification and account setup.", "known_breaches": ["optus-2022-breach"], "notes": "Not a dedicated identity-verification vendor; included because it directly stored and exposed customers' passport and driver's licence numbers used for identity verification."},
-    {"id": "medibank", "name": "Medibank Private", "website": "https://www.medibank.com.au", "region": "APAC", "type": "kyc", "description": "Australia's largest private health insurer, which collects Medicare numbers and, for international student customers, passport and visa details as part of identity and eligibility verification.", "known_breaches": ["medibank-2022-breach"], "notes": "Not a dedicated identity-verification vendor; included because it directly stored and exposed Medicare numbers and international students' passport numbers used for identity/eligibility verification."},
-    {"id": "monroe-university", "name": "Monroe University", "website": "https://www.monroeu.edu", "region": "US", "type": "id_verification", "description": "US private university in New York that collects Social Security numbers, driver's license numbers, passport numbers, and government identification numbers from students and staff for enrollment, financial aid, and identity verification.", "known_breaches": ["monroe-university-2026-breach"], "notes": "Not a dedicated identity-verification vendor; included because it directly stored and exposed students' and staff's government-issued identity document numbers."},
-    {"id": "aylo-mindgeek", "name": "Aylo (formerly MindGeek)", "website": "https://www.aylo.com", "region": "global", "type": "age_verification", "description": "Operator of major adult-content platforms including Pornhub, YouPorn, and RedTube, using third-party identity verification (Yoti) for content uploaders and various age-assurance methods (credit card, mobile carrier, open banking) for viewers depending on jurisdiction.", "known_breaches": ["aylo-mindgeek-2025-ftc-settlement"], "notes": "Not a dedicated identity-verification vendor; included because it directly retained uploaders' unencrypted identity documents and Social Security numbers collected via its Yoti-powered verification process."},
-    {"id": "serasa-experian-brazil", "name": "Serasa Experian (Brazil)", "website": "https://www.serasaexperian.com.br", "region": "LATAM", "type": "kyc", "description": "Brazilian subsidiary of global credit bureau Experian, providing credit scoring, identity verification, and KYC data products (including the Mosaic consumer-segmentation service) to Brazilian businesses.", "known_breaches": ["serasa-experian-2021-breach"], "notes": "Experian disputes that its own systems were breached, but the leaked dataset closely mirrored Serasa-collected data categories and was widely attributed to the company in Brazilian media and ongoing litigation."},
-    {"id": "buro-de-credito-mexico", "name": "Buró de Crédito (Mexico)", "website": "https://www.burodecredito.com.mx", "region": "LATAM", "type": "kyc", "description": "Mexico's principal credit-reporting bureau, used by banks and lenders for identity verification and creditworthiness checks nationwide.", "known_breaches": ["buro-de-credito-2023-breach"], "notes": "Not a dedicated identity-verification vendor in the KYC/IDV industry sense, but a credit bureau whose data underpins identity and creditworthiness checks; Mexico's banking regulator (CNBV) was notified of a data exposure in 2022-2023."},
-    {"id": "eguwallet", "name": "EguWallet", "website": "https://eguwallet.eu", "region": "EU", "type": "id_verification", "description": "eIDAS 2.0-certified European Digital Identity (EUDI) Wallet developed by IT Eguilde SRL, allowing citizens to store and present ID cards, driving licences, diplomas, and qualified signatures from a mobile device, recognised across all 27 EU member states.", "known_breaches": [], "notes": "No confirmed public breach identified as of research date."}
+    {
+      "id": "yoti",
+      "name": "Yoti",
+      "website": "https://www.yoti.com",
+      "region": "UK",
+      "type": "id_verification",
+      "description": "UK-based digital identity and age verification provider offering ID document checks, facial age estimation, and reusable digital ID.",
+      "known_breaches": [],
+      "notes": "No major public breach identified as of research date; included for completeness given prominent role in UK age-verification market (Online Safety Act compliance)."
+    },
+    {
+      "id": "onfido",
+      "name": "Onfido (an Entrust company)",
+      "website": "https://onfido.com",
+      "region": "global",
+      "type": "id_verification",
+      "description": "Global identity verification platform providing document verification and biometric facial matching, acquired by Entrust in 2024.",
+      "known_breaches": [],
+      "notes": "No major public breach identified as of research date; monitored due to scale of ID document processing."
+    },
+    {
+      "id": "veriff",
+      "name": "Veriff",
+      "website": "https://www.veriff.com",
+      "region": "global",
+      "type": "id_verification",
+      "description": "Estonian-founded global identity verification company serving fintech, crypto, mobility and marketplace clients.",
+      "known_breaches": [],
+      "notes": "No major public breach identified as of research date."
+    },
+    {
+      "id": "jumio",
+      "name": "Jumio",
+      "website": "https://www.jumio.com",
+      "region": "global",
+      "type": "id_verification",
+      "description": "US-based identity verification and eKYC company using AI-driven document and biometric verification.",
+      "known_breaches": [],
+      "notes": "No major public breach identified as of research date."
+    },
+    {
+      "id": "id-me",
+      "name": "ID.me",
+      "website": "https://www.id.me",
+      "region": "US",
+      "type": "kyc",
+      "description": "US identity verification network used by government agencies (IRS, state unemployment offices) and private sector for identity proofing.",
+      "known_breaches": [],
+      "notes": "Faced congressional scrutiny over facial recognition and identity-proofing practices, but no confirmed large-scale data breach identified as of research date."
+    },
+    {
+      "id": "sumsub",
+      "name": "Sumsub",
+      "website": "https://sumsub.com",
+      "region": "global",
+      "type": "kyc",
+      "description": "Global KYC/AML and identity verification provider widely used by cryptocurrency exchanges and fintechs.",
+      "known_breaches": [
+        "sumsub-2024-2026-disclosure"
+      ],
+      "notes": "Disclosed in February 2026 that an intrusion dating back to July 2024 went undetected for roughly 18 months."
+    },
+    {
+      "id": "trulioo",
+      "name": "Trulioo",
+      "website": "https://www.trulioo.com",
+      "region": "global",
+      "type": "kyc",
+      "description": "Canadian global identity verification network (GlobalGateway) aggregating data sources for KYC/AML compliance.",
+      "known_breaches": [],
+      "notes": "No major public breach identified as of research date."
+    },
+    {
+      "id": "persona",
+      "name": "Persona",
+      "website": "https://withpersona.com",
+      "region": "US",
+      "type": "id_verification",
+      "description": "US-based configurable identity verification and KYC platform used by fintech, marketplaces, and crypto companies.",
+      "known_breaches": [],
+      "notes": "No major public breach identified as of research date."
+    },
+    {
+      "id": "agechecked",
+      "name": "AgeChecked",
+      "website": "https://agechecked.com",
+      "region": "UK",
+      "type": "age_verification",
+      "description": "UK-based age verification service used for age-restricted online sales and access control.",
+      "known_breaches": [],
+      "notes": "Included for completeness given role in UK/EU age-verification compliance; no confirmed breach identified as of research date."
+    },
+    {
+      "id": "verifymyage",
+      "name": "VerifyMy (VerifyMyAge)",
+      "website": "https://verifymy.io",
+      "region": "UK",
+      "type": "age_verification",
+      "description": "UK-based age assurance provider offering age estimation and age verification for online platforms.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "idnow",
+      "name": "IDnow",
+      "website": "https://www.idnow.io",
+      "region": "EU",
+      "type": "kyc",
+      "description": "German identity verification provider offering video identification and automated eKYC across the EU.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "webid",
+      "name": "WebID",
+      "website": "https://www.webid-solutions.de",
+      "region": "EU",
+      "type": "kyc",
+      "description": "German provider of video identification and eSignature identity verification services.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "idology",
+      "name": "IDology (a GBG company)",
+      "website": "https://www.idology.com",
+      "region": "US",
+      "type": "kyc",
+      "description": "US identity verification and fraud prevention company, part of GBG Group, serving financial services and age-restricted commerce.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "lexisnexis-risk",
+      "name": "LexisNexis Risk Solutions",
+      "website": "https://risk.lexisnexis.com",
+      "region": "US",
+      "type": "kyc",
+      "description": "US risk-management and identity-data aggregator offering KYC/AML and ID verification products (ThreatMetrix, InstantID) and healthcare patient identity management.",
+      "known_breaches": [],
+      "notes": "No confirmed direct breach of ID-verification data identified as of research date; monitored given scale of identity data holdings."
+    },
+    {
+      "id": "experian",
+      "name": "Experian (Identity/KYC products)",
+      "website": "https://www.experian.com",
+      "region": "global",
+      "type": "kyc",
+      "description": "Global credit bureau offering identity verification and KYC data products alongside credit reporting, including patient identity verification for healthcare.",
+      "known_breaches": [],
+      "notes": "Experian has had unrelated consumer data-exposure incidents historically; no ID-verification-specific breach confirmed as of research date."
+    },
+    {
+      "id": "au10tix",
+      "name": "AU10TIX",
+      "website": "https://www.au10tix.com",
+      "region": "global",
+      "type": "id_verification",
+      "description": "Israeli identity-verification technology vendor providing document and biometric verification behind the scenes for major platforms including TikTok, Uber, X, and LinkedIn.",
+      "known_breaches": [
+        "au10tix-2024-credential-exposure"
+      ],
+      "notes": "Admin credentials to a logging platform were exposed online for over a year, reported by 404 Media in June 2024."
+    },
+    {
+      "id": "idmerit",
+      "name": "IDMerit",
+      "website": "https://www.idmerit.com",
+      "region": "global",
+      "type": "kyc",
+      "description": "California-based AI-powered identity verification provider serving financial services and fintech platforms across 200+ countries.",
+      "known_breaches": [
+        "idmerit-2025-2026-mongodb-exposure"
+      ],
+      "notes": "An unsecured MongoDB database was discovered exposed to the public internet in November 2025, disclosed publicly in February 2026."
+    },
+    {
+      "id": "fractal-id",
+      "name": "Fractal ID",
+      "website": "https://fractal.id",
+      "region": "EU",
+      "type": "kyc",
+      "description": "Web3-focused KYC/identity verification provider used by crypto exchanges and DeFi platforms.",
+      "known_breaches": [
+        "fractal-id-2024-api-breach"
+      ],
+      "notes": "Confirmed unauthorized API access in July 2024 affecting roughly 0.5% of its user base."
+    },
+    {
+      "id": "signzy",
+      "name": "Signzy",
+      "website": "https://www.signzy.com",
+      "region": "APAC",
+      "type": "kyc",
+      "description": "India-based (Bengaluru) provider of digital KYC and identity-verification infrastructure for banks and fintechs.",
+      "known_breaches": [
+        "signzy-2024-malware-incident"
+      ],
+      "notes": "Confirmed infostealer malware incident in late 2024; major banking clients stated their customer data was unaffected."
+    },
+    {
+      "id": "discord-trust-safety",
+      "name": "Discord (Age Verification / Trust & Safety vendor)",
+      "website": "https://discord.com",
+      "region": "global",
+      "type": "age_verification",
+      "description": "Global chat and community platform; not a dedicated ID-verification vendor, but processes government ID images for age verification via third-party support tooling.",
+      "known_breaches": [
+        "discord-2025-zendesk-breach"
+      ],
+      "notes": "Breach occurred via a compromised third-party customer-support (Zendesk) system, not Discord's core infrastructure."
+    },
+    {
+      "id": "mygiftcardsupply",
+      "name": "MyGiftCardSupply",
+      "website": "https://mygiftcardsupply.com",
+      "region": "US",
+      "type": "kyc",
+      "description": "US online gift-card retailer that collects customer ID documents to comply with anti-money-laundering (KYC) rules.",
+      "known_breaches": [
+        "mygiftcardsupply-2024-exposed-storage"
+      ],
+      "notes": "Not a dedicated identity-verification vendor, but included because it directly stored KYC identity documents that were exposed."
+    },
+    {
+      "id": "transak-kyc-vendor",
+      "name": "Transak (third-party KYC vendor incident)",
+      "website": "https://transak.com",
+      "region": "global",
+      "type": "kyc",
+      "description": "Fiat-to-crypto payment gateway whose third-party KYC vendor was compromised via a phishing attack.",
+      "known_breaches": [
+        "transak-2025-kyc-vendor-breach"
+      ],
+      "notes": "The breach originated at a third-party KYC vendor used by Transak, not at a named public identity-verification brand."
+    },
+    {
+      "id": "nefos-puffpal",
+      "name": "Nefos (PuffPal)",
+      "website": "https://www.nefos.eu",
+      "region": "EU",
+      "type": "age_verification",
+      "description": "European platform (PuffPal) providing membership management and age verification for cannabis social clubs and retailers.",
+      "known_breaches": [
+        "puffpal-2026-passport-exposure"
+      ],
+      "notes": "Systems hosting age-verification documents for cannabis-club members were left unprotected on the public internet."
+    },
+    {
+      "id": "tea-app",
+      "name": "Tea (Tea Dating Advice app)",
+      "website": "https://teadatingadvice.com",
+      "region": "US",
+      "type": "age_verification",
+      "description": "US women's dating-safety app that required selfie and government-ID verification at signup.",
+      "known_breaches": [
+        "tea-app-2025-breach"
+      ],
+      "notes": "Not a dedicated identity-verification vendor; included because it directly collected and exposed verification selfies and ID photos."
+    },
+    {
+      "id": "incode",
+      "name": "Incode",
+      "website": "https://incode.com",
+      "region": "US",
+      "type": "id_verification",
+      "description": "US-based identity verification platform offering biometric onboarding, liveness detection, and reusable digital identity for fintech, gig-economy, healthcare, and government clients.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "socure",
+      "name": "Socure",
+      "website": "https://www.socure.com",
+      "region": "US",
+      "type": "id_verification",
+      "description": "US identity verification and fraud-prevention platform combining data intelligence, document verification, and machine learning risk scoring.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "mitek",
+      "name": "Mitek Systems",
+      "website": "https://www.miteksystems.com",
+      "region": "US",
+      "type": "id_verification",
+      "description": "US provider of mobile document capture and biometric identity verification technology (Mobile Verify) used by banks and fintechs worldwide.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "gbg",
+      "name": "GBG (GB Group)",
+      "website": "https://www.gbgplc.com",
+      "region": "UK",
+      "type": "kyc",
+      "description": "UK-headquartered global identity data intelligence company providing identity verification, fraud, and location data services; parent of IDology.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "idemia",
+      "name": "IDEMIA",
+      "website": "https://www.idemia.com",
+      "region": "EU",
+      "type": "id_verification",
+      "description": "French multinational providing biometric identity solutions, secure ID documents (passports, national IDs), and border control systems for governments worldwide.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "thales-digital-identity",
+      "name": "Thales Group (Digital Identity & Security)",
+      "website": "https://www.thalesgroup.com",
+      "region": "EU",
+      "type": "id_verification",
+      "description": "French multinational technology group providing biometric passports, national eID cards, and digital identity infrastructure for governments and enterprises.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "equifax",
+      "name": "Equifax",
+      "website": "https://www.equifax.com",
+      "region": "US",
+      "type": "kyc",
+      "description": "US credit bureau offering identity verification and KYC data products alongside credit reporting services.",
+      "known_breaches": [
+        "equifax-2017-breach"
+      ],
+      "notes": "Included primarily for its major 2017 breach exposing SSNs and identity data used in KYC/credit-verification contexts, and its ongoing identity-verification product line."
+    },
+    {
+      "id": "transunion",
+      "name": "TransUnion",
+      "website": "https://www.transunion.com",
+      "region": "US",
+      "type": "kyc",
+      "description": "US credit bureau providing identity verification, fraud analytics, and KYC data solutions alongside credit reporting.",
+      "known_breaches": [
+        "transunion-2025-breach"
+      ],
+      "notes": "Disclosed a 2025 breach affecting millions of US customer records via a third-party application."
+    },
+    {
+      "id": "innovatrics",
+      "name": "Innovatrics",
+      "website": "https://www.innovatrics.com",
+      "region": "EU",
+      "type": "id_verification",
+      "description": "Slovakia-based biometric and identity verification technology provider offering facial recognition, fingerprint, and document verification products.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "intellicheck",
+      "name": "Intellicheck",
+      "website": "https://www.intellicheck.com",
+      "region": "US",
+      "type": "id_verification",
+      "description": "US identity verification company specializing in ID document authentication for retail, financial services, and law enforcement use cases.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "signicat",
+      "name": "Signicat",
+      "website": "https://www.signicat.com",
+      "region": "EU",
+      "type": "kyc",
+      "description": "Norwegian digital identity and e-signature platform serving European banks and fintechs with KYC/AML and identity orchestration.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "securekey",
+      "name": "SecureKey Technologies",
+      "website": "https://securekey.com",
+      "region": "global",
+      "type": "id_verification",
+      "description": "Identity verification and digital credential network provider, part of Avast/Gen Digital ecosystem, offering privacy-preserving identity verification.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "hyperverge",
+      "name": "HyperVerge",
+      "website": "https://hyperverge.co",
+      "region": "APAC",
+      "type": "id_verification",
+      "description": "India-based AI identity verification platform offering document verification, face matching, and liveness detection for fintech and telecom clients globally.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "idenfy",
+      "name": "iDenfy",
+      "website": "https://idenfy.com",
+      "region": "EU",
+      "type": "kyc",
+      "description": "Lithuanian identity verification and KYC/KYB platform supporting over 200 countries and thousands of document types.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "seon",
+      "name": "SEON",
+      "website": "https://seon.io",
+      "region": "EU",
+      "type": "kyc",
+      "description": "Hungarian digital fraud-intelligence platform building risk profiles from email, phone, IP, and device signals, often paired with KYC workflows.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "complyadvantage",
+      "name": "ComplyAdvantage",
+      "website": "https://complyadvantage.com",
+      "region": "UK",
+      "type": "kyc",
+      "description": "UK-based AML-focused compliance platform with proprietary risk-intelligence data covering sanctions, PEPs, and adverse media across 200+ countries.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "identomat",
+      "name": "Identomat",
+      "website": "https://identomat.com",
+      "region": "US",
+      "type": "id_verification",
+      "description": "AI-powered KYC/AML platform supporting 8,800+ document types across 193+ countries with passive and active liveness detection.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "focal-mozn",
+      "name": "Focal (by Mozn)",
+      "website": "https://mozn.ai",
+      "region": "global",
+      "type": "kyc",
+      "description": "MENA-region-focused KYC/KYB/AML compliance platform (Focal) built by Saudi AI company Mozn, handling 50,000+ verifications daily.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "togggle",
+      "name": "Togggle",
+      "website": "https://togggle.io",
+      "region": "EU",
+      "type": "id_verification",
+      "description": "Privacy-focused decentralized KYC and reusable digital identity platform.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "complycube",
+      "name": "ComplyCube",
+      "website": "https://www.complycube.com",
+      "region": "UK",
+      "type": "kyc",
+      "description": "UK-based identity verification and AML compliance platform offering document verification, biometric checks, and ongoing monitoring.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "berbix",
+      "name": "Berbix (Socure)",
+      "website": "https://www.berbix.com",
+      "region": "US",
+      "type": "id_verification",
+      "description": "US identity verification company acquired by Socure, providing ID document and selfie verification for marketplaces and sharing-economy platforms.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "alloy",
+      "name": "Alloy",
+      "website": "https://www.alloy.com",
+      "region": "US",
+      "type": "kyc",
+      "description": "US identity risk and KYC/KYB decisioning platform used by banks and fintechs to orchestrate multiple verification data sources.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "ondato",
+      "name": "Ondato",
+      "website": "https://ondato.com",
+      "region": "EU",
+      "type": "kyc",
+      "description": "Lithuanian cloud-based KYC/KYB identity verification platform serving regulated fintechs and SaaS platforms across Europe.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "passbase",
+      "name": "Passbase",
+      "website": "https://passbase.com",
+      "region": "EU",
+      "type": "id_verification",
+      "description": "European identity verification API provider offering document and biometric verification for developers.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "k-id",
+      "name": "k-ID",
+      "website": "https://www.k-id.com",
+      "region": "global",
+      "type": "age_verification",
+      "description": "Age assurance and parental-consent platform used by gaming and social platforms to comply with child-safety regulations worldwide.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "oneid",
+      "name": "OneID",
+      "website": "https://oneid.uk",
+      "region": "UK",
+      "type": "age_verification",
+      "description": "UK Open Banking-based age verification provider, FCA-regulated and DIATF-certified, used for Online Safety Act compliance.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "oneverify",
+      "name": "OneVerify",
+      "website": "https://www.oneverify.co.uk",
+      "region": "UK",
+      "type": "age_verification",
+      "description": "UK age verification platform for gambling, adult content, alcohol, tobacco, and cannabis websites, marketed as storing no user data.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "bouncer-digital",
+      "name": "Bouncer Digital",
+      "website": "https://bouncer.digital",
+      "region": "LATAM",
+      "type": "age_verification",
+      "description": "Age verification provider using facial recognition and QR-code checks for gaming platforms and vending machines, focused on LATAM markets.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "privately",
+      "name": "Privately",
+      "website": "https://avpassociation.com/member/privately/",
+      "region": "EU",
+      "type": "age_verification",
+      "description": "Age verification provider using facial and voice age estimation for social media, dating, gambling, and e-commerce platforms.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "truora",
+      "name": "Truora",
+      "website": "https://www.truora.com",
+      "region": "LATAM",
+      "type": "kyc",
+      "description": "Latin America-focused identity verification and background-check platform serving fintechs and marketplaces across the region.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "idfy",
+      "name": "IDfy",
+      "website": "https://idfy.com",
+      "region": "APAC",
+      "type": "kyc",
+      "description": "India-based identity verification and background-check platform offering employment, KYC, and document verification services.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "uqudo",
+      "name": "Uqudo",
+      "website": "https://uqudo.com",
+      "region": "global",
+      "type": "kyc",
+      "description": "UAE-based digital identity verification company serving the Middle East and Africa (MEA), validating 156+ passport types and national IDs across 22 countries.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "iidentifii",
+      "name": "iiDENTIFii",
+      "website": "https://iidentifii.com",
+      "region": "global",
+      "type": "id_verification",
+      "description": "Face-authentication and identity verification platform designed for enterprises across Africa and the Middle East.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "smile-id",
+      "name": "Smile ID",
+      "website": "https://usesmileid.com",
+      "region": "global",
+      "type": "kyc",
+      "description": "Pan-African identity verification and KYC platform supporting document and biometric checks across dozens of African countries.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "dojah",
+      "name": "Dojah",
+      "website": "https://dojah.io",
+      "region": "global",
+      "type": "kyc",
+      "description": "Nigeria-based identity verification API provider offering KYC, KYB, and biometric checks across African markets.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "identitypass",
+      "name": "IdentityPass (Prembly)",
+      "website": "https://prembly.com",
+      "region": "global",
+      "type": "kyc",
+      "description": "African identity verification and compliance platform (by Prembly) offering KYC, KYB, and AML screening across Nigeria and other African markets.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "verifyme-africa",
+      "name": "VerifyMe (Africa)",
+      "website": "https://verifyme.ng",
+      "region": "global",
+      "type": "kyc",
+      "description": "Nigeria-based identity verification platform offering KYC checks against national identity databases (BVN, NIN) across Africa. Distinct from UK's VerifyMy/VerifyMyAge.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date; name similarity to UK VerifyMy is coincidental."
+    },
+    {
+      "id": "yesid",
+      "name": "yes:id",
+      "website": "https://www.yesid.io",
+      "region": "global",
+      "type": "kyc",
+      "description": "African digital identity verification platform validating government IDs across 150+ countries with cross-checks against Sub-Saharan and East African ID authorities.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "vove-id",
+      "name": "Vove ID",
+      "website": "https://voveid.com",
+      "region": "global",
+      "type": "kyc",
+      "description": "Morocco/US-based biometric KYC and AML startup providing reusable digital identity verification across Africa and the Middle East.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "biometrida",
+      "name": "Biometrida",
+      "website": "https://biometridafrica.com",
+      "region": "global",
+      "type": "id_verification",
+      "description": "African identity platform offering biometric verification, liveness detection, document verification, and AML/CFT controls across 248 territories.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "facetec",
+      "name": "FaceTec",
+      "website": "https://www.facetec.com",
+      "region": "US",
+      "type": "id_verification",
+      "description": "US-based 3D face biometrics and liveness-detection technology provider used in digital ID programs including MENA government projects.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "iproov",
+      "name": "iProov",
+      "website": "https://www.iproov.com",
+      "region": "UK",
+      "type": "id_verification",
+      "description": "UK-based biometric face-verification and liveness-detection provider used by governments, banks, and healthcare organizations for high-assurance identity checks.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "binance",
+      "name": "Binance",
+      "website": "https://www.binance.com",
+      "region": "global",
+      "type": "kyc",
+      "description": "Global cryptocurrency exchange requiring KYC identity verification (passports, IDs, selfies) for account tiers and regulatory compliance.",
+      "known_breaches": [
+        "binance-2019-kyc-leak"
+      ],
+      "notes": "Not a dedicated identity-verification vendor; included because it directly collected and had KYC images leaked via a third-party vendor breach."
+    },
+    {
+      "id": "coinbase",
+      "name": "Coinbase",
+      "website": "https://www.coinbase.com",
+      "region": "US",
+      "type": "kyc",
+      "description": "US-based cryptocurrency exchange requiring KYC verification including government IDs, selfies, and addresses for account compliance.",
+      "known_breaches": [
+        "coinbase-2024-2025-breach"
+      ],
+      "notes": "Not a dedicated identity-verification vendor; included because a bribed third-party support contractor exfiltrated KYC and personal data."
+    },
+    {
+      "id": "france-titres",
+      "name": "France Titres (ANTS)",
+      "website": "https://www.ants.gouv.fr",
+      "region": "EU",
+      "type": "id_verification",
+      "description": "French national government agency operating the database of identity documents (passports, national ID cards, driving licences) for French citizens.",
+      "known_breaches": [
+        "france-titres-2026-breach"
+      ],
+      "notes": "Government identity-document authority, not a private vendor; included due to the scale of the 2026 breach affecting a third of France's adult population."
+    },
+    {
+      "id": "eurail",
+      "name": "Eurail / Interrail (Eurail Group)",
+      "website": "https://www.eurail.com",
+      "region": "EU",
+      "type": "kyc",
+      "description": "European rail-pass provider that collects passport numbers and personal data from travellers for identity verification and pass issuance.",
+      "known_breaches": [
+        "eurail-2025-2026-breach"
+      ],
+      "notes": "Not a dedicated identity-verification vendor; included because it directly stored passport data that was exposed in a breach."
+    },
+    {
+      "id": "uk-visa-portal",
+      "name": "UK Visa Portal (ETA-Pass)",
+      "website": "",
+      "region": "UK",
+      "type": "id_verification",
+      "description": "Third-party website (also known as UK Visit / ETA-Pass) that processed UK visa/ETA applications requiring passport and selfie uploads.",
+      "known_breaches": [
+        "uk-visa-portal-2026-breach"
+      ],
+      "notes": "Not an official UK government service; a commercial third-party site processing visa applications and identity documents."
+    },
+    {
+      "id": "renaper-argentina",
+      "name": "RENAPER (Argentina)",
+      "website": "https://www.renaper.gob.ar",
+      "region": "LATAM",
+      "type": "id_verification",
+      "description": "Argentina's National Registry of Persons, the government agency responsible for issuing national ID cards (DNI) and maintaining the national identity database.",
+      "known_breaches": [
+        "renaper-2021-breach"
+      ],
+      "notes": "Government identity authority; included due to the scale of the breach affecting nearly all Argentine citizens."
+    },
+    {
+      "id": "aadhaar-uidai",
+      "name": "Aadhaar (UIDAI, India)",
+      "website": "https://uidai.gov.in",
+      "region": "APAC",
+      "type": "id_verification",
+      "description": "India's Unique Identification Authority, operator of the Aadhaar biometric national ID system used for identity verification across government and private services.",
+      "known_breaches": [
+        "aadhaar-2018-leaks"
+      ],
+      "notes": "Government biometric ID authority; included due to multiple large-scale reported data exposures linked to the Aadhaar ecosystem."
+    },
+    {
+      "id": "sweden-bankid-cgi",
+      "name": "BankID (Sweden) / CGI",
+      "website": "https://www.bankid.com",
+      "region": "EU",
+      "type": "id_verification",
+      "description": "Sweden's dominant bank-backed digital identity and authentication system (BankID), with supporting infrastructure built by IT contractor CGI.",
+      "known_breaches": [
+        "sweden-bankid-cgi-2026-breach"
+      ],
+      "notes": "Not a single company; included because a breach of contractor CGI's Swedish division exposed source code and data related to BankID authentication infrastructure."
+    },
+    {
+      "id": "nid-bangladesh",
+      "name": "National ID (Bangladesh)",
+      "website": "",
+      "region": "APAC",
+      "type": "id_verification",
+      "description": "Bangladesh's National Identity Registration Wing database, storing citizen identity records used for government and financial services verification.",
+      "known_breaches": [
+        "bangladesh-nid-2023-leak"
+      ],
+      "notes": "Government identity database; included due to a large-scale reported public exposure of citizen NID data."
+    },
+    {
+      "id": "vouched",
+      "name": "Vouched",
+      "website": "https://www.vouched.id",
+      "region": "US",
+      "type": "id_verification",
+      "description": "US AI-powered identity verification platform specializing in healthcare (Know Your Patient), document authentication, and biometric analysis, integrated with Epic's MyChart.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "microblink",
+      "name": "Microblink",
+      "website": "https://microblink.com",
+      "region": "EU",
+      "type": "id_verification",
+      "description": "Croatian-founded identity verification and document-capture platform, the only vendor to meet all thresholds in the US DHS RIVR evaluation as of March 2026, serving healthcare and telehealth intake.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "clear-secure",
+      "name": "CLEAR (CLEAR Secure)",
+      "website": "https://www.clearme.com",
+      "region": "US",
+      "type": "id_verification",
+      "description": "US biometric identity platform best known for airport/venue expedited screening (CLEAR Plus), also offering CLEAR1 healthcare identity verification integrated with Epic.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "digidentity",
+      "name": "Digidentity",
+      "website": "https://www.digidentity.eu",
+      "region": "EU",
+      "type": "id_verification",
+      "description": "Dutch digital identity provider offering secure authentication and identity verification for healthcare, government, and enterprise sectors across Europe.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "identos",
+      "name": "IDENTOS",
+      "website": "https://www.identos.com",
+      "region": "global",
+      "type": "id_verification",
+      "description": "Identity verification platform offering government-strength biometric and document verification toolsets for healthcare patient and proxy identity checks.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "verifinow",
+      "name": "VerifiNow",
+      "website": "https://www.verifinow.com",
+      "region": "US",
+      "type": "id_verification",
+      "description": "US biometric identity verification vendor offering PatientVerifi, a voice/facial/liveness platform for telehealth patient authentication integrated with Zoom and Microsoft Teams.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "worldcoin-tfh",
+      "name": "Worldcoin (Tools for Humanity)",
+      "website": "https://world.org",
+      "region": "global",
+      "type": "id_verification",
+      "description": "Biometric iris-scanning digital identity project (World ID) developed by Tools for Humanity, aiming to provide proof-of-personhood verification globally.",
+      "known_breaches": [],
+      "notes": "No confirmed data breach identified as of research date; included given scale of biometric data collection and ongoing regulatory scrutiny in multiple countries."
+    },
+    {
+      "id": "clear-plus-airport",
+      "name": "CLEAR Plus",
+      "website": "https://www.clearme.com",
+      "region": "US",
+      "type": "id_verification",
+      "description": "CLEAR's consumer-facing biometric expedited-screening product used at US airports and stadiums, verifying identity via fingerprint and iris/facial scans.",
+      "known_breaches": [],
+      "notes": "Distinct entry from CLEAR's healthcare (CLEAR1) product line to reflect its separate consumer identity database; no confirmed public breach identified as of research date."
+    },
+    {
+      "id": "nec-corporation",
+      "name": "NEC Corporation",
+      "website": "https://www.nec.com",
+      "region": "APAC",
+      "type": "id_verification",
+      "description": "Japanese multinational technology company offering biometric identity verification (facial, iris, fingerprint recognition) via its NEC Identity Cloud Service for governments, financial institutions, and enterprises across Asia-Pacific.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "megvii",
+      "name": "Megvii",
+      "website": "https://en.megvii.com",
+      "region": "APAC",
+      "type": "id_verification",
+      "description": "Chinese AI company (developer of Face++) providing facial recognition and biometric identity verification technology used in Chinese and regional identity-verification deployments.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "sensetime",
+      "name": "SenseTime",
+      "website": "https://www.sensetime.com",
+      "region": "APAC",
+      "type": "id_verification",
+      "description": "Chinese AI company providing facial recognition and biometric identity verification technology, partnering regionally to extend smart-city and identity verification services across Asia-Pacific.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "ongrid",
+      "name": "OnGrid",
+      "website": "https://www.ongrid.in",
+      "region": "APAC",
+      "type": "kyc",
+      "description": "India-based background verification and KYC platform offering digital identity checks for employment and financial-services onboarding.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "trusting-social",
+      "name": "Trusting Social",
+      "website": "https://trustingsocial.com",
+      "region": "APAC",
+      "type": "id_verification",
+      "description": "Singapore-headquartered digital identity company (Trust Vision) offering facial recognition eKYC, selfie-to-ID matching, and cross-database identity verification across Southeast Asia.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "cynopsis-solutions",
+      "name": "Cynopsis Solutions",
+      "website": "https://www.cynopsis-solutions.com",
+      "region": "APAC",
+      "type": "kyc",
+      "description": "Singapore-based RegTech company offering KYC, AML screening, and compliance automation for financial institutions in Southeast Asia.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "surepass",
+      "name": "SurePass",
+      "website": "https://surepass.io",
+      "region": "APAC",
+      "type": "kyc",
+      "description": "India-based identity verification API provider offering Aadhaar, PAN, and document-based KYC verification for Indian fintechs.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "accura-scan",
+      "name": "Accura Scan",
+      "website": "https://accurascan.com",
+      "region": "APAC",
+      "type": "id_verification",
+      "description": "India-based identity verification vendor offering on-device document scanning, liveness detection, and biometric matching SDKs.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "data-zoo",
+      "name": "Data Zoo",
+      "website": "https://datazoo.com",
+      "region": "APAC",
+      "type": "kyc",
+      "description": "Australia/Wales-based identity verification platform processing sensitive customer information for KYC compliance and onboarding across global enterprises.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "authbridge",
+      "name": "AuthBridge",
+      "website": "https://authbridge.com",
+      "region": "APAC",
+      "type": "kyc",
+      "description": "India's largest background-verification and identity-authentication company, serving over 3,000 clients across 140 countries for employee onboarding and customer KYC.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "onespan",
+      "name": "OneSpan",
+      "website": "https://www.onespan.com",
+      "region": "US",
+      "type": "id_verification",
+      "description": "US digital-agreement security company offering identity verification, biometric comparison, and e-signature authentication (OneSpan Sign) for banking and financial services.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "acuant-gbg",
+      "name": "Acuant (a GBG company)",
+      "website": "https://www.acuant.com",
+      "region": "US",
+      "type": "id_verification",
+      "description": "US identity verification and document authentication provider, acquired by GB Group (GBG) in 2021 and integrated into GBG's identity verification offerings.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "biovertify",
+      "name": "BioVerify",
+      "website": "https://www.bioverify.me",
+      "region": "APAC",
+      "type": "kyc",
+      "description": "New Zealand-based biometric AML/CFT identity verification provider offering safe-harbour data-source coverage for New Zealand and Australia.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "cyberlinks",
+      "name": "Cyberlinks",
+      "website": "https://www.cyberlinks.co.jp",
+      "region": "APAC",
+      "type": "id_verification",
+      "description": "Japanese company operating the country's official public personal authentication platform using government-issued ID cards for eKYC, with a dominant position in Japan's digital identity market.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "duc-app",
+      "name": "Duc App (Duales)",
+      "website": "https://duc.app",
+      "region": "LATAM",
+      "type": "kyc",
+      "description": "Toronto-based Canadian fintech money-transfer app (Duc) serving immigrant communities, requiring driver's licenses, passports, and selfies for KYC identity verification.",
+      "known_breaches": [
+        "duc-app-2026-breach"
+      ],
+      "notes": "Not a dedicated identity-verification vendor; included because it directly stored and exposed customer KYC identity documents."
+    },
+    {
+      "id": "paytel-communications",
+      "name": "Pay Tel Communications",
+      "website": "https://www.pay-tel.com",
+      "region": "US",
+      "type": "id_verification",
+      "description": "US corrections-industry vendor providing phone, tablet, and communications services to jail and prison inmates, requiring ID document uploads from those wishing to communicate with inmates.",
+      "known_breaches": [
+        "paytel-2026-breach"
+      ],
+      "notes": "Not a dedicated identity-verification vendor; included because it directly stored and exposed government ID documents submitted for its identity-verification process."
+    },
+    {
+      "id": "tabiq-hotel-checkin",
+      "name": "Tabiq",
+      "website": "",
+      "region": "APAC",
+      "type": "id_verification",
+      "description": "Hotel check-in system used at multiple hotels in Japan, relying on facial recognition and passport/ID document scanning to verify guest identity at check-in.",
+      "known_breaches": [
+        "tabiq-2026-breach"
+      ],
+      "notes": "Not a dedicated identity-verification vendor; included because it directly collected and exposed guest passports and driver's licenses via a misconfigured cloud storage bucket."
+    },
+    {
+      "id": "nyc-health-hospitals",
+      "name": "NYC Health + Hospitals",
+      "website": "https://www.nychealthandhospitals.org",
+      "region": "US",
+      "type": "kyc",
+      "description": "The largest public municipal healthcare system in the United States, requiring identity documents and biometric enrollment (fingerprints) for patient and employee identity verification.",
+      "known_breaches": [
+        "nyc-health-hospitals-2026-breach"
+      ],
+      "notes": "Not a dedicated identity-verification vendor; included because a third-party vendor breach exposed patients' and employees' government IDs and biometric fingerprint/palm-print data."
+    },
+    {
+      "id": "discord-persona-5ca",
+      "name": "Persona Identities / 5CA (Discord vendor)",
+      "website": "https://withpersona.com",
+      "region": "global",
+      "type": "age_verification",
+      "description": "Third-party age-verification vendor chain used by Discord, involving identity verification software (Persona Identities) and outsourced support provider 5CA.",
+      "known_breaches": [
+        "discord-5ca-2025-breach"
+      ],
+      "notes": "Distinct entry documenting the specific third-party vendor (5CA) blamed for the original October 2025 Discord breach, as clarified in later reporting; not to be confused with the main Discord entry already tracked."
+    },
+    {
+      "id": "uae-pass",
+      "name": "UAE Pass",
+      "website": "https://uaepass.ae",
+      "region": "global",
+      "type": "id_verification",
+      "description": "United Arab Emirates' national digital identity system offering biometric (face) login and a single sign-on used across more than 6,000 government and private services, with over 5 million users.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "saudi-nafath-absher",
+      "name": "Nafath / Absher (Saudi Arabia)",
+      "website": "https://www.absher.sa",
+      "region": "global",
+      "type": "id_verification",
+      "description": "Saudi Arabia's national single sign-on and digital identity system (Nafath, built on the Absher platform), combining national ID, OTP, and facial recognition for over 530 integrated government and private services with 3 billion-plus logins.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "gosuslugi-esia",
+      "name": "Gosuslugi / ESIA (Russia)",
+      "website": "https://www.gosuslugi.ru",
+      "region": "global",
+      "type": "id_verification",
+      "description": "Russia's federal public-services portal (Gosuslugi) and its underlying Unified Identification and Authentication System (ESIA), used for passport applications, tax filings, and identity verification against a national Unified Biometric System.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date; included given its status as Russia's mandated domestic digital-ID system following a 2023 ban on foreign ID verification services."
+    },
+    {
+      "id": "marriott-starwood",
+      "name": "Marriott International / Starwood Hotels",
+      "website": "https://www.marriott.com",
+      "region": "US",
+      "type": "kyc",
+      "description": "Global hotel chain that acquired Starwood Hotels & Resorts in 2016; Starwood's guest reservation database stored passport numbers and personal data collected to comply with local hotel-registration laws in various countries.",
+      "known_breaches": [
+        "marriott-starwood-2018-breach"
+      ],
+      "notes": "Not a dedicated identity-verification vendor; included because its Starwood guest database directly stored and exposed millions of passport numbers."
+    },
+    {
+      "id": "t-mobile-us",
+      "name": "T-Mobile US",
+      "website": "https://www.t-mobile.com",
+      "region": "US",
+      "type": "kyc",
+      "description": "Major US wireless telecommunications carrier that collects Social Security numbers and driver's license/ID numbers from customers and applicants for account verification and credit checks.",
+      "known_breaches": [
+        "t-mobile-2021-breach"
+      ],
+      "notes": "Not a dedicated identity-verification vendor; included because its systems directly stored and exposed customer SSNs and driver's license numbers used for identity verification during account signup."
+    },
+    {
+      "id": "optus",
+      "name": "Optus (Singtel)",
+      "website": "https://www.optus.com.au",
+      "region": "APAC",
+      "type": "kyc",
+      "description": "Australia's second-largest telecommunications carrier, owned by Singapore's Singtel, that collects passport numbers, driver's licence numbers, and Medicare details from customers for identity verification and account setup.",
+      "known_breaches": [
+        "optus-2022-breach"
+      ],
+      "notes": "Not a dedicated identity-verification vendor; included because it directly stored and exposed customers' passport and driver's licence numbers used for identity verification."
+    },
+    {
+      "id": "medibank",
+      "name": "Medibank Private",
+      "website": "https://www.medibank.com.au",
+      "region": "APAC",
+      "type": "kyc",
+      "description": "Australia's largest private health insurer, which collects Medicare numbers and, for international student customers, passport and visa details as part of identity and eligibility verification.",
+      "known_breaches": [
+        "medibank-2022-breach"
+      ],
+      "notes": "Not a dedicated identity-verification vendor; included because it directly stored and exposed Medicare numbers and international students' passport numbers used for identity/eligibility verification."
+    },
+    {
+      "id": "monroe-university",
+      "name": "Monroe University",
+      "website": "https://www.monroeu.edu",
+      "region": "US",
+      "type": "id_verification",
+      "description": "US private university in New York that collects Social Security numbers, driver's license numbers, passport numbers, and government identification numbers from students and staff for enrollment, financial aid, and identity verification.",
+      "known_breaches": [
+        "monroe-university-2026-breach"
+      ],
+      "notes": "Not a dedicated identity-verification vendor; included because it directly stored and exposed students' and staff's government-issued identity document numbers."
+    },
+    {
+      "id": "aylo-mindgeek",
+      "name": "Aylo (formerly MindGeek)",
+      "website": "https://www.aylo.com",
+      "region": "global",
+      "type": "age_verification",
+      "description": "Operator of major adult-content platforms including Pornhub, YouPorn, and RedTube, using third-party identity verification (Yoti) for content uploaders and various age-assurance methods (credit card, mobile carrier, open banking) for viewers depending on jurisdiction.",
+      "known_breaches": [
+        "aylo-mindgeek-2025-ftc-settlement"
+      ],
+      "notes": "Not a dedicated identity-verification vendor; included because it directly retained uploaders' unencrypted identity documents and Social Security numbers collected via its Yoti-powered verification process."
+    },
+    {
+      "id": "serasa-experian-brazil",
+      "name": "Serasa Experian (Brazil)",
+      "website": "https://www.serasaexperian.com.br",
+      "region": "LATAM",
+      "type": "kyc",
+      "description": "Brazilian subsidiary of global credit bureau Experian, providing credit scoring, identity verification, and KYC data products (including the Mosaic consumer-segmentation service) to Brazilian businesses.",
+      "known_breaches": [
+        "serasa-experian-2021-breach"
+      ],
+      "notes": "Experian disputes that its own systems were breached, but the leaked dataset closely mirrored Serasa-collected data categories and was widely attributed to the company in Brazilian media and ongoing litigation."
+    },
+    {
+      "id": "buro-de-credito-mexico",
+      "name": "Buró de Crédito (Mexico)",
+      "website": "https://www.burodecredito.com.mx",
+      "region": "LATAM",
+      "type": "kyc",
+      "description": "Mexico's principal credit-reporting bureau, used by banks and lenders for identity verification and creditworthiness checks nationwide.",
+      "known_breaches": [
+        "buro-de-credito-2023-breach"
+      ],
+      "notes": "Not a dedicated identity-verification vendor in the KYC/IDV industry sense, but a credit bureau whose data underpins identity and creditworthiness checks; Mexico's banking regulator (CNBV) was notified of a data exposure in 2022-2023."
+    },
+    {
+      "id": "eguwallet",
+      "name": "EguWallet",
+      "website": "https://eguwallet.eu",
+      "region": "EU",
+      "type": "id_verification",
+      "description": "eIDAS 2.0-certified European Digital Identity (EUDI) Wallet developed by IT Eguilde SRL, allowing citizens to store and present ID cards, driving licences, diplomas, and qualified signatures from a mobile device, recognised across all 27 EU member states.",
+      "known_breaches": [],
+      "notes": "No confirmed public breach identified as of research date."
+    },
+    {
+      "id": "verizon",
+      "name": "verizon",
+      "website": "",
+      "region": "",
+      "type": "unknown",
+      "description": "Auto-created from automated candidate; please verify and expand."
+    }
   ]
 }

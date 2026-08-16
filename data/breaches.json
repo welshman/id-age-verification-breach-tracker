@@ -1,37 +1,916 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-08-15",
+  "last_updated": "2026-08-16",
   "breaches": [
-    {"id": "au10tix-2024-credential-exposure", "title": "AU10TIX Admin Credential Exposure", "date": "2024-06-26", "companies": ["au10tix"], "data_types": ["passport", "national_id", "drivers_license", "selfie", "dob", "full_name"], "severity": "high", "summary": "Administrative credentials to AU10TIX's internal logging platform were exposed online for more than a year and remained functional when discovered.", "details": "404 Media reported that AU10TIX, an Israeli identity-verification vendor used behind the scenes by platforms including TikTok, Uber, X, and LinkedIn, left administrative credentials to a logging platform exposed after they were harvested by infostealer malware from an employee's machine and posted to Telegram. The credentials were still active when tested in June 2024, roughly a year after exposure. Access reportedly allowed viewing of end-user names, dates of birth, nationalities, ID numbers, document types, and links to uploaded identity-document images. AU10TIX stated it found no evidence the access was exploited maliciously and later clarified that the exposed logging environment was not directly connected to production identity data.", "sources": ["https://www.eff.org/deeplinks/2024/06/hack-age-verification-company-shows-privacy-danger-social-media-laws", "https://9to5mac.com/2024/06/27/identity-verification-company-au10tix/", "https://www.au10tix.com/blog/au10tix-clarifies-past-security-event-no-evidence-of-data-exposure-or-customer-impact/"], "affected_regions": ["global"], "verification_type": "id_verification"},
-    {"id": "fractal-id-2024-api-breach", "title": "Fractal ID API Unauthorized Access", "date": "2024-07-14", "companies": ["fractal-id"], "data_types": ["passport", "selfie", "address", "full_name", "email"], "severity": "medium", "summary": "An unauthorized third party used a compromised operator account to run an API script that extracted user KYC data from Fractal ID.", "details": "Fractal ID, a Web3-focused identity verification provider, disclosed that on July 14, 2024 an unauthorized party accessed an operator's account and executed an API script over roughly two hours, extracting personal information for approximately 0.5% of its user base (potentially over 50,000 users out of about 1 million). Exposed data included names, email addresses, cryptocurrency wallet addresses, phone numbers, physical addresses, and images of uploaded KYC documents including passports.", "sources": ["https://cryptoslate.com/web3-kyc-vendor-fractal-id-loses-over-50k-users-passport-info-in-data-breach/"], "affected_regions": ["global"], "verification_type": "kyc"},
-    {"id": "signzy-2024-malware-incident", "title": "Signzy Infostealer Malware Incident", "date": "2024-11-25", "companies": ["signzy"], "data_types": ["unspecified_customer_data"], "severity": "medium", "summary": "Signzy, an Indian digital KYC provider, confirmed a security breach involving information-stealer malware that may have exposed some customer data.", "details": "Signzy, a Bengaluru-based provider of online identity verification and KYC infrastructure for banks and fintechs, confirmed a cyberattack involving infostealer malware detected in late November 2024. Some data reportedly briefly appeared on a cybercrime forum. Major clients including PayU and ICICI Bank stated their own customer data was not exposed. Signzy did not publicly disclose the full scope of data exfiltrated.", "sources": ["https://cybermaterial.com/signzy-suffers-cyberattack-on-kyc-services/"], "affected_regions": ["APAC"], "verification_type": "kyc"},
-    {"id": "mygiftcardsupply-2024-exposed-storage", "title": "MyGiftCardSupply Exposed KYC Document Storage", "date": "2024-12-01", "companies": ["mygiftcardsupply"], "data_types": ["passport", "drivers_license", "national_id"], "severity": "high", "summary": "A publicly exposed cloud storage server run by US gift-card retailer MyGiftCardSupply left hundreds of thousands of customer identity documents accessible without authentication.", "details": "A security researcher known as JayeLTee discovered a publicly exposed online storage server belonging to MyGiftCardSupply, a US company that sells digital gift cards and requires customers to upload identity documents to comply with anti-money-laundering (KYC) rules. The server exposed driving licenses, passports, and other identity documents for hundreds of thousands of customers. The company secured the server after disclosure and stated it would conduct an audit of its KYC verification process and delete files promptly after verification going forward.", "sources": ["https://finance.yahoo.com/news/online-gift-card-store-exposed-150044254.html"], "affected_regions": ["US"], "verification_type": "kyc"},
-    {"id": "transak-2025-kyc-vendor-breach", "title": "Transak Third-Party KYC Vendor Breach", "date": "2025-02-04", "companies": ["transak-kyc-vendor"], "data_types": ["passport", "drivers_license", "selfie", "dob", "full_name"], "severity": "medium", "summary": "A phishing attack on an employee laptop at a third-party KYC vendor used by crypto payment gateway Transak led to exposure of roughly 92,500 users' identity data.", "details": "Transak, a fiat-to-crypto payment gateway, disclosed that a breach at its third-party KYC vendor exposed personal information for approximately 92,554 users, about 1.14% of its user base. The incident was reportedly initiated by a phishing attack on an employee's laptop, granting unauthorized access to the vendor's systems. Stolen data included names, birth dates, government-issued IDs (passports and driver's licenses), and verification selfies. Transak stated no financial account data was compromised.", "sources": ["https://cyberpress.org/breach-in-transaks-kyc/"], "affected_regions": ["global"], "verification_type": "kyc"},
-    {"id": "tea-app-2025-breach", "title": "Tea App Legacy Storage Breach", "date": "2025-07-25", "companies": ["tea-app"], "data_types": ["selfie", "drivers_license", "passport"], "severity": "critical", "summary": "An unsecured legacy Firebase storage bucket exposed roughly 72,000 images from the Tea dating-safety app, including about 13,000 verification selfies and government ID photos.", "details": "On July 25, 2025, the women's dating-safety app Tea confirmed that hackers accessed an unsecured, publicly listable legacy Firebase storage bucket, extracting approximately 72,000 images. Around 13,000 of these were verification selfies and government ID photos (driver's licenses and passports) that Tea's own privacy policy claimed were deleted after verification but had in fact been retained. The remaining roughly 59,000 images came from posts, comments, and direct messages. Only users who signed up before February 2024 were affected. The leaked images were posted to 4chan and used to build harassment sites and location-mapping tools targeting affected women. A second breach days later exposed over a million private messages.", "sources": ["https://www.nbcnews.com/tech/social-media/tea-app-hacked-13000-photos-leaked-4chan-call-action-rcna221139", "https://www.nytimes.com/2025/07/26/us/tea-safety-dating-app-hack.html", "https://techcrunch.com/2025/07/29/tea-apps-data-breach-gets-much-worse-exposing-over-a-million-private-messages/", "https://www.npr.org/2025/08/02/nx-s1-5483886/tea-app-breach-hacked-whisper-networks"], "affected_regions": ["US", "global"], "verification_type": "age_verification"},
-    {"id": "discord-2025-zendesk-breach", "title": "Discord Third-Party Support System (Zendesk) Breach", "date": "2025-10-08", "companies": ["discord-trust-safety"], "data_types": ["passport", "drivers_license", "selfie", "email", "billing_info"], "severity": "critical", "summary": "Hackers compromised a third-party customer-support platform used by Discord, stealing over two million government ID images submitted for age verification.", "details": "Discord confirmed that an unauthorized party gained access to a third-party customer-service platform (widely reported as Zendesk-based) used by its support and Trust & Safety teams. Attackers reportedly stole around 2,185,151 government ID images, primarily passports and driver's licenses, submitted by users flagged by Discord's automated moderation for age verification, along with usernames, email addresses, partial billing information, IP addresses, and support correspondence. The attackers, per researcher group VX-Underground, claimed to have taken about 1.5 terabytes of data and threatened to leak it unless a ransom was paid. Discord stated passwords and private messages outside of support interactions were not affected.", "sources": ["https://www.yahoo.com/news/articles/hackers-threaten-leak-2-1m-172852594.html", "https://www.computing.co.uk/news/2025/security/discord-privacy-breach-fears-personal-ids"], "affected_regions": ["global"], "verification_type": "age_verification"},
-    {"id": "sumsub-2024-2026-disclosure", "title": "Sumsub Long-Undetected Intrusion", "date": "2026-02-01", "companies": ["sumsub"], "data_types": ["full_name", "email", "phone_number"], "severity": "high", "summary": "Sumsub disclosed in February 2026 that attackers had accessed an internal support environment starting in July 2024, undetected for roughly 18 months.", "details": "Sumsub, a leading global online identity-verification and KYC provider serving major cryptocurrency exchanges (including Bitget, Bybit, MoonPay, Bitpanda, Wirex, BingX, MEXC, Huobi, and Coinlist), disclosed in early February 2026 that it had suffered a cyberattack dating back to July 2024, discovered only in January 2026 during a security audit. The attacker used a malicious attachment sent through a third-party support-ticket platform to gain unauthorized access to an internal customer-support environment. Sumsub stated no identity documents, biometric data, or banking information were confirmed leaked, but names, email addresses, and phone numbers of an undetermined number of clients were exposed. The exact scope remained unclear at time of disclosure.", "sources": ["https://lebot-avocat.com/en/sumsub-data-breach-cyberattack-exposes-kyc-chain-risks/"], "affected_regions": ["global"], "verification_type": "kyc"},
-    {"id": "idmerit-2025-2026-mongodb-exposure", "title": "IDMerit Unsecured MongoDB Database (1 Billion Records)", "date": "2026-02-18", "companies": ["idmerit"], "data_types": ["national_id", "dob", "address", "phone_number", "email", "full_name"], "severity": "critical", "summary": "An unauthenticated MongoDB database linked to identity-verification provider IDMerit exposed roughly one billion sensitive personal records across 26 countries.", "details": "Cybernews researchers discovered on November 11, 2025 that IDMerit, a California-based AI-powered identity-verification provider, had left a MongoDB deployment exposed to the public internet without authentication. The database was secured the following day, but public disclosure did not occur until February 18, 2026, roughly 99 days later. The exposure totaled around three billion records overall, of which approximately one billion contained sensitive personal data across 26 countries, including full legal names, home addresses, postal codes, dates of birth, government-issued national ID numbers, phone numbers, email addresses, gender, telecom metadata, and KYC/AML verification logs.", "sources": ["https://www.zyphe.com/resources/news/idmerit-data-leak", "https://cybernews.com/security/global-data-leak-exposes-billion-records/", "https://www.quantrail-data.com/1-billion-kyc-records-exposed-in-massive-identity-data-leak"], "affected_regions": ["global"], "verification_type": "kyc"},
-    {"id": "puffpal-2026-passport-exposure", "title": "PuffPal Cannabis Club Passport Exposure", "date": "2026-06-10", "companies": ["nefos-puffpal"], "data_types": ["passport", "drivers_license"], "severity": "critical", "summary": "Nearly one million passports and driver's licenses used for age verification at European cannabis social clubs were left unprotected on the open internet for months.", "details": "A database of almost a million passports and photo IDs from multiple countries, used for age and identity verification at cannabis social clubs and retailers via the PuffPal platform operated by Nefos, was found exposed on unprotected, publicly accessible URLs with no password protection. The documents were reportedly discoverable for months before being secured, following reporting by The Verge. Security researcher Bruce Schneier highlighted the incident as an example of a high-value credential (a passport) being put at risk by a comparatively low-security ancillary verification system.", "sources": ["https://www.schneier.com/blog/archives/2026/06/one-million-passports-leaked-online.html", "https://cambridgeanalytica.org/data-breaches-scandals/passports-driver-licenses-exposed-public-internet-2026-51096/"], "affected_regions": ["EU"], "verification_type": "age_verification"},
-    {"id": "equifax-2017-breach", "title": "Equifax Data Breach", "date": "2017-09-07", "companies": ["equifax"], "data_types": ["full_name", "dob", "address", "national_id", "drivers_license"], "severity": "critical", "summary": "A vulnerability in Equifax's web application allowed attackers to access sensitive personal and identity data for approximately 147 million people.", "details": "Equifax, one of the largest US credit bureaus and a provider of identity verification and KYC data products, disclosed in September 2017 that attackers exploited an unpatched Apache Struts vulnerability to access its systems between May and July 2017. The breach exposed Social Security numbers, birth dates, addresses, and in some cases driver's license numbers for approximately 147 million people, along with credit card numbers for around 209,000 consumers. The incident remains one of the largest breaches of identity-verification-relevant data in US history and led to a $700 million settlement with US regulators.", "sources": ["https://www.ftc.gov/enforcement/refunds/equifax-data-breach-settlement"], "affected_regions": ["US", "global"], "verification_type": "kyc"},
-    {"id": "transunion-2025-breach", "title": "TransUnion Third-Party Application Breach", "date": "2025-07-28", "companies": ["transunion"], "data_types": ["full_name", "dob", "national_id"], "severity": "high", "summary": "TransUnion disclosed a breach via a third-party application affecting the personal information of millions of US consumers.", "details": "TransUnion, a major US credit bureau and identity-data provider, disclosed in 2025 that an unauthorized party gained access to a third-party application supporting its US consumer support operations, exposing personal information including names, dates of birth, and Social Security numbers for millions of individuals. TransUnion stated its core credit database was not affected and notified impacted consumers directly.", "sources": ["https://www.hypr.com/blog/transunion-2025-state-of-omnichannel-fraud-report-insights"], "affected_regions": ["US"], "verification_type": "kyc"},
-    {"id": "binance-2019-kyc-leak", "title": "Binance KYC Image Leak", "date": "2019-08-07", "companies": ["binance"], "data_types": ["passport", "selfie", "national_id"], "severity": "high", "summary": "Images of passports, IDs, and selfies submitted by roughly 60,000 Binance users for KYC verification circulated on Telegram after an alleged third-party vendor breach.", "details": "In August 2019, a Telegram user calling themselves 'Guardian M' published numerous images showing individuals holding identification documents alongside papers labeled 'Binance,' claiming to have obtained the data through a breach. CoinDesk confirmed with several affected users that the images matched KYC documents they had submitted to Binance in 2018 and 2019. Binance stated the leaked data did not match its internal database and pointed to a compromised third-party vendor, but around 60,000 users were reportedly affected. The incident was linked to a broader cyberattack on Binance the prior May that also resulted in the theft of 7,000 bitcoin.", "sources": ["https://finance.yahoo.com/news/binance-customer-data-leaking-know-125156463.html", "https://www.linkedin.com/pulse/100000-users-exposed-kyc-turned-exchanges-data-marcel-thiess-fica-cttpf"], "affected_regions": ["global"], "verification_type": "kyc"},
-    {"id": "coinbase-2024-2025-breach", "title": "Coinbase Bribed Support-Contractor Breach", "date": "2024-12-01", "companies": ["coinbase"], "data_types": ["full_name", "address", "dob", "national_id", "passport", "drivers_license", "bank_details"], "severity": "critical", "summary": "Hackers bribed overseas customer-support contractors to exfiltrate KYC and personal data for roughly 70,000 Coinbase users, later demanding a $20 million ransom.", "details": "Coinbase, the largest US cryptocurrency exchange, disclosed in an SEC filing in May 2025 that a breach originating in December 2024 exposed personal information for approximately 69,461 users. The attackers bribed customer-support agents employed by third-party contractor TaskUs in India to copy internal data using personal phones, rather than exploiting a technical vulnerability. Exposed data included names, addresses, dates of birth, nationalities, government-issued ID images, partial Social Security numbers, masked bank account details, and KYC-related records. Attackers demanded a $20 million ransom to prevent public release of the data; Coinbase refused to pay and instead offered a bounty for information leading to the attackers' identification. Similar bribery attempts were reportedly made against Binance and Kraken, which said their access controls prevented a similar breach.", "sources": ["https://finance.yahoo.com/news/binance-customer-data-leaking-know-125156463.html", "https://www.dlnews.com/articles/people-culture/binance-kraken-dodge-coinbase-breach-using-ai-access-rules/", "https://www.binance.com/en/square/post/25122602460841"], "affected_regions": ["US", "global"], "verification_type": "kyc"},
-    {"id": "france-titres-2026-breach", "title": "France Titres (ANTS) National ID Database Breach", "date": "2026-04-15", "companies": ["france-titres"], "data_types": ["full_name", "dob", "email", "address", "national_id", "passport", "drivers_license"], "severity": "critical", "summary": "Hackers breached France's national identity-document database (France Titres/ANTS), stealing 18-19 million records covering roughly a third of the country's adult population.", "details": "France's Interior Ministry detected an intrusion on April 15, 2026 into infrastructure operated by France Titres (ANTS), the government agency managing the national database of identity documents including biometric passports, national ID cards, and driving licences. Attackers gained unauthorized access to identifying information and subsequently advertised a database of an estimated 18 to 19 million records for sale on criminal forums, a figure representing roughly a third of France's adult population. Exposed data reportedly included full names, email addresses, dates of birth, and unique account identifiers, with some records also including home addresses and phone numbers. French cybersecurity authority ANSSI opened an investigation into the incident.", "sources": ["https://www.europe-infos.fr/english/8595/frances-id-and-passport-portal-was-hacked-millions-may-now-be-targets-for-scams-and-identity-fraud/", "https://www.biometricupdate.com/202604/french-govt-confirms-hack-of-at-least-18m-records-from-id-document-database"], "affected_regions": ["EU"], "verification_type": "id_verification"},
-    {"id": "eurail-2025-2026-breach", "title": "Eurail/Interrail Passport Data Breach", "date": "2025-12-26", "companies": ["eurail"], "data_types": ["passport", "full_name", "dob", "email", "address", "phone_number", "bank_details"], "severity": "critical", "summary": "A December 2025 cyberattack on Eurail, the operator of Interrail travel passes, exposed passport numbers and personal data for over 308,000 European travellers.", "details": "Eurail, which sells Interrail rail passes used across Europe, confirmed in April 2026 that a cyberattack on December 26, 2025 compromised personal data for 308,777 travellers, including passport numbers, full names, dates of birth, phone numbers, and email and home addresses. A subset of affected users who had taken part in the EU-funded DiscoverEU youth travel program also had passport scans, bank account numbers, and some health data exposed. A sample of the stolen dataset was published on Telegram and the full set was reportedly offered for sale on the dark web, prompting some affected travellers to be advised to cancel and reissue their passports.", "sources": ["https://www.theguardian.com/technology/2026/apr/23/some-interrail-travellers-told-to-cancel-passports-as-hacked-data-posted-online", "https://www.intheeventof.co/guides/breaches/eurail-2026"], "affected_regions": ["EU"], "verification_type": "kyc"},
-    {"id": "uk-visa-portal-2026-breach", "title": "UK Visa Portal (ETA-Pass) Passport & Selfie Exposure", "date": "2026-05-27", "companies": ["uk-visa-portal"], "data_types": ["passport", "selfie", "address"], "severity": "high", "summary": "A third-party UK visa-application website publicly exposed at least 100,000 passports, selfies, and location data belonging to applicants, and did not fix the leak after disclosure.", "details": "TechCrunch reported in May 2026 that a website called UK Visa Portal, also known as UK Visit or ETA-Pass, publicly exposed passports and selfie photographs belonging to at least 100,000 applicants who had used the third-party commercial site to apply for UK visas or Electronic Travel Authorisations. The exposed data included location metadata tied to submitted documents. Rather than fixing the exposure after being notified, the website's operators reportedly sent legal threats to the researcher and TechCrunch instead of securing the data.", "sources": ["https://techcrunch.com/2026/05/27/uk-visa-portal-spilled-thousands-of-applicants-passports-and-selfies-online-and-hasnt-fixed-the-leak/"], "affected_regions": ["UK", "global"], "verification_type": "id_verification"},
-    {"id": "renaper-2021-breach", "title": "RENAPER Argentina National ID Database Breach", "date": "2021-10-13", "companies": ["renaper-argentina"], "data_types": ["full_name", "national_id", "dob", "photo"], "severity": "critical", "summary": "An attacker used a compromised government VPN account to query Argentina's national identity database for records covering nearly all 45 million citizens.", "details": "In October 2021, an attacker exfiltrated personal identity records for close to all 45 million registered Argentines from RENAPER (Registro Nacional de las Personas), the government agency responsible for issuing national ID cards. As proof, photos and personal details of high-profile individuals including then-President Alberto Fernandez and footballer Lionel Messi were posted to Twitter, and the full dataset was subsequently offered for sale on a dark-web forum. Argentina's Ministry of Interior stated the RENAPER database itself was not breached and instead opened an investigation into eight government employees suspected of insider involvement in accessing the system improperly.", "sources": ["https://www.cyberbreaches.org/en/incidents/argentina-renaper-2021"], "affected_regions": ["LATAM"], "verification_type": "id_verification"},
-    {"id": "aadhaar-2018-leaks", "title": "Aadhaar Biometric Database Exposures", "date": "2018-01-04", "companies": ["aadhaar-uidai"], "data_types": ["full_name", "address", "email", "phone_number", "national_id", "photo"], "severity": "critical", "summary": "Multiple reported incidents in 2018 described unauthorized access to India's Aadhaar biometric national identity database, including personal data allegedly sold online for a small fee.", "details": "In January 2018, The Tribune newspaper reported that access to Aadhaar demographic data for over a billion enrolled Indians, including names, addresses, photographs, and phone numbers, could reportedly be purchased for a small fee via anonymous groups, and that software to create counterfeit Aadhaar cards was also being offered. UIDAI, the government body managing Aadhaar, disputed that biometric data (fingerprints or retina scans) was exposed and stated the newspaper likely accessed only limited data through an internal government search tool. In March 2018 a further reported vulnerability in a government utility's system was said to allow access to Aadhaar numbers and banking information. UIDAI maintained that Aadhaar's core database remained secure throughout.", "sources": ["https://www.theguardian.com/world/2018/jan/04/india-national-id-database-data-leak-bought-online-aadhaar", "https://www.reuters.com/article/world/new-data-leak-hits-indias-national-id-card-database-aadhaar-zdnet-idUSKBN1H00K2/"], "affected_regions": ["APAC"], "verification_type": "id_verification"},
-    {"id": "sweden-bankid-cgi-2026-breach", "title": "CGI Sweden Breach Linked to BankID Infrastructure", "date": "2026-03-17", "companies": ["sweden-bankid-cgi"], "data_types": ["source_code", "credentials"], "severity": "high", "summary": "A hacker group calling itself ByteToBreach claimed to have stolen source code and credentials from IT contractor CGI's Swedish division, related to infrastructure used by public authorities and Sweden's BankID authentication system.", "details": "In March 2026, a hacker group known as ByteToBreach claimed responsibility for a breach affecting CGI's Swedish division, alleging theft of a large dataset including source code reportedly used by Swedish public authorities. The group also claimed additional databases containing personal data and electronic signature documents were being sold separately. The incident drew scrutiny given Sweden's reliance on the bank-backed BankID digital identity system for citizen authentication, and came as Sweden's government was preparing to launch a state-backed digital identity alternative (Sverige-ID).", "sources": ["https://www.biometricupdate.com/202603/swedens-bankid-breached-by-hacker-group-as-govt-prepares-e-id-launch"], "affected_regions": ["EU"], "verification_type": "id_verification"},
-    {"id": "bangladesh-nid-2023-leak", "title": "Bangladesh National ID (NID) Database Exposure", "date": "2023-06-27", "companies": ["nid-bangladesh"], "data_types": ["full_name", "dob", "phone_number", "email", "national_id"], "severity": "high", "summary": "A security researcher discovered that personal data for an estimated 50 million Bangladeshi citizens, including national ID numbers, was publicly accessible via a government website.", "details": "A cybersecurity specialist reported discovering on June 27, 2023 that names, dates of birth, phone numbers, email addresses, and National Identity (NID) numbers for an estimated 50 million Bangladeshi citizens were openly accessible via a government website, discoverable through simple web searches. Bangladesh's Computer Incident Response Team (CIRT) acknowledged the report and launched an investigation following public disclosure of the exposure.", "sources": ["https://www.dhakatribune.com/bangladesh/319028/has-a-massive-data-breach-exposed-personal-info-of"], "affected_regions": ["APAC"], "verification_type": "id_verification"},
-    {"id": "duc-app-2026-breach", "title": "Duc App Exposed KYC Documents (5-Year Exposure)", "date": "2026-04-02", "companies": ["duc-app"], "data_types": ["passport", "drivers_license", "selfie", "full_name", "address"], "severity": "critical", "summary": "A Canadian money-transfer app left an unencrypted, password-free Amazon storage server publicly exposed for approximately five years, revealing over 360,000 identity documents.", "details": "TechCrunch reported in April 2026 that Duc, a Toronto-based money-transfer app owned by fintech company Duales, left a publicly accessible Amazon-hosted storage server exposed without a password for roughly five years. Security researcher Anurag Sen discovered the misconfiguration; the server listed over 360,000 files uploaded since September 2020, including driver's licenses, passports, and selfies collected for KYC identity verification, plus spreadsheets containing customer names, addresses, and transaction details. The data was also stored unencrypted. Duales resolved the exposure on April 2, 2026 after being contacted by TechCrunch, and Canada's Office of the Privacy Commissioner reached out to the company regarding next steps.", "sources": ["https://techcrunch.com/2026/04/02/canadian-money-transfer-app-duc-expose-drivers-licenses-passports-amazon-server/", "https://www.privacyguides.org/news/2026/04/03/data-breach-roundup-mar-27-apr-2-2026/", "https://canadabreaches.ca/"], "affected_regions": ["LATAM", "global"], "verification_type": "kyc"},
-    {"id": "paytel-2026-breach", "title": "Pay Tel Prison Communications Vendor Exposed IDs", "date": "2026-05-04", "companies": ["paytel-communications"], "data_types": ["drivers_license", "passport", "selfie", "national_id"], "severity": "high", "summary": "An unprotected Microsoft Azure storage bucket belonging to prison-communications vendor Pay Tel exposed 3.4 million documents, including an estimated 300,000 unique driver's licenses and other IDs.", "details": "UpGuard researchers discovered on May 4, 2026 a publicly exposed Microsoft Azure-hosted storage bucket belonging to Pay Tel Communications, a corrections-industry vendor supplying jail and prison communications services primarily in the southeastern United States. The bucket held 3.4 million documents totaling 1.1 terabytes, including an estimated 300,000 unique driver's licenses along with smaller numbers of passports and Social Security cards, submitted by people wishing to communicate with incarcerated individuals as part of Pay Tel's identity-verification signup process. Profile photos and private inmate communications were also exposed. Pay Tel secured the server after being notified.", "sources": ["https://techcrunch.com/2026/05/28/a-security-lapse-at-prison-payphone-service-pay-tel-publicly-exposed-over-300000-callers-drivers-licenses/", "https://www.upguard.com/breaches/breaking-containment-how-a-corrections-vendor-exposed-inmate-communications"], "affected_regions": ["US"], "verification_type": "id_verification"},
-    {"id": "tabiq-2026-breach", "title": "Tabiq Hotel Check-In System Passport Exposure", "date": "2026-05-15", "companies": ["tabiq-hotel-checkin"], "data_types": ["passport", "drivers_license", "selfie"], "severity": "critical", "summary": "A misconfigured public Amazon S3 bucket used by Japanese hotel check-in system Tabiq exposed roughly a million passports and driver's licenses submitted for facial-recognition guest verification.", "details": "Tabiq, a facial-recognition and document-scanning check-in system used at multiple hotels in Japan, exposed approximately one million passports and driver's licenses via a publicly accessible Amazon S3 storage bucket that required no password, according to reporting compiled by Privacy Guides in May 2026. Amazon S3 buckets default to private access, making the misconfiguration notable. The exposure was one of several similar identity-document leaks reported around the same period, alongside the PuffPal/Nefos cannabis-club breach, prompting comparisons between the two incidents.", "sources": ["https://www.privacyguides.org/news/2026/05/22/data-breach-roundup-may-15-21-2026/", "https://techcrunch.com/2026/07/07/the-worst-hacks-and-breaches-of-2026-so-far/"], "affected_regions": ["APAC"], "verification_type": "id_verification"},
-    {"id": "nyc-health-hospitals-2026-breach", "title": "NYC Health + Hospitals Third-Party Vendor Breach (Fingerprints Stolen)", "date": "2025-11-25", "companies": ["nyc-health-hospitals"], "data_types": ["full_name", "national_id", "passport", "drivers_license", "biometric_fingerprint", "address", "geolocation"], "severity": "critical", "summary": "An intrusion via an unnamed third-party vendor exposed medical, financial, and biometric data including fingerprints and palm prints for at least 1.8 million people at NYC's largest public hospital system.", "details": "NYC Health + Hospitals, the largest municipal public-hospital system in the United States, confirmed on May 18, 2026 that an unauthorized actor accessed its systems between approximately November 25, 2025 and February 11, 2026 via a security flaw at an undisclosed third-party vendor, going undetected for roughly two and a half months before discovery on February 2, 2026. Exposed data varied by individual but could include health insurance information, medical records (diagnoses, medications, test results, imagery), Social Security numbers, passports, driver's licenses, billing and payment information, precise geolocation data, and biometric fingerprint and palm-print scans, the last of which NYC H+H requires employees to enroll for criminal-background checks. This was among the first major US public-hospital breaches to confirm loss of raw biometric identifiers, which unlike passwords or account numbers cannot be reissued.", "sources": ["https://www.privacyguides.org/news/2026/05/22/data-breach-roundup-may-15-21-2026/", "https://www.techradar.com/pro/security/nyc-health-hospitals-says-mega-data-breach-allowed-hackers-to-steal-personal-data-medical-records-and-fingerprints-scans-of-around-1-8-million-people", "https://www.nychealthandhospitals.org/pressrelease/notice-of-data-breach/"], "affected_regions": ["US"], "verification_type": "kyc"},
-    {"id": "discord-5ca-2025-breach", "title": "Discord Age-Verification Vendor Chain Exposure (Persona Identities / 5CA)", "date": "2025-10-09", "companies": ["discord-persona-5ca"], "data_types": ["passport", "drivers_license", "email", "ip_address"], "severity": "high", "summary": "Follow-up reporting found front-end code for Discord's age-verification vendor Persona Identities sitting exposed on a US government-authorized server, months after Discord attributed its original breach to third-party support provider 5CA.", "details": "In a statement on October 9, 2025, Discord attributed its earlier-reported breach to a third-party service provider, 5CA, rather than a breach of Discord's own systems, stating the incident affected only users who had contacted Discord's Customer Support or Trust and Safety teams and could include exposure of government IDs, IP addresses, and limited billing or corporate data. In February 2026, Fortune reported that Discord had used at least three separate age-verification vendors since the October incident, and that researchers found nearly 2,500 accessible files of front-end code belonging to age-verification vendor Persona Identities sitting on a US government-authorized endpoint. Discord distanced itself from the Peter Thiel-backed vendor following the discovery. Discord maintained that identity documents uploaded for age verification are typically deleted immediately after age confirmation and that user identity is never associated with the account itself.", "sources": ["https://fortune.com/2026/02/24/discord-peter-thiel-backed-persona-identity-verification-breach/"], "affected_regions": ["global"], "verification_type": "age_verification"},
-    {"id": "marriott-starwood-2018-breach", "title": "Marriott/Starwood Guest Database Breach", "date": "2018-11-30", "companies": ["marriott-starwood"], "data_types": ["passport", "full_name", "address", "email", "phone_number", "dob", "payment_card"], "severity": "critical", "summary": "A four-year undetected intrusion into Starwood's guest reservation database, disclosed by Marriott in November 2018, exposed the personal data of up to 383 million unique guests, including 5.25 million unencrypted passport numbers.", "details": "Marriott International disclosed on November 30, 2018 that attackers had accessed Starwood's guest reservation database beginning in 2014, two years before Marriott acquired Starwood, and remained undetected until September 2018. The breach affected up to 383 million unique guest records, exposing combinations of names, mailing addresses, phone numbers, email addresses, passport numbers, Starwood Preferred Guest account information, dates of birth, gender, and arrival/departure information. Marriott confirmed in January 2019 that 5.25 million passport numbers were stored unencrypted, while a further 20.3 million were encrypted with no evidence the decryption key was accessed. The FTC found in 2024 that Marriott and Starwood had suffered three separate breaches between 2014 and 2020 affecting a combined 344 million customers worldwide, and the UK ICO separately fined Marriott £18.4 million in 2020. A 2024 multistate settlement with 50 US attorneys general required Marriott to implement a comprehensive information security program.", "sources": ["https://www.ftc.gov/news-events/news/press-releases/2024/10/ftc-takes-action-against-marriott-starwood-over-multiple-data-breaches", "https://www.latimes.com/business/la-fi-marriott-passport-20190104-story.html", "https://www.bbc.co.uk/news/technology-54748843", "https://portal.ct.gov/ag/press-releases/2024-press-releases/multistate-settlement-with-marriott-for-data-breach-of-starwood-guest-reservation-database"], "affected_regions": ["global"], "verification_type": "kyc"},
-    {"id": "t-mobile-2021-breach", "title": "T-Mobile SSN and Driver's License Breach", "date": "2021-08-16", "companies": ["t-mobile-us"], "data_types": ["full_name", "dob", "national_id", "drivers_license"], "severity": "critical", "summary": "A 2021 breach at T-Mobile exposed Social Security numbers and driver's license/ID numbers for over 76 million current, former, and prospective customers.", "details": "T-Mobile confirmed in August 2021 that hackers had accessed systems containing personal information for approximately 7.8 million current postpaid customers and around 40 million former or prospective customers, later revising the total to roughly 76.6 million affected individuals. Exposed data included first and last names, dates of birth, Social Security numbers, and driver's license or government ID numbers, information typically used for identity verification during account applications and credit checks. T-Mobile ultimately paid $350 million to settle a class-action lawsuit and committed a further $150 million to cybersecurity improvements. The 2021 incident was one of at least nine data breaches T-Mobile has disclosed since 2018, cumulatively resulting in over $531 million in penalties and settlements according to compiled analysis.", "sources": ["https://www.reuters.com/technology/hackers-steal-some-personal-data-about-78-mln-t-mobile-customers-2021-08-18/", "https://www.michigan.gov/ag/news/press-releases/2021/08/20/ag-nessel-reissues-consumer-alert-following-tmobile-data-breach", "https://en.wikipedia.org/wiki/T-Mobile_data_breach", "https://www.cloudskope.com/breaches/tmobile-data-breach"], "affected_regions": ["US"], "verification_type": "kyc"},
-    {"id": "optus-2022-breach", "title": "Optus Data Breach (Passports & Driver's Licences)", "date": "2022-09-22", "companies": ["optus"], "data_types": ["passport", "drivers_license", "national_id", "full_name", "dob", "address", "phone_number", "email"], "severity": "critical", "summary": "A September 2022 cyberattack on Australian telecom Optus exposed passport numbers, driver's licence numbers, and Medicare details for up to 9.8 million current and former customers, roughly 40% of Australia's population.", "details": "Optus, Australia's second-largest telecommunications carrier and a subsidiary of Singapore's Singtel, disclosed on September 22, 2022 that a cyberattack had exposed the personal information of up to 9.8 million current and former customers. Compromised data included names, dates of birth, phone numbers, email addresses, and for a subset of roughly 2.8 million customers, passport numbers, driver's licence numbers, and Medicare card numbers used for identity verification and account setup. The Australian government and multiple state governments demanded Optus cover the cost of replacing affected identification documents; Optus agreed to pay for passport replacements and several states funded free driver's licence reissuance. The Australian Information Commissioner filed civil penalty proceedings against Optus in 2025, alleging the company failed to take reasonable steps to protect personal information from unauthorized access dating back to 2019.", "sources": ["https://en.wikipedia.org/wiki/2022_Optus_data_breach", "https://www.oaic.gov.au/news/media-centre/australian-information-commissioner-takes-civil-penalty-action-against-optus", "https://apnews.com/article/technology-australia-hacking-telecommunications-3a7e004d3e129f92ab940314835edba8", "https://www.abc.net.au/news/2022-09-27/optus-data-breach-drivers-licence-change-numbers/101475118"], "affected_regions": ["APAC"], "verification_type": "kyc"},
-    {"id": "medibank-2022-breach", "title": "Medibank Ransomware Breach (Passports & Medicare Numbers)", "date": "2022-10-13", "companies": ["medibank"], "data_types": ["passport", "national_id", "full_name", "dob", "address", "phone_number", "email", "health_records"], "severity": "critical", "summary": "A ransomware attack on Australia's largest private health insurer, Medibank, exposed Medicare numbers, international students' passport numbers, and sensitive health-claims data for nearly 10 million customers.", "details": "Medibank Private disclosed in October 2022 that a ransomware attacker had accessed and stolen customer data affecting approximately 9.7 million current and former customers, one of Australia's largest ever data breaches. After Medibank refused to pay a ransom, the attackers progressively published stolen data on the dark web, organized into 'good list' and 'naughty list' categories based on claims history. Exposed data included names, addresses, dates of birth, phone numbers, email addresses, Medicare card numbers for its ahm-brand customers, passport and visa details for international student customers, and sensitive health-claims data including diagnosis and procedure codes. Medibank stated it does not routinely collect primary identity documents such as driver's licences from resident customers, limiting passport exposure mainly to its international student segment.", "sources": ["https://www.cyber.gov.au/about-us/alerts/medibank-private-cyber-security-incident", "https://www.qld.gov.au/community/your-home-community/cyber-security/cyber-security-for-queenslanders/case-studies/medibank-private-cyber-incident", "https://www.medibank.com.au/livebetter/newsroom/post/medibank-cybercrime-update%207%20November", "https://www.sbs.com.au/news/article/good-and-naughty-lists-medibank-hackers-begin-posting-stolen-customer-data-on-dark-web/sq8qblscb"], "affected_regions": ["APAC"], "verification_type": "kyc"},
-    {"id": "monroe-university-2026-breach", "title": "Monroe University Data Security Incident", "date": "2024-12-09", "companies": ["monroe-university"], "data_types": ["full_name", "dob", "national_id", "drivers_license", "passport", "health_records"], "severity": "high", "summary": "An unauthorized party accessed Monroe University's computer systems in December 2024 and acquired files containing Social Security numbers, driver's licenses, and passport numbers, affecting approximately 320,000 individuals.", "details": "Monroe University, a private university in New York, disclosed in a notice dated January 2, 2026 that an unauthorized party gained access to its computer systems between December 9 and December 23, 2024 and copied files from its network. After a lengthy review, the university determined on September 30, 2025 that the files contained personal information for certain individuals, varying by person but potentially including names, dates of birth, Social Security numbers, driver's license numbers, passport numbers, other government identification numbers, medical and health insurance information, electronic account credentials, financial account information, and student data. Approximately 320,000 individuals were reported to be impacted, according to Security Magazine's January 2026 roundup of notable breaches. Monroe University stated it had no evidence the information had been used for identity theft or fraud at the time of notification.", "sources": ["https://www.monroeu.edu/sites/default/files/documents/2026/01/07/DataSecurityIncident.pdf", "https://www.securitymagazine.com/articles/102110-7-data-breaches-exposures-to-know-about-january-2026"], "affected_regions": ["US"], "verification_type": "kyc"}
+    {
+      "id": "au10tix-2024-credential-exposure",
+      "title": "AU10TIX Admin Credential Exposure",
+      "date": "2024-06-26",
+      "companies": [
+        "au10tix"
+      ],
+      "data_types": [
+        "passport",
+        "national_id",
+        "drivers_license",
+        "selfie",
+        "dob",
+        "full_name"
+      ],
+      "severity": "high",
+      "summary": "Administrative credentials to AU10TIX's internal logging platform were exposed online for more than a year and remained functional when discovered.",
+      "details": "404 Media reported that AU10TIX, an Israeli identity-verification vendor used behind the scenes by platforms including TikTok, Uber, X, and LinkedIn, left administrative credentials to a logging platform exposed after they were harvested by infostealer malware from an employee's machine and posted to Telegram. The credentials were still active when tested in June 2024, roughly a year after exposure. Access reportedly allowed viewing of end-user names, dates of birth, nationalities, ID numbers, document types, and links to uploaded identity-document images. AU10TIX stated it found no evidence the access was exploited maliciously and later clarified that the exposed logging environment was not directly connected to production identity data.",
+      "sources": [
+        "https://www.eff.org/deeplinks/2024/06/hack-age-verification-company-shows-privacy-danger-social-media-laws",
+        "https://9to5mac.com/2024/06/27/identity-verification-company-au10tix/",
+        "https://www.au10tix.com/blog/au10tix-clarifies-past-security-event-no-evidence-of-data-exposure-or-customer-impact/"
+      ],
+      "affected_regions": [
+        "global"
+      ],
+      "verification_type": "id_verification"
+    },
+    {
+      "id": "fractal-id-2024-api-breach",
+      "title": "Fractal ID API Unauthorized Access",
+      "date": "2024-07-14",
+      "companies": [
+        "fractal-id"
+      ],
+      "data_types": [
+        "passport",
+        "selfie",
+        "address",
+        "full_name",
+        "email"
+      ],
+      "severity": "medium",
+      "summary": "An unauthorized third party used a compromised operator account to run an API script that extracted user KYC data from Fractal ID.",
+      "details": "Fractal ID, a Web3-focused identity verification provider, disclosed that on July 14, 2024 an unauthorized party accessed an operator's account and executed an API script over roughly two hours, extracting personal information for approximately 0.5% of its user base (potentially over 50,000 users out of about 1 million). Exposed data included names, email addresses, cryptocurrency wallet addresses, phone numbers, physical addresses, and images of uploaded KYC documents including passports.",
+      "sources": [
+        "https://cryptoslate.com/web3-kyc-vendor-fractal-id-loses-over-50k-users-passport-info-in-data-breach/"
+      ],
+      "affected_regions": [
+        "global"
+      ],
+      "verification_type": "kyc"
+    },
+    {
+      "id": "signzy-2024-malware-incident",
+      "title": "Signzy Infostealer Malware Incident",
+      "date": "2024-11-25",
+      "companies": [
+        "signzy"
+      ],
+      "data_types": [
+        "unspecified_customer_data"
+      ],
+      "severity": "medium",
+      "summary": "Signzy, an Indian digital KYC provider, confirmed a security breach involving information-stealer malware that may have exposed some customer data.",
+      "details": "Signzy, a Bengaluru-based provider of online identity verification and KYC infrastructure for banks and fintechs, confirmed a cyberattack involving infostealer malware detected in late November 2024. Some data reportedly briefly appeared on a cybercrime forum. Major clients including PayU and ICICI Bank stated their own customer data was not exposed. Signzy did not publicly disclose the full scope of data exfiltrated.",
+      "sources": [
+        "https://cybermaterial.com/signzy-suffers-cyberattack-on-kyc-services/"
+      ],
+      "affected_regions": [
+        "APAC"
+      ],
+      "verification_type": "kyc"
+    },
+    {
+      "id": "mygiftcardsupply-2024-exposed-storage",
+      "title": "MyGiftCardSupply Exposed KYC Document Storage",
+      "date": "2024-12-01",
+      "companies": [
+        "mygiftcardsupply"
+      ],
+      "data_types": [
+        "passport",
+        "drivers_license",
+        "national_id"
+      ],
+      "severity": "high",
+      "summary": "A publicly exposed cloud storage server run by US gift-card retailer MyGiftCardSupply left hundreds of thousands of customer identity documents accessible without authentication.",
+      "details": "A security researcher known as JayeLTee discovered a publicly exposed online storage server belonging to MyGiftCardSupply, a US company that sells digital gift cards and requires customers to upload identity documents to comply with anti-money-laundering (KYC) rules. The server exposed driving licenses, passports, and other identity documents for hundreds of thousands of customers. The company secured the server after disclosure and stated it would conduct an audit of its KYC verification process and delete files promptly after verification going forward.",
+      "sources": [
+        "https://finance.yahoo.com/news/online-gift-card-store-exposed-150044254.html"
+      ],
+      "affected_regions": [
+        "US"
+      ],
+      "verification_type": "kyc"
+    },
+    {
+      "id": "transak-2025-kyc-vendor-breach",
+      "title": "Transak Third-Party KYC Vendor Breach",
+      "date": "2025-02-04",
+      "companies": [
+        "transak-kyc-vendor"
+      ],
+      "data_types": [
+        "passport",
+        "drivers_license",
+        "selfie",
+        "dob",
+        "full_name"
+      ],
+      "severity": "medium",
+      "summary": "A phishing attack on an employee laptop at a third-party KYC vendor used by crypto payment gateway Transak led to exposure of roughly 92,500 users' identity data.",
+      "details": "Transak, a fiat-to-crypto payment gateway, disclosed that a breach at its third-party KYC vendor exposed personal information for approximately 92,554 users, about 1.14% of its user base. The incident was reportedly initiated by a phishing attack on an employee's laptop, granting unauthorized access to the vendor's systems. Stolen data included names, birth dates, government-issued IDs (passports and driver's licenses), and verification selfies. Transak stated no financial account data was compromised.",
+      "sources": [
+        "https://cyberpress.org/breach-in-transaks-kyc/"
+      ],
+      "affected_regions": [
+        "global"
+      ],
+      "verification_type": "kyc"
+    },
+    {
+      "id": "tea-app-2025-breach",
+      "title": "Tea App Legacy Storage Breach",
+      "date": "2025-07-25",
+      "companies": [
+        "tea-app"
+      ],
+      "data_types": [
+        "selfie",
+        "drivers_license",
+        "passport"
+      ],
+      "severity": "critical",
+      "summary": "An unsecured legacy Firebase storage bucket exposed roughly 72,000 images from the Tea dating-safety app, including about 13,000 verification selfies and government ID photos.",
+      "details": "On July 25, 2025, the women's dating-safety app Tea confirmed that hackers accessed an unsecured, publicly listable legacy Firebase storage bucket, extracting approximately 72,000 images. Around 13,000 of these were verification selfies and government ID photos (driver's licenses and passports) that Tea's own privacy policy claimed were deleted after verification but had in fact been retained. The remaining roughly 59,000 images came from posts, comments, and direct messages. Only users who signed up before February 2024 were affected. The leaked images were posted to 4chan and used to build harassment sites and location-mapping tools targeting affected women. A second breach days later exposed over a million private messages.",
+      "sources": [
+        "https://www.nbcnews.com/tech/social-media/tea-app-hacked-13000-photos-leaked-4chan-call-action-rcna221139",
+        "https://www.nytimes.com/2025/07/26/us/tea-safety-dating-app-hack.html",
+        "https://techcrunch.com/2025/07/29/tea-apps-data-breach-gets-much-worse-exposing-over-a-million-private-messages/",
+        "https://www.npr.org/2025/08/02/nx-s1-5483886/tea-app-breach-hacked-whisper-networks"
+      ],
+      "affected_regions": [
+        "US",
+        "global"
+      ],
+      "verification_type": "age_verification"
+    },
+    {
+      "id": "discord-2025-zendesk-breach",
+      "title": "Discord Third-Party Support System (Zendesk) Breach",
+      "date": "2025-10-08",
+      "companies": [
+        "discord-trust-safety"
+      ],
+      "data_types": [
+        "passport",
+        "drivers_license",
+        "selfie",
+        "email",
+        "billing_info"
+      ],
+      "severity": "critical",
+      "summary": "Hackers compromised a third-party customer-support platform used by Discord, stealing over two million government ID images submitted for age verification.",
+      "details": "Discord confirmed that an unauthorized party gained access to a third-party customer-service platform (widely reported as Zendesk-based) used by its support and Trust & Safety teams. Attackers reportedly stole around 2,185,151 government ID images, primarily passports and driver's licenses, submitted by users flagged by Discord's automated moderation for age verification, along with usernames, email addresses, partial billing information, IP addresses, and support correspondence. The attackers, per researcher group VX-Underground, claimed to have taken about 1.5 terabytes of data and threatened to leak it unless a ransom was paid. Discord stated passwords and private messages outside of support interactions were not affected.",
+      "sources": [
+        "https://www.yahoo.com/news/articles/hackers-threaten-leak-2-1m-172852594.html",
+        "https://www.computing.co.uk/news/2025/security/discord-privacy-breach-fears-personal-ids"
+      ],
+      "affected_regions": [
+        "global"
+      ],
+      "verification_type": "age_verification"
+    },
+    {
+      "id": "sumsub-2024-2026-disclosure",
+      "title": "Sumsub Long-Undetected Intrusion",
+      "date": "2026-02-01",
+      "companies": [
+        "sumsub"
+      ],
+      "data_types": [
+        "full_name",
+        "email",
+        "phone_number"
+      ],
+      "severity": "high",
+      "summary": "Sumsub disclosed in February 2026 that attackers had accessed an internal support environment starting in July 2024, undetected for roughly 18 months.",
+      "details": "Sumsub, a leading global online identity-verification and KYC provider serving major cryptocurrency exchanges (including Bitget, Bybit, MoonPay, Bitpanda, Wirex, BingX, MEXC, Huobi, and Coinlist), disclosed in early February 2026 that it had suffered a cyberattack dating back to July 2024, discovered only in January 2026 during a security audit. The attacker used a malicious attachment sent through a third-party support-ticket platform to gain unauthorized access to an internal customer-support environment. Sumsub stated no identity documents, biometric data, or banking information were confirmed leaked, but names, email addresses, and phone numbers of an undetermined number of clients were exposed. The exact scope remained unclear at time of disclosure.",
+      "sources": [
+        "https://lebot-avocat.com/en/sumsub-data-breach-cyberattack-exposes-kyc-chain-risks/"
+      ],
+      "affected_regions": [
+        "global"
+      ],
+      "verification_type": "kyc"
+    },
+    {
+      "id": "idmerit-2025-2026-mongodb-exposure",
+      "title": "IDMerit Unsecured MongoDB Database (1 Billion Records)",
+      "date": "2026-02-18",
+      "companies": [
+        "idmerit"
+      ],
+      "data_types": [
+        "national_id",
+        "dob",
+        "address",
+        "phone_number",
+        "email",
+        "full_name"
+      ],
+      "severity": "critical",
+      "summary": "An unauthenticated MongoDB database linked to identity-verification provider IDMerit exposed roughly one billion sensitive personal records across 26 countries.",
+      "details": "Cybernews researchers discovered on November 11, 2025 that IDMerit, a California-based AI-powered identity-verification provider, had left a MongoDB deployment exposed to the public internet without authentication. The database was secured the following day, but public disclosure did not occur until February 18, 2026, roughly 99 days later. The exposure totaled around three billion records overall, of which approximately one billion contained sensitive personal data across 26 countries, including full legal names, home addresses, postal codes, dates of birth, government-issued national ID numbers, phone numbers, email addresses, gender, telecom metadata, and KYC/AML verification logs.",
+      "sources": [
+        "https://www.zyphe.com/resources/news/idmerit-data-leak",
+        "https://cybernews.com/security/global-data-leak-exposes-billion-records/",
+        "https://www.quantrail-data.com/1-billion-kyc-records-exposed-in-massive-identity-data-leak"
+      ],
+      "affected_regions": [
+        "global"
+      ],
+      "verification_type": "kyc"
+    },
+    {
+      "id": "puffpal-2026-passport-exposure",
+      "title": "PuffPal Cannabis Club Passport Exposure",
+      "date": "2026-06-10",
+      "companies": [
+        "nefos-puffpal"
+      ],
+      "data_types": [
+        "passport",
+        "drivers_license"
+      ],
+      "severity": "critical",
+      "summary": "Nearly one million passports and driver's licenses used for age verification at European cannabis social clubs were left unprotected on the open internet for months.",
+      "details": "A database of almost a million passports and photo IDs from multiple countries, used for age and identity verification at cannabis social clubs and retailers via the PuffPal platform operated by Nefos, was found exposed on unprotected, publicly accessible URLs with no password protection. The documents were reportedly discoverable for months before being secured, following reporting by The Verge. Security researcher Bruce Schneier highlighted the incident as an example of a high-value credential (a passport) being put at risk by a comparatively low-security ancillary verification system.",
+      "sources": [
+        "https://www.schneier.com/blog/archives/2026/06/one-million-passports-leaked-online.html",
+        "https://cambridgeanalytica.org/data-breaches-scandals/passports-driver-licenses-exposed-public-internet-2026-51096/"
+      ],
+      "affected_regions": [
+        "EU"
+      ],
+      "verification_type": "age_verification"
+    },
+    {
+      "id": "equifax-2017-breach",
+      "title": "Equifax Data Breach",
+      "date": "2017-09-07",
+      "companies": [
+        "equifax"
+      ],
+      "data_types": [
+        "full_name",
+        "dob",
+        "address",
+        "national_id",
+        "drivers_license"
+      ],
+      "severity": "critical",
+      "summary": "A vulnerability in Equifax's web application allowed attackers to access sensitive personal and identity data for approximately 147 million people.",
+      "details": "Equifax, one of the largest US credit bureaus and a provider of identity verification and KYC data products, disclosed in September 2017 that attackers exploited an unpatched Apache Struts vulnerability to access its systems between May and July 2017. The breach exposed Social Security numbers, birth dates, addresses, and in some cases driver's license numbers for approximately 147 million people, along with credit card numbers for around 209,000 consumers. The incident remains one of the largest breaches of identity-verification-relevant data in US history and led to a $700 million settlement with US regulators.",
+      "sources": [
+        "https://www.ftc.gov/enforcement/refunds/equifax-data-breach-settlement"
+      ],
+      "affected_regions": [
+        "US",
+        "global"
+      ],
+      "verification_type": "kyc"
+    },
+    {
+      "id": "transunion-2025-breach",
+      "title": "TransUnion Third-Party Application Breach",
+      "date": "2025-07-28",
+      "companies": [
+        "transunion"
+      ],
+      "data_types": [
+        "full_name",
+        "dob",
+        "national_id"
+      ],
+      "severity": "high",
+      "summary": "TransUnion disclosed a breach via a third-party application affecting the personal information of millions of US consumers.",
+      "details": "TransUnion, a major US credit bureau and identity-data provider, disclosed in 2025 that an unauthorized party gained access to a third-party application supporting its US consumer support operations, exposing personal information including names, dates of birth, and Social Security numbers for millions of individuals. TransUnion stated its core credit database was not affected and notified impacted consumers directly.",
+      "sources": [
+        "https://www.hypr.com/blog/transunion-2025-state-of-omnichannel-fraud-report-insights"
+      ],
+      "affected_regions": [
+        "US"
+      ],
+      "verification_type": "kyc"
+    },
+    {
+      "id": "binance-2019-kyc-leak",
+      "title": "Binance KYC Image Leak",
+      "date": "2019-08-07",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [
+        "passport",
+        "selfie",
+        "national_id"
+      ],
+      "severity": "high",
+      "summary": "Images of passports, IDs, and selfies submitted by roughly 60,000 Binance users for KYC verification circulated on Telegram after an alleged third-party vendor breach.",
+      "details": "In August 2019, a Telegram user calling themselves 'Guardian M' published numerous images showing individuals holding identification documents alongside papers labeled 'Binance,' claiming to have obtained the data through a breach. CoinDesk confirmed with several affected users that the images matched KYC documents they had submitted to Binance in 2018 and 2019. Binance stated the leaked data did not match its internal database and pointed to a compromised third-party vendor, but around 60,000 users were reportedly affected. The incident was linked to a broader cyberattack on Binance the prior May that also resulted in the theft of 7,000 bitcoin.",
+      "sources": [
+        "https://finance.yahoo.com/news/binance-customer-data-leaking-know-125156463.html",
+        "https://www.linkedin.com/pulse/100000-users-exposed-kyc-turned-exchanges-data-marcel-thiess-fica-cttpf"
+      ],
+      "affected_regions": [
+        "global"
+      ],
+      "verification_type": "kyc"
+    },
+    {
+      "id": "coinbase-2024-2025-breach",
+      "title": "Coinbase Bribed Support-Contractor Breach",
+      "date": "2024-12-01",
+      "companies": [
+        "coinbase"
+      ],
+      "data_types": [
+        "full_name",
+        "address",
+        "dob",
+        "national_id",
+        "passport",
+        "drivers_license",
+        "bank_details"
+      ],
+      "severity": "critical",
+      "summary": "Hackers bribed overseas customer-support contractors to exfiltrate KYC and personal data for roughly 70,000 Coinbase users, later demanding a $20 million ransom.",
+      "details": "Coinbase, the largest US cryptocurrency exchange, disclosed in an SEC filing in May 2025 that a breach originating in December 2024 exposed personal information for approximately 69,461 users. The attackers bribed customer-support agents employed by third-party contractor TaskUs in India to copy internal data using personal phones, rather than exploiting a technical vulnerability. Exposed data included names, addresses, dates of birth, nationalities, government-issued ID images, partial Social Security numbers, masked bank account details, and KYC-related records. Attackers demanded a $20 million ransom to prevent public release of the data; Coinbase refused to pay and instead offered a bounty for information leading to the attackers' identification. Similar bribery attempts were reportedly made against Binance and Kraken, which said their access controls prevented a similar breach.",
+      "sources": [
+        "https://finance.yahoo.com/news/binance-customer-data-leaking-know-125156463.html",
+        "https://www.dlnews.com/articles/people-culture/binance-kraken-dodge-coinbase-breach-using-ai-access-rules/",
+        "https://www.binance.com/en/square/post/25122602460841"
+      ],
+      "affected_regions": [
+        "US",
+        "global"
+      ],
+      "verification_type": "kyc"
+    },
+    {
+      "id": "france-titres-2026-breach",
+      "title": "France Titres (ANTS) National ID Database Breach",
+      "date": "2026-04-15",
+      "companies": [
+        "france-titres"
+      ],
+      "data_types": [
+        "full_name",
+        "dob",
+        "email",
+        "address",
+        "national_id",
+        "passport",
+        "drivers_license"
+      ],
+      "severity": "critical",
+      "summary": "Hackers breached France's national identity-document database (France Titres/ANTS), stealing 18-19 million records covering roughly a third of the country's adult population.",
+      "details": "France's Interior Ministry detected an intrusion on April 15, 2026 into infrastructure operated by France Titres (ANTS), the government agency managing the national database of identity documents including biometric passports, national ID cards, and driving licences. Attackers gained unauthorized access to identifying information and subsequently advertised a database of an estimated 18 to 19 million records for sale on criminal forums, a figure representing roughly a third of France's adult population. Exposed data reportedly included full names, email addresses, dates of birth, and unique account identifiers, with some records also including home addresses and phone numbers. French cybersecurity authority ANSSI opened an investigation into the incident.",
+      "sources": [
+        "https://www.europe-infos.fr/english/8595/frances-id-and-passport-portal-was-hacked-millions-may-now-be-targets-for-scams-and-identity-fraud/",
+        "https://www.biometricupdate.com/202604/french-govt-confirms-hack-of-at-least-18m-records-from-id-document-database"
+      ],
+      "affected_regions": [
+        "EU"
+      ],
+      "verification_type": "id_verification"
+    },
+    {
+      "id": "eurail-2025-2026-breach",
+      "title": "Eurail/Interrail Passport Data Breach",
+      "date": "2025-12-26",
+      "companies": [
+        "eurail"
+      ],
+      "data_types": [
+        "passport",
+        "full_name",
+        "dob",
+        "email",
+        "address",
+        "phone_number",
+        "bank_details"
+      ],
+      "severity": "critical",
+      "summary": "A December 2025 cyberattack on Eurail, the operator of Interrail travel passes, exposed passport numbers and personal data for over 308,000 European travellers.",
+      "details": "Eurail, which sells Interrail rail passes used across Europe, confirmed in April 2026 that a cyberattack on December 26, 2025 compromised personal data for 308,777 travellers, including passport numbers, full names, dates of birth, phone numbers, and email and home addresses. A subset of affected users who had taken part in the EU-funded DiscoverEU youth travel program also had passport scans, bank account numbers, and some health data exposed. A sample of the stolen dataset was published on Telegram and the full set was reportedly offered for sale on the dark web, prompting some affected travellers to be advised to cancel and reissue their passports.",
+      "sources": [
+        "https://www.theguardian.com/technology/2026/apr/23/some-interrail-travellers-told-to-cancel-passports-as-hacked-data-posted-online",
+        "https://www.intheeventof.co/guides/breaches/eurail-2026"
+      ],
+      "affected_regions": [
+        "EU"
+      ],
+      "verification_type": "kyc"
+    },
+    {
+      "id": "uk-visa-portal-2026-breach",
+      "title": "UK Visa Portal (ETA-Pass) Passport & Selfie Exposure",
+      "date": "2026-05-27",
+      "companies": [
+        "uk-visa-portal"
+      ],
+      "data_types": [
+        "passport",
+        "selfie",
+        "address"
+      ],
+      "severity": "high",
+      "summary": "A third-party UK visa-application website publicly exposed at least 100,000 passports, selfies, and location data belonging to applicants, and did not fix the leak after disclosure.",
+      "details": "TechCrunch reported in May 2026 that a website called UK Visa Portal, also known as UK Visit or ETA-Pass, publicly exposed passports and selfie photographs belonging to at least 100,000 applicants who had used the third-party commercial site to apply for UK visas or Electronic Travel Authorisations. The exposed data included location metadata tied to submitted documents. Rather than fixing the exposure after being notified, the website's operators reportedly sent legal threats to the researcher and TechCrunch instead of securing the data.",
+      "sources": [
+        "https://techcrunch.com/2026/05/27/uk-visa-portal-spilled-thousands-of-applicants-passports-and-selfies-online-and-hasnt-fixed-the-leak/"
+      ],
+      "affected_regions": [
+        "UK",
+        "global"
+      ],
+      "verification_type": "id_verification"
+    },
+    {
+      "id": "renaper-2021-breach",
+      "title": "RENAPER Argentina National ID Database Breach",
+      "date": "2021-10-13",
+      "companies": [
+        "renaper-argentina"
+      ],
+      "data_types": [
+        "full_name",
+        "national_id",
+        "dob",
+        "photo"
+      ],
+      "severity": "critical",
+      "summary": "An attacker used a compromised government VPN account to query Argentina's national identity database for records covering nearly all 45 million citizens.",
+      "details": "In October 2021, an attacker exfiltrated personal identity records for close to all 45 million registered Argentines from RENAPER (Registro Nacional de las Personas), the government agency responsible for issuing national ID cards. As proof, photos and personal details of high-profile individuals including then-President Alberto Fernandez and footballer Lionel Messi were posted to Twitter, and the full dataset was subsequently offered for sale on a dark-web forum. Argentina's Ministry of Interior stated the RENAPER database itself was not breached and instead opened an investigation into eight government employees suspected of insider involvement in accessing the system improperly.",
+      "sources": [
+        "https://www.cyberbreaches.org/en/incidents/argentina-renaper-2021"
+      ],
+      "affected_regions": [
+        "LATAM"
+      ],
+      "verification_type": "id_verification"
+    },
+    {
+      "id": "aadhaar-2018-leaks",
+      "title": "Aadhaar Biometric Database Exposures",
+      "date": "2018-01-04",
+      "companies": [
+        "aadhaar-uidai"
+      ],
+      "data_types": [
+        "full_name",
+        "address",
+        "email",
+        "phone_number",
+        "national_id",
+        "photo"
+      ],
+      "severity": "critical",
+      "summary": "Multiple reported incidents in 2018 described unauthorized access to India's Aadhaar biometric national identity database, including personal data allegedly sold online for a small fee.",
+      "details": "In January 2018, The Tribune newspaper reported that access to Aadhaar demographic data for over a billion enrolled Indians, including names, addresses, photographs, and phone numbers, could reportedly be purchased for a small fee via anonymous groups, and that software to create counterfeit Aadhaar cards was also being offered. UIDAI, the government body managing Aadhaar, disputed that biometric data (fingerprints or retina scans) was exposed and stated the newspaper likely accessed only limited data through an internal government search tool. In March 2018 a further reported vulnerability in a government utility's system was said to allow access to Aadhaar numbers and banking information. UIDAI maintained that Aadhaar's core database remained secure throughout.",
+      "sources": [
+        "https://www.theguardian.com/world/2018/jan/04/india-national-id-database-data-leak-bought-online-aadhaar",
+        "https://www.reuters.com/article/world/new-data-leak-hits-indias-national-id-card-database-aadhaar-zdnet-idUSKBN1H00K2/"
+      ],
+      "affected_regions": [
+        "APAC"
+      ],
+      "verification_type": "id_verification"
+    },
+    {
+      "id": "sweden-bankid-cgi-2026-breach",
+      "title": "CGI Sweden Breach Linked to BankID Infrastructure",
+      "date": "2026-03-17",
+      "companies": [
+        "sweden-bankid-cgi"
+      ],
+      "data_types": [
+        "source_code",
+        "credentials"
+      ],
+      "severity": "high",
+      "summary": "A hacker group calling itself ByteToBreach claimed to have stolen source code and credentials from IT contractor CGI's Swedish division, related to infrastructure used by public authorities and Sweden's BankID authentication system.",
+      "details": "In March 2026, a hacker group known as ByteToBreach claimed responsibility for a breach affecting CGI's Swedish division, alleging theft of a large dataset including source code reportedly used by Swedish public authorities. The group also claimed additional databases containing personal data and electronic signature documents were being sold separately. The incident drew scrutiny given Sweden's reliance on the bank-backed BankID digital identity system for citizen authentication, and came as Sweden's government was preparing to launch a state-backed digital identity alternative (Sverige-ID).",
+      "sources": [
+        "https://www.biometricupdate.com/202603/swedens-bankid-breached-by-hacker-group-as-govt-prepares-e-id-launch"
+      ],
+      "affected_regions": [
+        "EU"
+      ],
+      "verification_type": "id_verification"
+    },
+    {
+      "id": "bangladesh-nid-2023-leak",
+      "title": "Bangladesh National ID (NID) Database Exposure",
+      "date": "2023-06-27",
+      "companies": [
+        "nid-bangladesh"
+      ],
+      "data_types": [
+        "full_name",
+        "dob",
+        "phone_number",
+        "email",
+        "national_id"
+      ],
+      "severity": "high",
+      "summary": "A security researcher discovered that personal data for an estimated 50 million Bangladeshi citizens, including national ID numbers, was publicly accessible via a government website.",
+      "details": "A cybersecurity specialist reported discovering on June 27, 2023 that names, dates of birth, phone numbers, email addresses, and National Identity (NID) numbers for an estimated 50 million Bangladeshi citizens were openly accessible via a government website, discoverable through simple web searches. Bangladesh's Computer Incident Response Team (CIRT) acknowledged the report and launched an investigation following public disclosure of the exposure.",
+      "sources": [
+        "https://www.dhakatribune.com/bangladesh/319028/has-a-massive-data-breach-exposed-personal-info-of"
+      ],
+      "affected_regions": [
+        "APAC"
+      ],
+      "verification_type": "id_verification"
+    },
+    {
+      "id": "duc-app-2026-breach",
+      "title": "Duc App Exposed KYC Documents (5-Year Exposure)",
+      "date": "2026-04-02",
+      "companies": [
+        "duc-app"
+      ],
+      "data_types": [
+        "passport",
+        "drivers_license",
+        "selfie",
+        "full_name",
+        "address"
+      ],
+      "severity": "critical",
+      "summary": "A Canadian money-transfer app left an unencrypted, password-free Amazon storage server publicly exposed for approximately five years, revealing over 360,000 identity documents.",
+      "details": "TechCrunch reported in April 2026 that Duc, a Toronto-based money-transfer app owned by fintech company Duales, left a publicly accessible Amazon-hosted storage server exposed without a password for roughly five years. Security researcher Anurag Sen discovered the misconfiguration; the server listed over 360,000 files uploaded since September 2020, including driver's licenses, passports, and selfies collected for KYC identity verification, plus spreadsheets containing customer names, addresses, and transaction details. The data was also stored unencrypted. Duales resolved the exposure on April 2, 2026 after being contacted by TechCrunch, and Canada's Office of the Privacy Commissioner reached out to the company regarding next steps.",
+      "sources": [
+        "https://techcrunch.com/2026/04/02/canadian-money-transfer-app-duc-expose-drivers-licenses-passports-amazon-server/",
+        "https://www.privacyguides.org/news/2026/04/03/data-breach-roundup-mar-27-apr-2-2026/",
+        "https://canadabreaches.ca/"
+      ],
+      "affected_regions": [
+        "LATAM",
+        "global"
+      ],
+      "verification_type": "kyc"
+    },
+    {
+      "id": "paytel-2026-breach",
+      "title": "Pay Tel Prison Communications Vendor Exposed IDs",
+      "date": "2026-05-04",
+      "companies": [
+        "paytel-communications"
+      ],
+      "data_types": [
+        "drivers_license",
+        "passport",
+        "selfie",
+        "national_id"
+      ],
+      "severity": "high",
+      "summary": "An unprotected Microsoft Azure storage bucket belonging to prison-communications vendor Pay Tel exposed 3.4 million documents, including an estimated 300,000 unique driver's licenses and other IDs.",
+      "details": "UpGuard researchers discovered on May 4, 2026 a publicly exposed Microsoft Azure-hosted storage bucket belonging to Pay Tel Communications, a corrections-industry vendor supplying jail and prison communications services primarily in the southeastern United States. The bucket held 3.4 million documents totaling 1.1 terabytes, including an estimated 300,000 unique driver's licenses along with smaller numbers of passports and Social Security cards, submitted by people wishing to communicate with incarcerated individuals as part of Pay Tel's identity-verification signup process. Profile photos and private inmate communications were also exposed. Pay Tel secured the server after being notified.",
+      "sources": [
+        "https://techcrunch.com/2026/05/28/a-security-lapse-at-prison-payphone-service-pay-tel-publicly-exposed-over-300000-callers-drivers-licenses/",
+        "https://www.upguard.com/breaches/breaking-containment-how-a-corrections-vendor-exposed-inmate-communications"
+      ],
+      "affected_regions": [
+        "US"
+      ],
+      "verification_type": "id_verification"
+    },
+    {
+      "id": "tabiq-2026-breach",
+      "title": "Tabiq Hotel Check-In System Passport Exposure",
+      "date": "2026-05-15",
+      "companies": [
+        "tabiq-hotel-checkin"
+      ],
+      "data_types": [
+        "passport",
+        "drivers_license",
+        "selfie"
+      ],
+      "severity": "critical",
+      "summary": "A misconfigured public Amazon S3 bucket used by Japanese hotel check-in system Tabiq exposed roughly a million passports and driver's licenses submitted for facial-recognition guest verification.",
+      "details": "Tabiq, a facial-recognition and document-scanning check-in system used at multiple hotels in Japan, exposed approximately one million passports and driver's licenses via a publicly accessible Amazon S3 storage bucket that required no password, according to reporting compiled by Privacy Guides in May 2026. Amazon S3 buckets default to private access, making the misconfiguration notable. The exposure was one of several similar identity-document leaks reported around the same period, alongside the PuffPal/Nefos cannabis-club breach, prompting comparisons between the two incidents.",
+      "sources": [
+        "https://www.privacyguides.org/news/2026/05/22/data-breach-roundup-may-15-21-2026/",
+        "https://techcrunch.com/2026/07/07/the-worst-hacks-and-breaches-of-2026-so-far/"
+      ],
+      "affected_regions": [
+        "APAC"
+      ],
+      "verification_type": "id_verification"
+    },
+    {
+      "id": "nyc-health-hospitals-2026-breach",
+      "title": "NYC Health + Hospitals Third-Party Vendor Breach (Fingerprints Stolen)",
+      "date": "2025-11-25",
+      "companies": [
+        "nyc-health-hospitals"
+      ],
+      "data_types": [
+        "full_name",
+        "national_id",
+        "passport",
+        "drivers_license",
+        "biometric_fingerprint",
+        "address",
+        "geolocation"
+      ],
+      "severity": "critical",
+      "summary": "An intrusion via an unnamed third-party vendor exposed medical, financial, and biometric data including fingerprints and palm prints for at least 1.8 million people at NYC's largest public hospital system.",
+      "details": "NYC Health + Hospitals, the largest municipal public-hospital system in the United States, confirmed on May 18, 2026 that an unauthorized actor accessed its systems between approximately November 25, 2025 and February 11, 2026 via a security flaw at an undisclosed third-party vendor, going undetected for roughly two and a half months before discovery on February 2, 2026. Exposed data varied by individual but could include health insurance information, medical records (diagnoses, medications, test results, imagery), Social Security numbers, passports, driver's licenses, billing and payment information, precise geolocation data, and biometric fingerprint and palm-print scans, the last of which NYC H+H requires employees to enroll for criminal-background checks. This was among the first major US public-hospital breaches to confirm loss of raw biometric identifiers, which unlike passwords or account numbers cannot be reissued.",
+      "sources": [
+        "https://www.privacyguides.org/news/2026/05/22/data-breach-roundup-may-15-21-2026/",
+        "https://www.techradar.com/pro/security/nyc-health-hospitals-says-mega-data-breach-allowed-hackers-to-steal-personal-data-medical-records-and-fingerprints-scans-of-around-1-8-million-people",
+        "https://www.nychealthandhospitals.org/pressrelease/notice-of-data-breach/"
+      ],
+      "affected_regions": [
+        "US"
+      ],
+      "verification_type": "kyc"
+    },
+    {
+      "id": "discord-5ca-2025-breach",
+      "title": "Discord Age-Verification Vendor Chain Exposure (Persona Identities / 5CA)",
+      "date": "2025-10-09",
+      "companies": [
+        "discord-persona-5ca"
+      ],
+      "data_types": [
+        "passport",
+        "drivers_license",
+        "email",
+        "ip_address"
+      ],
+      "severity": "high",
+      "summary": "Follow-up reporting found front-end code for Discord's age-verification vendor Persona Identities sitting exposed on a US government-authorized server, months after Discord attributed its original breach to third-party support provider 5CA.",
+      "details": "In a statement on October 9, 2025, Discord attributed its earlier-reported breach to a third-party service provider, 5CA, rather than a breach of Discord's own systems, stating the incident affected only users who had contacted Discord's Customer Support or Trust and Safety teams and could include exposure of government IDs, IP addresses, and limited billing or corporate data. In February 2026, Fortune reported that Discord had used at least three separate age-verification vendors since the October incident, and that researchers found nearly 2,500 accessible files of front-end code belonging to age-verification vendor Persona Identities sitting on a US government-authorized endpoint. Discord distanced itself from the Peter Thiel-backed vendor following the discovery. Discord maintained that identity documents uploaded for age verification are typically deleted immediately after age confirmation and that user identity is never associated with the account itself.",
+      "sources": [
+        "https://fortune.com/2026/02/24/discord-peter-thiel-backed-persona-identity-verification-breach/"
+      ],
+      "affected_regions": [
+        "global"
+      ],
+      "verification_type": "age_verification"
+    },
+    {
+      "id": "marriott-starwood-2018-breach",
+      "title": "Marriott/Starwood Guest Database Breach",
+      "date": "2018-11-30",
+      "companies": [
+        "marriott-starwood"
+      ],
+      "data_types": [
+        "passport",
+        "full_name",
+        "address",
+        "email",
+        "phone_number",
+        "dob",
+        "payment_card"
+      ],
+      "severity": "critical",
+      "summary": "A four-year undetected intrusion into Starwood's guest reservation database, disclosed by Marriott in November 2018, exposed the personal data of up to 383 million unique guests, including 5.25 million unencrypted passport numbers.",
+      "details": "Marriott International disclosed on November 30, 2018 that attackers had accessed Starwood's guest reservation database beginning in 2014, two years before Marriott acquired Starwood, and remained undetected until September 2018. The breach affected up to 383 million unique guest records, exposing combinations of names, mailing addresses, phone numbers, email addresses, passport numbers, Starwood Preferred Guest account information, dates of birth, gender, and arrival/departure information. Marriott confirmed in January 2019 that 5.25 million passport numbers were stored unencrypted, while a further 20.3 million were encrypted with no evidence the decryption key was accessed. The FTC found in 2024 that Marriott and Starwood had suffered three separate breaches between 2014 and 2020 affecting a combined 344 million customers worldwide, and the UK ICO separately fined Marriott £18.4 million in 2020. A 2024 multistate settlement with 50 US attorneys general required Marriott to implement a comprehensive information security program.",
+      "sources": [
+        "https://www.ftc.gov/news-events/news/press-releases/2024/10/ftc-takes-action-against-marriott-starwood-over-multiple-data-breaches",
+        "https://www.latimes.com/business/la-fi-marriott-passport-20190104-story.html",
+        "https://www.bbc.co.uk/news/technology-54748843",
+        "https://portal.ct.gov/ag/press-releases/2024-press-releases/multistate-settlement-with-marriott-for-data-breach-of-starwood-guest-reservation-database"
+      ],
+      "affected_regions": [
+        "global"
+      ],
+      "verification_type": "kyc"
+    },
+    {
+      "id": "t-mobile-2021-breach",
+      "title": "T-Mobile SSN and Driver's License Breach",
+      "date": "2021-08-16",
+      "companies": [
+        "t-mobile-us"
+      ],
+      "data_types": [
+        "full_name",
+        "dob",
+        "national_id",
+        "drivers_license"
+      ],
+      "severity": "critical",
+      "summary": "A 2021 breach at T-Mobile exposed Social Security numbers and driver's license/ID numbers for over 76 million current, former, and prospective customers.",
+      "details": "T-Mobile confirmed in August 2021 that hackers had accessed systems containing personal information for approximately 7.8 million current postpaid customers and around 40 million former or prospective customers, later revising the total to roughly 76.6 million affected individuals. Exposed data included first and last names, dates of birth, Social Security numbers, and driver's license or government ID numbers, information typically used for identity verification during account applications and credit checks. T-Mobile ultimately paid $350 million to settle a class-action lawsuit and committed a further $150 million to cybersecurity improvements. The 2021 incident was one of at least nine data breaches T-Mobile has disclosed since 2018, cumulatively resulting in over $531 million in penalties and settlements according to compiled analysis.",
+      "sources": [
+        "https://www.reuters.com/technology/hackers-steal-some-personal-data-about-78-mln-t-mobile-customers-2021-08-18/",
+        "https://www.michigan.gov/ag/news/press-releases/2021/08/20/ag-nessel-reissues-consumer-alert-following-tmobile-data-breach",
+        "https://en.wikipedia.org/wiki/T-Mobile_data_breach",
+        "https://www.cloudskope.com/breaches/tmobile-data-breach"
+      ],
+      "affected_regions": [
+        "US"
+      ],
+      "verification_type": "kyc"
+    },
+    {
+      "id": "optus-2022-breach",
+      "title": "Optus Data Breach (Passports & Driver's Licences)",
+      "date": "2022-09-22",
+      "companies": [
+        "optus"
+      ],
+      "data_types": [
+        "passport",
+        "drivers_license",
+        "national_id",
+        "full_name",
+        "dob",
+        "address",
+        "phone_number",
+        "email"
+      ],
+      "severity": "critical",
+      "summary": "A September 2022 cyberattack on Australian telecom Optus exposed passport numbers, driver's licence numbers, and Medicare details for up to 9.8 million current and former customers, roughly 40% of Australia's population.",
+      "details": "Optus, Australia's second-largest telecommunications carrier and a subsidiary of Singapore's Singtel, disclosed on September 22, 2022 that a cyberattack had exposed the personal information of up to 9.8 million current and former customers. Compromised data included names, dates of birth, phone numbers, email addresses, and for a subset of roughly 2.8 million customers, passport numbers, driver's licence numbers, and Medicare card numbers used for identity verification and account setup. The Australian government and multiple state governments demanded Optus cover the cost of replacing affected identification documents; Optus agreed to pay for passport replacements and several states funded free driver's licence reissuance. The Australian Information Commissioner filed civil penalty proceedings against Optus in 2025, alleging the company failed to take reasonable steps to protect personal information from unauthorized access dating back to 2019.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/2022_Optus_data_breach",
+        "https://www.oaic.gov.au/news/media-centre/australian-information-commissioner-takes-civil-penalty-action-against-optus",
+        "https://apnews.com/article/technology-australia-hacking-telecommunications-3a7e004d3e129f92ab940314835edba8",
+        "https://www.abc.net.au/news/2022-09-27/optus-data-breach-drivers-licence-change-numbers/101475118"
+      ],
+      "affected_regions": [
+        "APAC"
+      ],
+      "verification_type": "kyc"
+    },
+    {
+      "id": "medibank-2022-breach",
+      "title": "Medibank Ransomware Breach (Passports & Medicare Numbers)",
+      "date": "2022-10-13",
+      "companies": [
+        "medibank"
+      ],
+      "data_types": [
+        "passport",
+        "national_id",
+        "full_name",
+        "dob",
+        "address",
+        "phone_number",
+        "email",
+        "health_records"
+      ],
+      "severity": "critical",
+      "summary": "A ransomware attack on Australia's largest private health insurer, Medibank, exposed Medicare numbers, international students' passport numbers, and sensitive health-claims data for nearly 10 million customers.",
+      "details": "Medibank Private disclosed in October 2022 that a ransomware attacker had accessed and stolen customer data affecting approximately 9.7 million current and former customers, one of Australia's largest ever data breaches. After Medibank refused to pay a ransom, the attackers progressively published stolen data on the dark web, organized into 'good list' and 'naughty list' categories based on claims history. Exposed data included names, addresses, dates of birth, phone numbers, email addresses, Medicare card numbers for its ahm-brand customers, passport and visa details for international student customers, and sensitive health-claims data including diagnosis and procedure codes. Medibank stated it does not routinely collect primary identity documents such as driver's licences from resident customers, limiting passport exposure mainly to its international student segment.",
+      "sources": [
+        "https://www.cyber.gov.au/about-us/alerts/medibank-private-cyber-security-incident",
+        "https://www.qld.gov.au/community/your-home-community/cyber-security/cyber-security-for-queenslanders/case-studies/medibank-private-cyber-incident",
+        "https://www.medibank.com.au/livebetter/newsroom/post/medibank-cybercrime-update%207%20November",
+        "https://www.sbs.com.au/news/article/good-and-naughty-lists-medibank-hackers-begin-posting-stolen-customer-data-on-dark-web/sq8qblscb"
+      ],
+      "affected_regions": [
+        "APAC"
+      ],
+      "verification_type": "kyc"
+    },
+    {
+      "id": "monroe-university-2026-breach",
+      "title": "Monroe University Data Security Incident",
+      "date": "2024-12-09",
+      "companies": [
+        "monroe-university"
+      ],
+      "data_types": [
+        "full_name",
+        "dob",
+        "national_id",
+        "drivers_license",
+        "passport",
+        "health_records"
+      ],
+      "severity": "high",
+      "summary": "An unauthorized party accessed Monroe University's computer systems in December 2024 and acquired files containing Social Security numbers, driver's licenses, and passport numbers, affecting approximately 320,000 individuals.",
+      "details": "Monroe University, a private university in New York, disclosed in a notice dated January 2, 2026 that an unauthorized party gained access to its computer systems between December 9 and December 23, 2024 and copied files from its network. After a lengthy review, the university determined on September 30, 2025 that the files contained personal information for certain individuals, varying by person but potentially including names, dates of birth, Social Security numbers, driver's license numbers, passport numbers, other government identification numbers, medical and health insurance information, electronic account credentials, financial account information, and student data. Approximately 320,000 individuals were reported to be impacted, according to Security Magazine's January 2026 roundup of notable breaches. Monroe University stated it had no evidence the information had been used for identity theft or fraud at the time of notification.",
+      "sources": [
+        "https://www.monroeu.edu/sites/default/files/documents/2026/01/07/DataSecurityIncident.pdf",
+        "https://www.securitymagazine.com/articles/102110-7-data-breaches-exposures-to-know-about-january-2026"
+      ],
+      "affected_regions": [
+        "US"
+      ],
+      "verification_type": "kyc"
+    },
+    {
+      "id": "cloud-leak-how-a-verizon-partner-exposed-millions-of-customer-accounts-upguard",
+      "title": "Cloud Leak: How A Verizon Partner Exposed Millions of Customer Accounts | UpGuard",
+      "date": "2026-08-15",
+      "companies": [
+        "verizon"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "source": "https://www.upguard.com/breaches/verizon-cloud-leak",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-08-15T23:47:02.833527+00:00"
+    },
+    {
+      "id": "home-economics-how-life-in-123-million-american-households-was-exposed-online-up",
+      "title": "Home Economics: How Life in 123 Million American Households Was Exposed Online | UpGuard",
+      "date": "2026-08-15",
+      "companies": [
+        "experian"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "source": "https://www.upguard.com/breaches/cloud-leak-alteryx",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-08-15T23:47:02.836886+00:00"
+    },
+    {
+      "id": "the-medibank-data-breach-complete-timeline-of-events-upguard",
+      "title": "The Medibank Data Breach (Complete Timeline of Events) | UpGuard",
+      "date": "2026-08-15",
+      "companies": [
+        "medibank"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "source": "https://www.upguard.com/breaches/medibank-data-leak",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-08-15T23:47:02.844788+00:00"
+    },
+    {
+      "id": "ai-sends-global-crime-syndicates-into-fraud-nirvana",
+      "title": "AI Sends Global Crime Syndicates Into Fraud Nirvana",
+      "date": "2026-08-15",
+      "companies": [
+        "persona"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "source": "https://www.darkreading.com/threat-intelligence/ai-global-crime-syndicates-fraud-nirvana",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-08-15T23:47:04.491781+00:00"
+    },
+    {
+      "id": "1-in-every-100-identity-check-failures-involves-deepfake-media",
+      "title": "1 in every 100 identity check failures involves deepfake media",
+      "date": "2026-08-15",
+      "companies": [
+        "lexisnexis-risk"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "source": "https://identityweek.net/1-in-every-100-identity-check-failures-involves-deepfake-media/",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-08-15T23:47:05.700220+00:00"
+    },
+    {
+      "id": "researcher-bypasses-microsoft-defender-security-patch-seizing-control",
+      "title": "Researcher bypasses Microsoft Defender security patch, seizing control",
+      "date": "2026-08-15",
+      "companies": [
+        "lexisnexis-risk"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "source": "https://www.csoonline.com/article/4208760/researcher-bypasses-microsoft-defender-security-patch-seizing-control.html",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-08-15T23:47:09.961819+00:00"
+    },
+    {
+      "id": "serruya-private-equity-new-listed-by-coinbase-cartel-ransomware-group",
+      "title": "Serruya private equity NEW Listed by Coinbase Cartel Ransomware Group",
+      "date": "2026-08-15",
+      "companies": [
+        "coinbase"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "source": "https://recentbreaches.com/breach/serruya-private-equity-new-coinbase-cartel-2026-08",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-08-15T23:47:19.324738+00:00"
+    },
+    {
+      "id": "sweet-water-holdings-new-listed-by-coinbase-cartel-ransomware-group",
+      "title": "Sweet Water Holdings NEW Listed by Coinbase Cartel Ransomware Group",
+      "date": "2026-08-15",
+      "companies": [
+        "coinbase"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "source": "https://recentbreaches.com/breach/sweet-water-holdings-new-coinbase-cartel-2026-08",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-08-15T23:47:19.326135+00:00"
+    }
   ]
 }

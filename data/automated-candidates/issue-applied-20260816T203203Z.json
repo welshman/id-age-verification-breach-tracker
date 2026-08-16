@@ -1,0 +1,137 @@
+{
+  "applied": [
+    {
+      "candidate_id": "cloud-leak-how-a-verizon-partner-exposed-millions-of-customer-accounts-upguard",
+      "created_breach_id": "cloud-leak-how-a-verizon-partner-exposed-millions-of-customer-accounts-upguard",
+      "source": "https://www.upguard.com/breaches/verizon-cloud-leak"
+    },
+    {
+      "candidate_id": "home-economics-how-life-in-123-million-american-households-was-exposed-online-up",
+      "created_breach_id": "home-economics-how-life-in-123-million-american-households-was-exposed-online-up",
+      "source": "https://www.upguard.com/breaches/cloud-leak-alteryx"
+    },
+    {
+      "candidate_id": "the-medibank-data-breach-complete-timeline-of-events-upguard",
+      "created_breach_id": "the-medibank-data-breach-complete-timeline-of-events-upguard",
+      "source": "https://www.upguard.com/breaches/medibank-data-leak"
+    },
+    {
+      "candidate_id": "ai-sends-global-crime-syndicates-into-fraud-nirvana",
+      "created_breach_id": "ai-sends-global-crime-syndicates-into-fraud-nirvana",
+      "source": "https://www.darkreading.com/threat-intelligence/ai-global-crime-syndicates-fraud-nirvana"
+    },
+    {
+      "candidate_id": "1-in-every-100-identity-check-failures-involves-deepfake-media",
+      "created_breach_id": "1-in-every-100-identity-check-failures-involves-deepfake-media",
+      "source": "https://identityweek.net/1-in-every-100-identity-check-failures-involves-deepfake-media/"
+    },
+    {
+      "candidate_id": "researcher-bypasses-microsoft-defender-security-patch-seizing-control",
+      "created_breach_id": "researcher-bypasses-microsoft-defender-security-patch-seizing-control",
+      "source": "https://www.csoonline.com/article/4208760/researcher-bypasses-microsoft-defender-security-patch-seizing-control.html"
+    },
+    {
+      "candidate_id": "serruya-private-equity-new-listed-by-coinbase-cartel-ransomware-group",
+      "created_breach_id": "serruya-private-equity-new-listed-by-coinbase-cartel-ransomware-group",
+      "source": "https://recentbreaches.com/breach/serruya-private-equity-new-coinbase-cartel-2026-08"
+    },
+    {
+      "candidate_id": "sweet-water-holdings-new-listed-by-coinbase-cartel-ransomware-group",
+      "created_breach_id": "sweet-water-holdings-new-listed-by-coinbase-cartel-ransomware-group",
+      "source": "https://recentbreaches.com/breach/sweet-water-holdings-new-coinbase-cartel-2026-08"
+    }
+  ],
+  "created_companies": [
+    "verizon"
+  ],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "cloud-leak-how-a-verizon-partner-exposed-millions-of-customer-accounts-upguard",
+      "title": "Cloud Leak: How A Verizon Partner Exposed Millions of Customer Accounts | UpGuard",
+      "source_url": "https://www.upguard.com/breaches/verizon-cloud-leak",
+      "feed": "https://upguard.com/breaches/rss.xml",
+      "matched_keywords": [
+        "Verizon"
+      ],
+      "discovered_at": "2026-08-15T23:47:02.833527+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "home-economics-how-life-in-123-million-american-households-was-exposed-online-up",
+      "title": "Home Economics: How Life in 123 Million American Households Was Exposed Online | UpGuard",
+      "source_url": "https://www.upguard.com/breaches/cloud-leak-alteryx",
+      "feed": "https://upguard.com/breaches/rss.xml",
+      "matched_keywords": [
+        "Experian"
+      ],
+      "discovered_at": "2026-08-15T23:47:02.836886+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "the-medibank-data-breach-complete-timeline-of-events-upguard",
+      "title": "The Medibank Data Breach (Complete Timeline of Events) | UpGuard",
+      "source_url": "https://www.upguard.com/breaches/medibank-data-leak",
+      "feed": "https://upguard.com/breaches/rss.xml",
+      "matched_keywords": [
+        "Medibank"
+      ],
+      "discovered_at": "2026-08-15T23:47:02.844788+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "ai-sends-global-crime-syndicates-into-fraud-nirvana",
+      "title": "AI Sends Global Crime Syndicates Into Fraud Nirvana",
+      "source_url": "https://www.darkreading.com/threat-intelligence/ai-global-crime-syndicates-fraud-nirvana",
+      "feed": "https://www.darkreading.com/rss.xml",
+      "matched_keywords": [
+        "Persona"
+      ],
+      "discovered_at": "2026-08-15T23:47:04.491781+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "1-in-every-100-identity-check-failures-involves-deepfake-media",
+      "title": "1 in every 100 identity check failures involves deepfake media",
+      "source_url": "https://identityweek.net/1-in-every-100-identity-check-failures-involves-deepfake-media/",
+      "feed": "https://identityweek.net/feed/",
+      "matched_keywords": [
+        "LexisNexis"
+      ],
+      "discovered_at": "2026-08-15T23:47:05.700220+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "researcher-bypasses-microsoft-defender-security-patch-seizing-control",
+      "title": "Researcher bypasses Microsoft Defender security patch, seizing control",
+      "source_url": "https://www.csoonline.com/article/4208760/researcher-bypasses-microsoft-defender-security-patch-seizing-control.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "LexisNexis"
+      ],
+      "discovered_at": "2026-08-15T23:47:09.961819+00:00"
+    },
+    {
+      "type": "api_candidate",
+      "suggested_id": "serruya-private-equity-new-listed-by-coinbase-cartel-ransomware-group",
+      "title": "Serruya private equity NEW Listed by Coinbase Cartel Ransomware Group",
+      "source_url": "https://recentbreaches.com/breach/serruya-private-equity-new-coinbase-cartel-2026-08",
+      "feed": "https://recentbreaches.com/api/breaches",
+      "matched_keywords": [
+        "Coinbase"
+      ],
+      "discovered_at": "2026-08-15T23:47:19.324738+00:00"
+    },
+    {
+      "type": "api_candidate",
+      "suggested_id": "sweet-water-holdings-new-listed-by-coinbase-cartel-ransomware-group",
+      "title": "Sweet Water Holdings NEW Listed by Coinbase Cartel Ransomware Group",
+      "source_url": "https://recentbreaches.com/breach/sweet-water-holdings-new-coinbase-cartel-2026-08",
+      "feed": "https://recentbreaches.com/api/breaches",
+      "matched_keywords": [
+        "Coinbase"
+      ],
+      "discovered_at": "2026-08-15T23:47:19.326135+00:00"
+    }
+  ]
+}
