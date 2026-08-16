@@ -235,5 +235,5 @@
     "enabled": true,
     "notes": "If HIBP_API_KEY is configured, query HIBP breach metadata and filter identity-document-related DataClasses."
   },
-  "review_policy": "All discoveries are written to data/pending-review.json and surfaced in a GitHub issue. Never auto-publish a breach claim."
+  "review_policy": "As of August 2026, discoveries are auto-applied directly to breaches.json/companies.json via scripts/apply_candidates.py (--mode direct) with severity set to 'unverified' pending further review. A GitHub issue is opened after publication summarizing what was added. This is a change from the original design, which held all discoveries in data/pending-review.json for manual PR-based review before publication. Every unverified entry should still be checked against its source link; entries found to be inaccurate should be corrected or removed."
 }
