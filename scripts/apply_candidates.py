@@ -114,7 +114,6 @@ def candidate_to_breach(candidate, companies_list):
         "added_by": "automated-pipeline",
         "discovered_at": discovered_at,
     }
-    # Guarantee every required field exists (defensive; should already be true above).
     for field in REQUIRED_BREACH_FIELDS:
         breach.setdefault(field, [] if field in ("companies", "data_types", "sources", "affected_regions") else "")
     return breach
@@ -145,7 +144,6 @@ def validate_breaches_obj(breaches_obj):
         for field in REQUIRED_BREACH_FIELDS:
             if field not in b:
                 raise ValueError(f"Breach '{b.get('id', '?')}' is missing required field '{field}'")
-    # Confirm it round-trips through JSON cleanly (catches NaN/Infinity, cycles, etc.)
     json.loads(json.dumps(breaches_obj))
 
 
@@ -219,8 +217,6 @@ def main():
         print(json.dumps({"applied": applied, "created_companies": created_companies}, indent=2))
         return 0
 
-    # Validate before writing anything to disk. If this fails, nothing is touched
-    # and the workflow step should fail loudly instead of publishing broken data.
     try:
         validate_breaches_obj(breaches_obj)
     except ValueError as e:
@@ -235,6 +231,16 @@ def main():
     atomic_write(BREACHES, breaches_obj)
     atomic_write(COMPANIES, companies_obj)
 
+    # Clear the pending queue now that its contents have been applied (or
+    # explicitly skipped as duplicates). This is the sole functional change
+    # from the previous version: previously the queue was left untouched,
+    # relying entirely on ID-based dedup in the loop above to prevent
+    # reprocessing on a future run. That dedup still runs unchanged, but the
+    # queue is now also emptied so old candidates can't be silently
+    # reprocessed under a different ID if sanitize_id() or the suggested_id
+    # format ever changes later.
+    atomic_write(PENDING, [])
+
     audit_name = f'issue-applied-{datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")}.json'
     atomic_write(AUTOMATED_AUDIT_DIR / audit_name,
                  {"applied": applied, "created_companies": created_companies, "original_candidates": pending})
@@ -242,6 +248,7 @@ def main():
     print("Applied candidates and updated files:")
     print(f" - {BREACHES}")
     print(f" - {COMPANIES}")
+    print(f" - {PENDING} (cleared)")
     print(f"Audit file: {AUTOMATED_AUDIT_DIR / audit_name}")
 
     return 0
