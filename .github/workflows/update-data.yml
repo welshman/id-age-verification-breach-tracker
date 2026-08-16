@@ -43,13 +43,17 @@ jobs:
             echo "has_candidates=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Commit pending review file
+      - name: Auto-apply candidates directly
+        if: steps.check_changes.outputs.has_candidates == 'true'
+        run: python scripts/apply_candidates.py --mode direct --dry-run false
+
+      - name: Commit applied candidates and pending review file
         if: steps.check_changes.outputs.has_candidates == 'true'
         run: |
           git config user.name "id-breach-tracker-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/pending-review.json data/last-run.json
-          git diff --cached --quiet || git commit -m "chore(data): update pending-review candidates [automated]"
+          git add data/pending-review.json data/last-run.json data/breaches.json data/companies.json data/automated-candidates
+          git diff --cached --quiet || git commit -m "chore(data): auto-apply new breach/company candidates [automated]"
           git push
 
       - name: Commit run metadata (no new candidates)
@@ -69,12 +73,12 @@ jobs:
             const fs = require('fs');
             const candidates = JSON.parse(fs.readFileSync('data/pending-review.json', 'utf8'));
             const body = [
-              '### New candidate breach/company entries found by the automated pipeline',
+              '### New breach/company candidates auto-applied by the automated pipeline',
               '',
               'These were discovered by keyword-matching public RSS feeds and/or the HIBP API against',
-              '`data/update-config.json`. **They have not been added to `breaches.json` or `companies.json`.**',
-              'Please verify each item against its source link, then manually merge confirmed entries',
-              'into the appropriate JSON file via a pull request.',
+              '`data/update-config.json` and have been **automatically added** to `breaches.json` and/or',
+              '`companies.json` as unverified entries. Please review each item against its source link',
+              'and correct or remove any inaccurate entries.',
               '',
               '```json',
               JSON.stringify(candidates, null, 2).slice(0, 60000),
@@ -83,7 +87,7 @@ jobs:
               '_This issue was created automatically by `.github/workflows/update-data.yml`._'
             ].join('\n');
 
-            const title = 'Automated: new breach/company candidates for review';
+            const title = 'Automated: new breach/company candidates auto-applied';
             const { data: existing } = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
