@@ -12,7 +12,6 @@ Usage:
 
 import argparse
 import json
-import os
 import re
 from datetime import datetime
 from pathlib import Path
@@ -29,18 +28,29 @@ AUTOMATED_AUDIT_DIR.mkdir(parents=True, exist_ok=True)
 
 ID_RE = re.compile(r'[^a-z0-9\-]')
 
+# Fields required by the frontend (breaches.html / main.js) on every breach entry.
+# Missing any of these causes JS rendering to throw and the page to hang on "Loading...".
+REQUIRED_BREACH_FIELDS = [
+    "id", "title", "date", "companies", "data_types", "severity",
+    "summary", "details", "sources", "affected_regions", "verification_type",
+]
+
+
 def load_json(p):
     if not p.exists():
         return None
     with p.open('r', encoding='utf-8') as f:
         return json.load(f)
 
+
 def atomic_write(path: Path, obj):
-    tmp = NamedTemporaryFile('w', delete=False, encoding='utf-8')
+    tmp = NamedTemporaryFile('w', delete=False, encoding='utf-8', dir=str(path.parent))
     tmp_name = tmp.name
     json.dump(obj, tmp, ensure_ascii=False, indent=2)
+    tmp.write('\n')
     tmp.close()
     shutil.move(tmp_name, str(path))
+
 
 def sanitize_id(s, maxlen=120):
     s = s.lower()
@@ -49,57 +59,68 @@ def sanitize_id(s, maxlen=120):
     s = re.sub(r'-+', '-', s).strip('-')
     return s[:maxlen]
 
+
 def find_company_by_keyword(companies, keyword):
     k = keyword.lower()
     for c in companies:
-        if c.get('id','').lower() == k or c.get('name','').lower() == k:
+        if c.get('id', '').lower() == k or c.get('name', '').lower() == k:
             return c['id']
-        # also try substring match on name
-        if k in c.get('name','').lower():
+        if k in c.get('name', '').lower():
             return c['id']
     return None
 
+
 def candidate_to_breach(candidate, companies_list):
-    # Build a minimal draft breach entry
-    suggested_id = candidate.get('suggested_id') or candidate.get('title','untitled')
+    """Build a complete, schema-valid draft breach entry.
+
+    Every field the frontend expects is always present, even if empty,
+    so a partially-filled automated candidate can never crash rendering.
+    """
+    suggested_id = candidate.get('suggested_id') or candidate.get('title', 'untitled')
     breach_id = sanitize_id(suggested_id)
     title = candidate.get('title') or ''
     discovered_at = candidate.get('discovered_at') or ''
-    date = None
-    if discovered_at:
-        date = discovered_at[:10]
-    # map matched keywords to company ids if possible
+    date = discovered_at[:10] if discovered_at else datetime.utcnow().date().isoformat()
+
     matched = candidate.get('matched_keywords') or []
     companies_ids = []
     for kw in matched:
         mapped = find_company_by_keyword(companies_list, kw)
-        if mapped:
-            companies_ids.append(mapped)
-        else:
-            # create placeholder id
-            placeholder_id = sanitize_id(kw)
-            companies_ids.append(placeholder_id)
-    # fallback: try to extract company-like token from suggested_id
+        companies_ids.append(mapped if mapped else sanitize_id(kw))
     if not companies_ids:
-        # if suggested_id contains company-like prefix, use first token
         token = breach_id.split('-')[0]
         if token:
             companies_ids.append(token)
+
+    source_url = candidate.get('source_url') or ''
+
     breach = {
         "id": breach_id,
         "title": title,
-        "date": date or "",
+        "date": date,
         "companies": companies_ids,
         "data_types": [],
         "severity": "unverified",
-        "source": candidate.get('source_url'),
+        "summary": f"Automatically discovered candidate pending human verification: {title}".strip(),
+        "details": (
+            f"This entry was discovered by the automated pipeline via {candidate.get('feed') or 'an external source'} "
+            f"and matched the keyword(s) {', '.join(matched) if matched else 'none recorded'}. "
+            "It has not been independently verified and should be checked against the source link before "
+            "being treated as a confirmed breach."
+        ),
+        "sources": [source_url] if source_url else [],
+        "affected_regions": [],
+        "verification_type": "unverified_automated",
         "added_by": "automated-pipeline",
-        "discovered_at": discovered_at
+        "discovered_at": discovered_at,
     }
+    # Guarantee every required field exists (defensive; should already be true above).
+    for field in REQUIRED_BREACH_FIELDS:
+        breach.setdefault(field, [] if field in ("companies", "data_types", "sources", "affected_regions") else "")
     return breach
 
+
 def ensure_company_record(companies_obj, company_id, name_hint=None):
-    # companies_obj is the top-level object with "companies" list
     existing = companies_obj.get('companies', [])
     if any(c.get('id') == company_id for c in existing):
         return False
@@ -109,16 +130,31 @@ def ensure_company_record(companies_obj, company_id, name_hint=None):
         "website": "",
         "region": "",
         "type": "unknown",
-        "description": "Auto-created from automated candidate; please verify and expand."
+        "description": "Auto-created from automated candidate; please verify and expand.",
     }
     existing.append(new)
     companies_obj['companies'] = existing
     return True
 
+
+def validate_breaches_obj(breaches_obj):
+    """Raise if the resulting breaches.json would not be safe to publish."""
+    if not isinstance(breaches_obj, dict) or 'breaches' not in breaches_obj:
+        raise ValueError("breaches.json is missing the top-level 'breaches' list")
+    for b in breaches_obj['breaches']:
+        for field in REQUIRED_BREACH_FIELDS:
+            if field not in b:
+                raise ValueError(f"Breach '{b.get('id', '?')}' is missing required field '{field}'")
+    # Confirm it round-trips through JSON cleanly (catches NaN/Infinity, cycles, etc.)
+    json.loads(json.dumps(breaches_obj))
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--mode', choices=['direct'], default='direct', help='Operation mode: direct (push to default branch). PR mode not implemented in this script.')
-    ap.add_argument('--dry-run', choices=['true','false'], default='true', help='If true, do not write files or make changes.')
+    ap.add_argument('--mode', choices=['direct'], default='direct',
+                     help='Operation mode: direct (push to default branch). PR mode not implemented in this script.')
+    ap.add_argument('--dry-run', choices=['true', 'false'], default='true',
+                     help='If true, do not write files or make changes.')
     args = ap.parse_args()
 
     dry_run = args.dry_run == 'true'
@@ -153,19 +189,14 @@ def main():
         if bid in existing_breaches:
             print(f"Skipping existing breach id: {bid}")
             continue
-        # ensure company records exist for each company id in breach
         for cid in breach.get('companies', []):
             if cid and cid not in existing_companies:
-                # add minimal company
                 name_hint = cid
                 print(f"Will create company record: {cid}")
                 if not dry_run:
                     ensure_company_record(companies_obj, cid, name_hint=name_hint)
                     existing_companies[cid] = True
-                    created_companies.append(cid)
-                else:
-                    created_companies.append(cid)
-        # append breach
+                created_companies.append(cid)
         print(f"Will add breach: {bid}")
         if not dry_run:
             lst = breaches_obj.get('breaches', [])
@@ -176,30 +207,37 @@ def main():
         applied.append({
             "candidate_id": cand.get('suggested_id'),
             "created_breach_id": bid,
-            "source": cand.get('source_url')
+            "source": cand.get('source_url'),
         })
 
-    # update last_updated field for breaches.json
     if added_any and not dry_run:
         today = datetime.utcnow().date().isoformat()
         breaches_obj['last_updated'] = today
 
-    # write files if not dry-run
     if dry_run:
         print("Dry run mode: no files changed. Summary:")
         print(json.dumps({"applied": applied, "created_companies": created_companies}, indent=2))
         return 0
 
-    # backup originals
-    shutil.copy(BREACHES, BREACHES.with_suffix('.json.bak'))
-    shutil.copy(COMPANIES, COMPANIES.with_suffix('.json.bak'))
+    # Validate before writing anything to disk. If this fails, nothing is touched
+    # and the workflow step should fail loudly instead of publishing broken data.
+    try:
+        validate_breaches_obj(breaches_obj)
+    except ValueError as e:
+        print(f"VALIDATION FAILED, aborting without writing any files: {e}", file=sys.stderr)
+        return 3
+
+    if BREACHES.exists():
+        shutil.copy(BREACHES, BREACHES.with_suffix('.json.bak'))
+    if COMPANIES.exists():
+        shutil.copy(COMPANIES, COMPANIES.with_suffix('.json.bak'))
 
     atomic_write(BREACHES, breaches_obj)
     atomic_write(COMPANIES, companies_obj)
 
-    # write audit copy of original candidates and mapping
     audit_name = f'issue-applied-{datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")}.json'
-    atomic_write(AUTOMATED_AUDIT_DIR / audit_name, {"applied": applied, "created_companies": created_companies, "original_candidates": pending})
+    atomic_write(AUTOMATED_AUDIT_DIR / audit_name,
+                 {"applied": applied, "created_companies": created_companies, "original_candidates": pending})
 
     print("Applied candidates and updated files:")
     print(f" - {BREACHES}")
@@ -207,6 +245,7 @@ def main():
     print(f"Audit file: {AUTOMATED_AUDIT_DIR / audit_name}")
 
     return 0
+
 
 if __name__ == '__main__':
     sys.exit(main())
