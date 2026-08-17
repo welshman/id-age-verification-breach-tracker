@@ -1,0 +1,24 @@
+{
+  "applied": [
+    {
+      "candidate_id": "new-ciso-appointments-2026",
+      "created_breach_id": "new-ciso-appointments-2026",
+      "source": "https://www.csoonline.com/article/4186743/new-ciso-appointments-2026.html"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "new-ciso-appointments-2026",
+      "title": "New CISO appointments 2026",
+      "source_url": "https://www.csoonline.com/article/4186743/new-ciso-appointments-2026.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "Socure",
+        "Coinbase"
+      ],
+      "discovered_at": "2026-08-17T06:46:05.761491+00:00"
+    }
+  ]
+}
