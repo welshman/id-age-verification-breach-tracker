@@ -1,0 +1,135 @@
+{
+  "applied": [
+    {
+      "candidate_id": "in-other-news-zombie-card-attack-t-mobile-cut-cable-to-stop-hackers-github-denie",
+      "created_breach_id": "in-other-news-zombie-card-attack-t-mobile-cut-cable-to-stop-hackers-github-denie",
+      "source": "https://www.securityweek.com/in-other-news-zombie-card-attack-t-mobile-cut-cable-to-stop-hackers-github-denies-ai-caused-bug/"
+    },
+    {
+      "candidate_id": "facetec-issued-new-patent-by-the-uspto",
+      "created_breach_id": "facetec-issued-new-patent-by-the-uspto",
+      "source": "https://identityweek.net/facetec-issued-new-patent-by-the-uspto/"
+    },
+    {
+      "candidate_id": "ai-threats-are-everywhere-a-risk-first-ciso-decides-what-to-prioritize",
+      "created_breach_id": "ai-threats-are-everywhere-a-risk-first-ciso-decides-what-to-prioritize",
+      "source": "https://www.csoonline.com/article/4212017/ai-threats-are-everywhere-a-risk-first-ciso-decides-what-to-prioritize.html"
+    },
+    {
+      "candidate_id": "kriminal-breaks-out-of-grok-claude-guardrails-at-12-99",
+      "created_breach_id": "kriminal-breaks-out-of-grok-claude-guardrails-at-12-99",
+      "source": "https://www.csoonline.com/article/4211952/kriminal-breaks-out-of-grok-claude-guardrails-at-12-99.html"
+    },
+    {
+      "candidate_id": "openai-temporarily-slows-scaling-efforts-also-promises-zero-data-retention-for-s",
+      "created_breach_id": "openai-temporarily-slows-scaling-efforts-also-promises-zero-data-retention-for-s",
+      "source": "https://www.csoonline.com/article/4211672/openai-temporarily-slows-scaling-efforts-also-promises-zero-data-retention-for-select-frontier-model-customers-2.html"
+    },
+    {
+      "candidate_id": "microsoft-finally-patches-critical-one-click-copilot-vulnerability-almost-eight-",
+      "created_breach_id": "microsoft-finally-patches-critical-one-click-copilot-vulnerability-almost-eight",
+      "source": "https://www.csoonline.com/article/4211342/microsoft-finally-patches-critical-one-click-copilot-vulnerability-more-than-eight-months-after-learning-of-it-2.html"
+    },
+    {
+      "candidate_id": "openai-president-s-blog-pushing-agentic-ai-most-notable-for-what-it-did-not-say",
+      "created_breach_id": "openai-president-s-blog-pushing-agentic-ai-most-notable-for-what-it-did-not-say",
+      "source": "https://www.csoonline.com/article/4210776/openai-presidents-blog-pushing-agentic-ai-most-notable-for-what-it-did-not-say-2.html"
+    },
+    {
+      "candidate_id": "turner-and-townsend-listed-by-coinbase-cartel-ransomware-group",
+      "created_breach_id": "turner-and-townsend-listed-by-coinbase-cartel-ransomware-group",
+      "source": "https://recentbreaches.com/breach/turner-and-townsend-coinbase-cartel-2026-08"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "in-other-news-zombie-card-attack-t-mobile-cut-cable-to-stop-hackers-github-denie",
+      "title": "In Other News: Zombie Card Attack, T-Mobile Cut Cable to Stop Hackers, GitHub Denies AI Caused Bug",
+      "source_url": "https://www.securityweek.com/in-other-news-zombie-card-attack-t-mobile-cut-cable-to-stop-hackers-github-denies-ai-caused-bug/",
+      "feed": "https://www.securityweek.com/feed/",
+      "matched_keywords": [
+        "T-Mobile"
+      ],
+      "discovered_at": "2026-08-22T03:03:32.866480+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "facetec-issued-new-patent-by-the-uspto",
+      "title": "FaceTec issued new patent by the USPTO",
+      "source_url": "https://identityweek.net/facetec-issued-new-patent-by-the-uspto/",
+      "feed": "https://identityweek.net/feed/",
+      "matched_keywords": [
+        "FaceTec"
+      ],
+      "discovered_at": "2026-08-22T03:03:33.138688+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "ai-threats-are-everywhere-a-risk-first-ciso-decides-what-to-prioritize",
+      "title": "AI threats are everywhere. A risk-first CISO decides what to prioritize",
+      "source_url": "https://www.csoonline.com/article/4212017/ai-threats-are-everywhere-a-risk-first-ciso-decides-what-to-prioritize.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "Verizon"
+      ],
+      "discovered_at": "2026-08-22T03:03:37.590761+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "kriminal-breaks-out-of-grok-claude-guardrails-at-12-99",
+      "title": "Kriminal breaks out of Grok, Claude guardrails at $12.99",
+      "source_url": "https://www.csoonline.com/article/4211952/kriminal-breaks-out-of-grok-claude-guardrails-at-12-99.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "Persona"
+      ],
+      "discovered_at": "2026-08-22T03:03:37.624900+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "openai-temporarily-slows-scaling-efforts-also-promises-zero-data-retention-for-s",
+      "title": "OpenAI ‘temporarily slows’ scaling efforts, also promises zero data retention for select frontier model customers",
+      "source_url": "https://www.csoonline.com/article/4211672/openai-temporarily-slows-scaling-efforts-also-promises-zero-data-retention-for-select-frontier-model-customers-2.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "LexisNexis"
+      ],
+      "discovered_at": "2026-08-22T03:03:37.647088+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "microsoft-finally-patches-critical-one-click-copilot-vulnerability-almost-eight-",
+      "title": "Microsoft finally patches critical one-click Copilot vulnerability, almost eight months after learning of it",
+      "source_url": "https://www.csoonline.com/article/4211342/microsoft-finally-patches-critical-one-click-copilot-vulnerability-more-than-eight-months-after-learning-of-it-2.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "LexisNexis"
+      ],
+      "discovered_at": "2026-08-22T03:03:37.697678+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "openai-president-s-blog-pushing-agentic-ai-most-notable-for-what-it-did-not-say",
+      "title": "OpenAI president’s blog pushing agentic AI most notable for what it did not say",
+      "source_url": "https://www.csoonline.com/article/4210776/openai-presidents-blog-pushing-agentic-ai-most-notable-for-what-it-did-not-say-2.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "LexisNexis"
+      ],
+      "discovered_at": "2026-08-22T03:03:37.756401+00:00"
+    },
+    {
+      "type": "api_candidate",
+      "suggested_id": "turner-and-townsend-listed-by-coinbase-cartel-ransomware-group",
+      "title": "Turner and Townsend Listed by Coinbase Cartel Ransomware Group",
+      "source_url": "https://recentbreaches.com/breach/turner-and-townsend-coinbase-cartel-2026-08",
+      "feed": "https://recentbreaches.com/api/breaches",
+      "matched_keywords": [
+        "Coinbase"
+      ],
+      "discovered_at": "2026-08-22T03:03:50.959268+00:00"
+    }
+  ]
+}
