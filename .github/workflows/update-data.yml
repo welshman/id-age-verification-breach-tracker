@@ -2,7 +2,7 @@ name: Update ID/Age Verification Breach Data
 
 on:
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '0 6 * * *'    # Every day at 06:00 UTC
   workflow_dispatch: {}
 
 permissions:
