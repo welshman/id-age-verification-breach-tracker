@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "westwing-group-se-new-listed-by-coinbase-cartel-ransomware-group",
+      "created_breach_id": "westwing-group-se-new-listed-by-coinbase-cartel-ransomware-group",
+      "source": "https://recentbreaches.com/breach/westwing-group-se-new-coinbase-cartel-2026-08"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "api_candidate",
+      "suggested_id": "westwing-group-se-new-listed-by-coinbase-cartel-ransomware-group",
+      "title": "Westwing Group SE NEW Listed by Coinbase Cartel Ransomware Group",
+      "source_url": "https://recentbreaches.com/breach/westwing-group-se-new-coinbase-cartel-2026-08",
+      "feed": "https://recentbreaches.com/api/breaches",
+      "matched_keywords": [
+        "Coinbase"
+      ],
+      "discovered_at": "2026-08-24T06:42:10.693568+00:00"
+    }
+  ]
+}

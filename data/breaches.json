@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-08-22",
+  "last_updated": "2026-08-24",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -1131,6 +1131,25 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-08-22T03:03:50.959268+00:00"
+    },
+    {
+      "id": "westwing-group-se-new-listed-by-coinbase-cartel-ransomware-group",
+      "title": "Westwing Group SE NEW Listed by Coinbase Cartel Ransomware Group",
+      "date": "2026-08-24",
+      "companies": [
+        "coinbase"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Westwing Group SE NEW Listed by Coinbase Cartel Ransomware Group",
+      "details": "This entry was discovered by the automated pipeline via https://recentbreaches.com/api/breaches and matched the keyword(s) Coinbase. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://recentbreaches.com/breach/westwing-group-se-new-coinbase-cartel-2026-08"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-08-24T06:42:10.693568+00:00"
     }
   ]
 }
