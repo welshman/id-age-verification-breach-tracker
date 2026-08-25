@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "cognizable-damage-required-for-data-breach-claims-ma-appeals-court-says-in-a-fir",
+      "created_breach_id": "cognizable-damage-required-for-data-breach-claims-ma-appeals-court-says-in-a-fir",
+      "source": "https://databreaches.net/2026/08/24/cognizable-damage-required-for-data-breach-claims-ma-appeals-court-says-in-a-first/"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "cognizable-damage-required-for-data-breach-claims-ma-appeals-court-says-in-a-fir",
+      "title": "“Cognizable damage” required for data breach claims, MA appeals court says in a first",
+      "source_url": "https://databreaches.net/2026/08/24/cognizable-damage-required-for-data-breach-claims-ma-appeals-court-says-in-a-first/",
+      "feed": "https://www.databreaches.net/feed/",
+      "matched_keywords": [
+        "TransUnion"
+      ],
+      "discovered_at": "2026-08-25T06:33:49.365546+00:00"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-08-24",
+  "last_updated": "2026-08-25",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -1150,6 +1150,25 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-08-24T06:42:10.693568+00:00"
+    },
+    {
+      "id": "cognizable-damage-required-for-data-breach-claims-ma-appeals-court-says-in-a-fir",
+      "title": "“Cognizable damage” required for data breach claims, MA appeals court says in a first",
+      "date": "2026-08-25",
+      "companies": [
+        "transunion"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: “Cognizable damage” required for data breach claims, MA appeals court says in a first",
+      "details": "This entry was discovered by the automated pipeline via https://www.databreaches.net/feed/ and matched the keyword(s) TransUnion. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://databreaches.net/2026/08/24/cognizable-damage-required-for-data-breach-claims-ma-appeals-court-says-in-a-first/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-08-25T06:33:49.365546+00:00"
     }
   ]
 }
