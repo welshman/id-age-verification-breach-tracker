@@ -1,0 +1,39 @@
+{
+  "applied": [
+    {
+      "candidate_id": "how-equifax-is-using-ai-to-elevate-its-cybersecurity",
+      "created_breach_id": "how-equifax-is-using-ai-to-elevate-its-cybersecurity",
+      "source": "https://www.csoonline.com/article/4213266/how-equifax-is-using-ai-to-elevate-its-cybersecurity.html"
+    },
+    {
+      "candidate_id": "7-ways-ai-can-be-used-to-enhance-security-operations",
+      "created_breach_id": "7-ways-ai-can-be-used-to-enhance-security-operations",
+      "source": "https://www.csoonline.com/article/4212560/7-ways-ai-can-be-used-to-enhance-security-operations.html"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "how-equifax-is-using-ai-to-elevate-its-cybersecurity",
+      "title": "How Equifax is using AI to elevate its cybersecurity",
+      "source_url": "https://www.csoonline.com/article/4213266/how-equifax-is-using-ai-to-elevate-its-cybersecurity.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "Equifax"
+      ],
+      "discovered_at": "2026-08-26T06:36:18.755160+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "7-ways-ai-can-be-used-to-enhance-security-operations",
+      "title": "7 ways AI can be used to enhance security operations",
+      "source_url": "https://www.csoonline.com/article/4212560/7-ways-ai-can-be-used-to-enhance-security-operations.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "TransUnion"
+      ],
+      "discovered_at": "2026-08-26T06:36:18.781801+00:00"
+    }
+  ]
+}
