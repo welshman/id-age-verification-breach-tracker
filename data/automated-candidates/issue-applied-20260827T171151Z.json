@@ -1,0 +1,39 @@
+{
+  "applied": [
+    {
+      "candidate_id": "critical-infrastructure-s-long-undefended-tail-exposed-by-uk-energy-attack",
+      "created_breach_id": "critical-infrastructure-s-long-undefended-tail-exposed-by-uk-energy-attack",
+      "source": "https://www.csoonline.com/article/4214535/critical-infrastructures-long-undefended-tail-exposed-by-uk-energy-attack.html"
+    },
+    {
+      "candidate_id": "crowe-listed-by-coinbase-cartel-ransomware-group",
+      "created_breach_id": "crowe-listed-by-coinbase-cartel-ransomware-group",
+      "source": "https://recentbreaches.com/breach/crowe-coinbase-cartel-2026-08"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "critical-infrastructure-s-long-undefended-tail-exposed-by-uk-energy-attack",
+      "title": "Critical infrastructure’s long, undefended tail exposed by UK energy attack",
+      "source_url": "https://www.csoonline.com/article/4214535/critical-infrastructures-long-undefended-tail-exposed-by-uk-energy-attack.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "Persona"
+      ],
+      "discovered_at": "2026-08-27T17:11:36.301735+00:00"
+    },
+    {
+      "type": "api_candidate",
+      "suggested_id": "crowe-listed-by-coinbase-cartel-ransomware-group",
+      "title": "Crowe Listed by Coinbase Cartel Ransomware Group",
+      "source_url": "https://recentbreaches.com/breach/crowe-coinbase-cartel-2026-08",
+      "feed": "https://recentbreaches.com/api/breaches",
+      "matched_keywords": [
+        "Coinbase"
+      ],
+      "discovered_at": "2026-08-27T17:11:49.154251+00:00"
+    }
+  ]
+}

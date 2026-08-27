@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-08-26",
+  "last_updated": "2026-08-27",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -1207,6 +1207,44 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-08-26T06:36:18.781801+00:00"
+    },
+    {
+      "id": "critical-infrastructure-s-long-undefended-tail-exposed-by-uk-energy-attack",
+      "title": "Critical infrastructure’s long, undefended tail exposed by UK energy attack",
+      "date": "2026-08-27",
+      "companies": [
+        "persona"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Critical infrastructure’s long, undefended tail exposed by UK energy attack",
+      "details": "This entry was discovered by the automated pipeline via https://www.csoonline.com/feed/ and matched the keyword(s) Persona. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.csoonline.com/article/4214535/critical-infrastructures-long-undefended-tail-exposed-by-uk-energy-attack.html"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-08-27T17:11:36.301735+00:00"
+    },
+    {
+      "id": "crowe-listed-by-coinbase-cartel-ransomware-group",
+      "title": "Crowe Listed by Coinbase Cartel Ransomware Group",
+      "date": "2026-08-27",
+      "companies": [
+        "coinbase"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Crowe Listed by Coinbase Cartel Ransomware Group",
+      "details": "This entry was discovered by the automated pipeline via https://recentbreaches.com/api/breaches and matched the keyword(s) Coinbase. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://recentbreaches.com/breach/crowe-coinbase-cartel-2026-08"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-08-27T17:11:49.154251+00:00"
     }
   ]
 }
