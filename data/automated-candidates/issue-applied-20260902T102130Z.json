@@ -1,0 +1,39 @@
+{
+  "applied": [
+    {
+      "candidate_id": "facetec-ur-code-adoption-gaining-significant-real-world-momentum",
+      "created_breach_id": "facetec-ur-code-adoption-gaining-significant-real-world-momentum",
+      "source": "https://identityweek.net/facetec-ur-code-adoption-gaining-significant-real-world-momentum/"
+    },
+    {
+      "candidate_id": "why-ur-codes-are-a-good-fit-for-project-lifesaver",
+      "created_breach_id": "why-ur-codes-are-a-good-fit-for-project-lifesaver",
+      "source": "https://identityweek.net/why-ur-codes-are-a-good-fit-for-project-lifesaver/"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "facetec-ur-code-adoption-gaining-significant-real-world-momentum",
+      "title": "FaceTec UR® Code adoption gaining significant real-world momentum",
+      "source_url": "https://identityweek.net/facetec-ur-code-adoption-gaining-significant-real-world-momentum/",
+      "feed": "https://identityweek.net/feed/",
+      "matched_keywords": [
+        "FaceTec"
+      ],
+      "discovered_at": "2026-09-02T10:20:48.882837+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "why-ur-codes-are-a-good-fit-for-project-lifesaver",
+      "title": "Why UR Codes are a good fit for Project Lifesaver",
+      "source_url": "https://identityweek.net/why-ur-codes-are-a-good-fit-for-project-lifesaver/",
+      "feed": "https://identityweek.net/feed/",
+      "matched_keywords": [
+        "FaceTec"
+      ],
+      "discovered_at": "2026-09-02T10:20:48.884862+00:00"
+    }
+  ]
+}
