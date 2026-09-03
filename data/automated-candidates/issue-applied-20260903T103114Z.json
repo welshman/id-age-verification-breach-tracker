@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "sonicwall-reports-two-major-security-holes-under-active-exploit",
+      "created_breach_id": "sonicwall-reports-two-major-security-holes-under-active-exploit",
+      "source": "https://www.csoonline.com/article/4217682/sonicwall-reports-two-major-security-holes-under-active-exploit-2.html"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "sonicwall-reports-two-major-security-holes-under-active-exploit",
+      "title": "SonicWall reports two major security holes under active exploit",
+      "source_url": "https://www.csoonline.com/article/4217682/sonicwall-reports-two-major-security-holes-under-active-exploit-2.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "LexisNexis"
+      ],
+      "discovered_at": "2026-09-03T10:30:04.453583+00:00"
+    }
+  ]
+}

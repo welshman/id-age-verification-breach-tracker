@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-09-02",
+  "last_updated": "2026-09-03",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -1283,6 +1283,25 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-09-02T10:20:48.884862+00:00"
+    },
+    {
+      "id": "sonicwall-reports-two-major-security-holes-under-active-exploit",
+      "title": "SonicWall reports two major security holes under active exploit",
+      "date": "2026-09-03",
+      "companies": [
+        "lexisnexis-risk"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: SonicWall reports two major security holes under active exploit",
+      "details": "This entry was discovered by the automated pipeline via https://www.csoonline.com/feed/ and matched the keyword(s) LexisNexis. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.csoonline.com/article/4217682/sonicwall-reports-two-major-security-holes-under-active-exploit-2.html"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-09-03T10:30:04.453583+00:00"
     }
   ]
 }
