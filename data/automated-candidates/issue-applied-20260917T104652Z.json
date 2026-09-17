@@ -1,0 +1,39 @@
+{
+  "applied": [
+    {
+      "candidate_id": "thales-builds-luna-8-in-age-of-cryptographic-security",
+      "created_breach_id": "thales-builds-luna-8-in-age-of-cryptographic-security",
+      "source": "https://identityweek.net/thales-builds-luna-8-in-age-of-cryptographic-security/"
+    },
+    {
+      "candidate_id": "fake-ai-trading-agent-steals-crypto-wallet-passwords",
+      "created_breach_id": "fake-ai-trading-agent-steals-crypto-wallet-passwords",
+      "source": "https://www.helpnetsecurity.com/2026/09/17/fake-ai-trading-agent-research/"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "thales-builds-luna-8-in-age-of-cryptographic-security",
+      "title": "Thales builds Luna 8 in age of cryptographic security",
+      "source_url": "https://identityweek.net/thales-builds-luna-8-in-age-of-cryptographic-security/",
+      "feed": "https://identityweek.net/feed/",
+      "matched_keywords": [
+        "Thales"
+      ],
+      "discovered_at": "2026-09-17T10:46:21.078120+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "fake-ai-trading-agent-steals-crypto-wallet-passwords",
+      "title": "Fake AI trading agent steals crypto wallet passwords",
+      "source_url": "https://www.helpnetsecurity.com/2026/09/17/fake-ai-trading-agent-research/",
+      "feed": "https://www.helpnetsecurity.com/feed/",
+      "matched_keywords": [
+        "Coinbase"
+      ],
+      "discovered_at": "2026-09-17T10:46:23.946448+00:00"
+    }
+  ]
+}

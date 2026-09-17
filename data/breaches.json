@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-09-16",
+  "last_updated": "2026-09-17",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -1321,6 +1321,44 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-09-16T10:37:25.868776+00:00"
+    },
+    {
+      "id": "thales-builds-luna-8-in-age-of-cryptographic-security",
+      "title": "Thales builds Luna 8 in age of cryptographic security",
+      "date": "2026-09-17",
+      "companies": [
+        "thales-digital-identity"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Thales builds Luna 8 in age of cryptographic security",
+      "details": "This entry was discovered by the automated pipeline via https://identityweek.net/feed/ and matched the keyword(s) Thales. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://identityweek.net/thales-builds-luna-8-in-age-of-cryptographic-security/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-09-17T10:46:21.078120+00:00"
+    },
+    {
+      "id": "fake-ai-trading-agent-steals-crypto-wallet-passwords",
+      "title": "Fake AI trading agent steals crypto wallet passwords",
+      "date": "2026-09-17",
+      "companies": [
+        "coinbase"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Fake AI trading agent steals crypto wallet passwords",
+      "details": "This entry was discovered by the automated pipeline via https://www.helpnetsecurity.com/feed/ and matched the keyword(s) Coinbase. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.helpnetsecurity.com/2026/09/17/fake-ai-trading-agent-research/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-09-17T10:46:23.946448+00:00"
     }
   ]
 }
