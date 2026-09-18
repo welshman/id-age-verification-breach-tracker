@@ -1,0 +1,55 @@
+{
+  "applied": [
+    {
+      "candidate_id": "iran-linked-handala-hack-tied-to-heavygram-telegram-backdoor-that-can-steal-pass",
+      "created_breach_id": "iran-linked-handala-hack-tied-to-heavygram-telegram-backdoor-that-can-steal-pass",
+      "source": "https://thehackernews.com/2026/09/iran-linked-handala-hack-tied-to.html"
+    },
+    {
+      "candidate_id": "ciso-s-expert-guide-to-agentic-pentesting-for-websites",
+      "created_breach_id": "ciso-s-expert-guide-to-agentic-pentesting-for-websites",
+      "source": "https://thehackernews.com/2026/09/cisos-expert-guide-to-agentic.html"
+    },
+    {
+      "candidate_id": "ai-one-of-the-top-sources-of-risk-to-enterprises-ai-threats-to-human-rights",
+      "created_breach_id": "ai-one-of-the-top-sources-of-risk-to-enterprises-ai-threats-to-human-rights",
+      "source": "https://identityweek.net/ai-one-of-the-top-sources-of-risk-to-enterprises-ai-threats-to-human-rights/"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "iran-linked-handala-hack-tied-to-heavygram-telegram-backdoor-that-can-steal-pass",
+      "title": "Iran-Linked Handala Hack Tied to HEAVYGRAM Telegram Backdoor That Can Steal Passwords",
+      "source_url": "https://thehackernews.com/2026/09/iran-linked-handala-hack-tied-to.html",
+      "feed": "https://feeds.feedburner.com/TheHackersNews",
+      "matched_keywords": [
+        "Persona"
+      ],
+      "discovered_at": "2026-09-18T10:21:45.888536+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "ciso-s-expert-guide-to-agentic-pentesting-for-websites",
+      "title": "CISO's Expert Guide to Agentic Pentesting for Websites",
+      "source_url": "https://thehackernews.com/2026/09/cisos-expert-guide-to-agentic.html",
+      "feed": "https://feeds.feedburner.com/TheHackersNews",
+      "matched_keywords": [
+        "Verizon"
+      ],
+      "discovered_at": "2026-09-18T10:21:45.890855+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "ai-one-of-the-top-sources-of-risk-to-enterprises-ai-threats-to-human-rights",
+      "title": "AI one of the top sources of risk to enterprises; AI threats to ‘human rights’",
+      "source_url": "https://identityweek.net/ai-one-of-the-top-sources-of-risk-to-enterprises-ai-threats-to-human-rights/",
+      "feed": "https://identityweek.net/feed/",
+      "matched_keywords": [
+        "Thales"
+      ],
+      "discovered_at": "2026-09-18T10:21:46.549481+00:00"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-09-17",
+  "last_updated": "2026-09-18",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -1359,6 +1359,63 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-09-17T10:46:23.946448+00:00"
+    },
+    {
+      "id": "iran-linked-handala-hack-tied-to-heavygram-telegram-backdoor-that-can-steal-pass",
+      "title": "Iran-Linked Handala Hack Tied to HEAVYGRAM Telegram Backdoor That Can Steal Passwords",
+      "date": "2026-09-18",
+      "companies": [
+        "persona"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Iran-Linked Handala Hack Tied to HEAVYGRAM Telegram Backdoor That Can Steal Passwords",
+      "details": "This entry was discovered by the automated pipeline via https://feeds.feedburner.com/TheHackersNews and matched the keyword(s) Persona. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://thehackernews.com/2026/09/iran-linked-handala-hack-tied-to.html"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-09-18T10:21:45.888536+00:00"
+    },
+    {
+      "id": "ciso-s-expert-guide-to-agentic-pentesting-for-websites",
+      "title": "CISO's Expert Guide to Agentic Pentesting for Websites",
+      "date": "2026-09-18",
+      "companies": [
+        "verizon"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: CISO's Expert Guide to Agentic Pentesting for Websites",
+      "details": "This entry was discovered by the automated pipeline via https://feeds.feedburner.com/TheHackersNews and matched the keyword(s) Verizon. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://thehackernews.com/2026/09/cisos-expert-guide-to-agentic.html"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-09-18T10:21:45.890855+00:00"
+    },
+    {
+      "id": "ai-one-of-the-top-sources-of-risk-to-enterprises-ai-threats-to-human-rights",
+      "title": "AI one of the top sources of risk to enterprises; AI threats to ‘human rights’",
+      "date": "2026-09-18",
+      "companies": [
+        "thales-digital-identity"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: AI one of the top sources of risk to enterprises; AI threats to ‘human rights’",
+      "details": "This entry was discovered by the automated pipeline via https://identityweek.net/feed/ and matched the keyword(s) Thales. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://identityweek.net/ai-one-of-the-top-sources-of-risk-to-enterprises-ai-threats-to-human-rights/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-09-18T10:21:46.549481+00:00"
     }
   ]
 }
