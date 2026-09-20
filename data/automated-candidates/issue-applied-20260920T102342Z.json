@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "identity-visibility-in-2026-the-foundation-of-identity-security",
+      "created_breach_id": "identity-visibility-in-2026-the-foundation-of-identity-security",
+      "source": "https://thehackernews.com/2026/09/identity-visibility-in-2026-foundation.html"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "identity-visibility-in-2026-the-foundation-of-identity-security",
+      "title": "Identity Visibility in 2026: The Foundation of Identity Security",
+      "source_url": "https://thehackernews.com/2026/09/identity-visibility-in-2026-foundation.html",
+      "feed": "https://feeds.feedburner.com/TheHackersNews",
+      "matched_keywords": [
+        "Verizon"
+      ],
+      "discovered_at": "2026-09-20T10:23:24.827879+00:00"
+    }
+  ]
+}

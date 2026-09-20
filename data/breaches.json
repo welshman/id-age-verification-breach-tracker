@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-09-18",
+  "last_updated": "2026-09-20",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -1416,6 +1416,25 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-09-18T10:21:46.549481+00:00"
+    },
+    {
+      "id": "identity-visibility-in-2026-the-foundation-of-identity-security",
+      "title": "Identity Visibility in 2026: The Foundation of Identity Security",
+      "date": "2026-09-20",
+      "companies": [
+        "verizon"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Identity Visibility in 2026: The Foundation of Identity Security",
+      "details": "This entry was discovered by the automated pipeline via https://feeds.feedburner.com/TheHackersNews and matched the keyword(s) Verizon. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://thehackernews.com/2026/09/identity-visibility-in-2026-foundation.html"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-09-20T10:23:24.827879+00:00"
     }
   ]
 }
