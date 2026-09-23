@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-09-20",
+  "last_updated": "2026-09-23",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -1435,6 +1435,63 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-09-20T10:23:24.827879+00:00"
+    },
+    {
+      "id": "microsoft-takes-down-eviltokens-device-code-phishing-service-tied-to-12-000-inbo",
+      "title": "Microsoft Takes Down EvilTokens Device-Code Phishing Service Tied to 12,000 Inbox Compromises",
+      "date": "2026-09-23",
+      "companies": [
+        "coinbase"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Microsoft Takes Down EvilTokens Device-Code Phishing Service Tied to 12,000 Inbox Compromises",
+      "details": "This entry was discovered by the automated pipeline via https://feeds.feedburner.com/TheHackersNews and matched the keyword(s) Coinbase. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://thehackernews.com/2026/09/microsoft-takes-down-eviltokens-device.html"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-09-23T10:34:33.609615+00:00"
+    },
+    {
+      "id": "microsoft-s-eviltokens-takedown-sheds-light-on-state-of-ai-powered-cybercrime",
+      "title": "Microsoft’s EvilTokens takedown sheds light on state of AI-powered cybercrime",
+      "date": "2026-09-23",
+      "companies": [
+        "coinbase"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Microsoft’s EvilTokens takedown sheds light on state of AI-powered cybercrime",
+      "details": "This entry was discovered by the automated pipeline via https://www.csoonline.com/feed/ and matched the keyword(s) Coinbase. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.csoonline.com/article/4225175/microsofts-eviltokens-takedown-sheds-light-on-state-of-ai-powered-cybercrime.html"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-09-23T10:34:36.417317+00:00"
+    },
+    {
+      "id": "microsoft-disrupts-eviltokens-phishing-service-that-gave-criminals-access-to-12",
+      "title": "Microsoft disrupts EvilTokens phishing service that gave criminals access to 12,000 inboxes",
+      "date": "2026-09-23",
+      "companies": [
+        "coinbase"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Microsoft disrupts EvilTokens phishing service that gave criminals access to 12,000 inboxes",
+      "details": "This entry was discovered by the automated pipeline via https://www.helpnetsecurity.com/feed/ and matched the keyword(s) Coinbase. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.helpnetsecurity.com/2026/09/23/microsoft-eviltokens-phishing-service-disrupted/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-09-23T10:34:37.624719+00:00"
     }
   ]
 }

@@ -1,0 +1,55 @@
+{
+  "applied": [
+    {
+      "candidate_id": "microsoft-takes-down-eviltokens-device-code-phishing-service-tied-to-12-000-inbo",
+      "created_breach_id": "microsoft-takes-down-eviltokens-device-code-phishing-service-tied-to-12-000-inbo",
+      "source": "https://thehackernews.com/2026/09/microsoft-takes-down-eviltokens-device.html"
+    },
+    {
+      "candidate_id": "microsoft-s-eviltokens-takedown-sheds-light-on-state-of-ai-powered-cybercrime",
+      "created_breach_id": "microsoft-s-eviltokens-takedown-sheds-light-on-state-of-ai-powered-cybercrime",
+      "source": "https://www.csoonline.com/article/4225175/microsofts-eviltokens-takedown-sheds-light-on-state-of-ai-powered-cybercrime.html"
+    },
+    {
+      "candidate_id": "microsoft-disrupts-eviltokens-phishing-service-that-gave-criminals-access-to-12-",
+      "created_breach_id": "microsoft-disrupts-eviltokens-phishing-service-that-gave-criminals-access-to-12",
+      "source": "https://www.helpnetsecurity.com/2026/09/23/microsoft-eviltokens-phishing-service-disrupted/"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "microsoft-takes-down-eviltokens-device-code-phishing-service-tied-to-12-000-inbo",
+      "title": "Microsoft Takes Down EvilTokens Device-Code Phishing Service Tied to 12,000 Inbox Compromises",
+      "source_url": "https://thehackernews.com/2026/09/microsoft-takes-down-eviltokens-device.html",
+      "feed": "https://feeds.feedburner.com/TheHackersNews",
+      "matched_keywords": [
+        "Coinbase"
+      ],
+      "discovered_at": "2026-09-23T10:34:33.609615+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "microsoft-s-eviltokens-takedown-sheds-light-on-state-of-ai-powered-cybercrime",
+      "title": "Microsoft’s EvilTokens takedown sheds light on state of AI-powered cybercrime",
+      "source_url": "https://www.csoonline.com/article/4225175/microsofts-eviltokens-takedown-sheds-light-on-state-of-ai-powered-cybercrime.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "Coinbase"
+      ],
+      "discovered_at": "2026-09-23T10:34:36.417317+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "microsoft-disrupts-eviltokens-phishing-service-that-gave-criminals-access-to-12-",
+      "title": "Microsoft disrupts EvilTokens phishing service that gave criminals access to 12,000 inboxes",
+      "source_url": "https://www.helpnetsecurity.com/2026/09/23/microsoft-eviltokens-phishing-service-disrupted/",
+      "feed": "https://www.helpnetsecurity.com/feed/",
+      "matched_keywords": [
+        "Coinbase"
+      ],
+      "discovered_at": "2026-09-23T10:34:37.624719+00:00"
+    }
+  ]
+}
