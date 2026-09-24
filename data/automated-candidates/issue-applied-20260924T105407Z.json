@@ -1,0 +1,42 @@
+{
+  "applied": [
+    {
+      "candidate_id": "uk-regulator-to-investigate-pornhub-parent-company-for-alleged-age-verification-",
+      "created_breach_id": "uk-regulator-to-investigate-pornhub-parent-company-for-alleged-age-verification",
+      "source": "https://therecord.media/uk-regulator-to-investigate-pornhub-parent-company-privacy"
+    },
+    {
+      "candidate_id": "british-regulator-takes-a-hard-look-at-pornhub-s-apple-powered-age-checks",
+      "created_breach_id": "british-regulator-takes-a-hard-look-at-pornhub-s-apple-powered-age-checks",
+      "source": "https://www.theregister.com/security/2026/09/23/british-regulator-takes-a-hard-look-at-pornhubs-apple-powered-age-checks/5298558"
+    }
+  ],
+  "created_companies": [
+    "pornhub"
+  ],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "uk-regulator-to-investigate-pornhub-parent-company-for-alleged-age-verification-",
+      "title": "UK regulator to investigate Pornhub parent company for alleged age verification failings",
+      "source_url": "https://therecord.media/uk-regulator-to-investigate-pornhub-parent-company-privacy",
+      "feed": "https://therecord.media/feed/",
+      "matched_keywords": [
+        "Pornhub"
+      ],
+      "discovered_at": "2026-09-24T10:53:28.204193+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "british-regulator-takes-a-hard-look-at-pornhub-s-apple-powered-age-checks",
+      "title": "British regulator takes a hard look at Pornhub's Apple-powered age checks",
+      "source_url": "https://www.theregister.com/security/2026/09/23/british-regulator-takes-a-hard-look-at-pornhubs-apple-powered-age-checks/5298558",
+      "feed": "https://www.theregister.com/security/headlines.atom",
+      "matched_keywords": [
+        "Aylo",
+        "Pornhub"
+      ],
+      "discovered_at": "2026-09-24T10:53:34.532449+00:00"
+    }
+  ]
+}
