@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "carbonato-botnet-compromises-docker-hosts-to-deploy-telegram-controlled-hermes-a",
+      "created_breach_id": "carbonato-botnet-compromises-docker-hosts-to-deploy-telegram-controlled-hermes-a",
+      "source": "https://thehackernews.com/2026/09/carbonato-botnet-compromises-docker.html"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "carbonato-botnet-compromises-docker-hosts-to-deploy-telegram-controlled-hermes-a",
+      "title": "Carbonato Botnet Compromises Docker Hosts to Deploy Telegram-Controlled Hermes AI Agent",
+      "source_url": "https://thehackernews.com/2026/09/carbonato-botnet-compromises-docker.html",
+      "feed": "https://feeds.feedburner.com/TheHackersNews",
+      "matched_keywords": [
+        "Persona"
+      ],
+      "discovered_at": "2026-09-28T12:34:34.422731+00:00"
+    }
+  ]
+}
