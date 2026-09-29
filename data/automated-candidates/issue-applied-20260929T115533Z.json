@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "prison-sentence-for-former-us-soldier-who-hacked-at-t-and-verizon",
+      "created_breach_id": "prison-sentence-for-former-us-soldier-who-hacked-at-t-and-verizon",
+      "source": "https://www.securityweek.com/prison-sentence-for-former-us-soldier-who-hacked-att-and-verizon/"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "prison-sentence-for-former-us-soldier-who-hacked-at-t-and-verizon",
+      "title": "Prison Sentence for Former US Soldier Who Hacked AT&T and Verizon",
+      "source_url": "https://www.securityweek.com/prison-sentence-for-former-us-soldier-who-hacked-att-and-verizon/",
+      "feed": "https://www.securityweek.com/feed/",
+      "matched_keywords": [
+        "Verizon"
+      ],
+      "discovered_at": "2026-09-29T11:55:17.674937+00:00"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-09-28",
+  "last_updated": "2026-09-29",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -1569,6 +1569,25 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-09-28T12:34:34.422731+00:00"
+    },
+    {
+      "id": "prison-sentence-for-former-us-soldier-who-hacked-at-t-and-verizon",
+      "title": "Prison Sentence for Former US Soldier Who Hacked AT&T and Verizon",
+      "date": "2026-09-29",
+      "companies": [
+        "verizon"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Prison Sentence for Former US Soldier Who Hacked AT&T and Verizon",
+      "details": "This entry was discovered by the automated pipeline via https://www.securityweek.com/feed/ and matched the keyword(s) Verizon. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.securityweek.com/prison-sentence-for-former-us-soldier-who-hacked-att-and-verizon/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-09-29T11:55:17.674937+00:00"
     }
   ]
 }
