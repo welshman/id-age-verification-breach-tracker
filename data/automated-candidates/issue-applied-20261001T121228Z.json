@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "sentinel-envelope-plus-adds-software-protection-without-source-code-changes",
+      "created_breach_id": "sentinel-envelope-plus-adds-software-protection-without-source-code-changes",
+      "source": "https://www.helpnetsecurity.com/2026/10/01/thales-sentinel-envelope-plus/"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "sentinel-envelope-plus-adds-software-protection-without-source-code-changes",
+      "title": "Sentinel Envelope Plus adds software protection without source code changes",
+      "source_url": "https://www.helpnetsecurity.com/2026/10/01/thales-sentinel-envelope-plus/",
+      "feed": "https://www.helpnetsecurity.com/feed/",
+      "matched_keywords": [
+        "Thales"
+      ],
+      "discovered_at": "2026-10-01T12:12:02.284538+00:00"
+    }
+  ]
+}

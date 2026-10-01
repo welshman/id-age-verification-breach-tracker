@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-09-29",
+  "last_updated": "2026-10-01",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -1588,6 +1588,25 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-09-29T11:55:17.674937+00:00"
+    },
+    {
+      "id": "sentinel-envelope-plus-adds-software-protection-without-source-code-changes",
+      "title": "Sentinel Envelope Plus adds software protection without source code changes",
+      "date": "2026-10-01",
+      "companies": [
+        "thales-digital-identity"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Sentinel Envelope Plus adds software protection without source code changes",
+      "details": "This entry was discovered by the automated pipeline via https://www.helpnetsecurity.com/feed/ and matched the keyword(s) Thales. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.helpnetsecurity.com/2026/10/01/thales-sentinel-envelope-plus/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-10-01T12:12:02.284538+00:00"
     }
   ]
 }
