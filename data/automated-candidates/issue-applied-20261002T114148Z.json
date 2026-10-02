@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "new-infosec-products-of-the-week-october-2-2026",
+      "created_breach_id": "new-infosec-products-of-the-week-october-2-2026",
+      "source": "https://www.helpnetsecurity.com/2026/10/02/new-infosec-products-of-the-week-october-2-2026/"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "new-infosec-products-of-the-week-october-2-2026",
+      "title": "New infosec products of the week: October 2, 2026",
+      "source_url": "https://www.helpnetsecurity.com/2026/10/02/new-infosec-products-of-the-week-october-2-2026/",
+      "feed": "https://www.helpnetsecurity.com/feed/",
+      "matched_keywords": [
+        "Thales"
+      ],
+      "discovered_at": "2026-10-02T11:41:37.311617+00:00"
+    }
+  ]
+}

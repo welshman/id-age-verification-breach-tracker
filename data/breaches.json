@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-10-01",
+  "last_updated": "2026-10-02",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -1607,6 +1607,25 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-10-01T12:12:02.284538+00:00"
+    },
+    {
+      "id": "new-infosec-products-of-the-week-october-2-2026",
+      "title": "New infosec products of the week: October 2, 2026",
+      "date": "2026-10-02",
+      "companies": [
+        "thales-digital-identity"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: New infosec products of the week: October 2, 2026",
+      "details": "This entry was discovered by the automated pipeline via https://www.helpnetsecurity.com/feed/ and matched the keyword(s) Thales. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.helpnetsecurity.com/2026/10/02/new-infosec-products-of-the-week-october-2-2026/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-10-02T11:41:37.311617+00:00"
     }
   ]
 }
