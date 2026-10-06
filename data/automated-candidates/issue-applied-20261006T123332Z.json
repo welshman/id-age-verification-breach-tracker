@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "nis2-compliance-7-low-cost-steps-to-secure-credentials",
+      "created_breach_id": "nis2-compliance-7-low-cost-steps-to-secure-credentials",
+      "source": "https://www.helpnetsecurity.com/2026/10/06/passwork-nis2-credential-security/"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "nis2-compliance-7-low-cost-steps-to-secure-credentials",
+      "title": "NIS2 compliance: 7 low-cost steps to secure credentials",
+      "source_url": "https://www.helpnetsecurity.com/2026/10/06/passwork-nis2-credential-security/",
+      "feed": "https://www.helpnetsecurity.com/feed/",
+      "matched_keywords": [
+        "Verizon"
+      ],
+      "discovered_at": "2026-10-06T12:33:13.702247+00:00"
+    }
+  ]
+}
