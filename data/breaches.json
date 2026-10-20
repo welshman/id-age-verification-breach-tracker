@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-10-06",
+  "last_updated": "2026-10-20",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -1645,6 +1645,25 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-10-06T12:33:13.702247+00:00"
+    },
+    {
+      "id": "ot-systems-complicate-quantum-resistant-data-protection",
+      "title": "OT systems complicate quantum-resistant data protection",
+      "date": "2026-10-20",
+      "companies": [
+        "thales-digital-identity"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: OT systems complicate quantum-resistant data protection",
+      "details": "This entry was discovered by the automated pipeline via https://www.csoonline.com/feed/ and matched the keyword(s) Thales. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.csoonline.com/article/4236142/ot-systems-complicate-shift-to-quantum-resistant-data-protection.html"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-10-20T10:46:10.764043+00:00"
     }
   ]
 }

@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "ot-systems-complicate-quantum-resistant-data-protection",
+      "created_breach_id": "ot-systems-complicate-quantum-resistant-data-protection",
+      "source": "https://www.csoonline.com/article/4236142/ot-systems-complicate-shift-to-quantum-resistant-data-protection.html"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "ot-systems-complicate-quantum-resistant-data-protection",
+      "title": "OT systems complicate quantum-resistant data protection",
+      "source_url": "https://www.csoonline.com/article/4236142/ot-systems-complicate-shift-to-quantum-resistant-data-protection.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "Thales"
+      ],
+      "discovered_at": "2026-10-20T10:46:10.764043+00:00"
+    }
+  ]
+}
