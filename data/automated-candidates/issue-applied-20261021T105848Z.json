@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "moving-past-autonomous-exploitation-to-machine-speed-security",
+      "created_breach_id": "moving-past-autonomous-exploitation-to-machine-speed-security",
+      "source": "https://www.csoonline.com/article/4237926/moving-past-autonomous-exploitation-to-machine-speed-security.html"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "moving-past-autonomous-exploitation-to-machine-speed-security",
+      "title": "Moving past autonomous exploitation to machine-speed security",
+      "source_url": "https://www.csoonline.com/article/4237926/moving-past-autonomous-exploitation-to-machine-speed-security.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "Verizon"
+      ],
+      "discovered_at": "2026-10-21T10:58:07.448826+00:00"
+    }
+  ]
+}
