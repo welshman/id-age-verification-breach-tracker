@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "facetec-partners-with-police-sheriffs-press-to-fight-law-enforcement-impersonati",
+      "created_breach_id": "facetec-partners-with-police-sheriffs-press-to-fight-law-enforcement-impersonati",
+      "source": "https://identityweek.net/facetec-partners-with-police-sheriffs-press-to-fight-law-enforcement-impersonation/"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "facetec-partners-with-police-sheriffs-press-to-fight-law-enforcement-impersonati",
+      "title": "FaceTec partners with Police & Sheriffs Press to fight law enforcement impersonation",
+      "source_url": "https://identityweek.net/facetec-partners-with-police-sheriffs-press-to-fight-law-enforcement-impersonation/",
+      "feed": "https://identityweek.net/feed/",
+      "matched_keywords": [
+        "FaceTec"
+      ],
+      "discovered_at": "2026-10-22T10:57:29.776616+00:00"
+    }
+  ]
+}

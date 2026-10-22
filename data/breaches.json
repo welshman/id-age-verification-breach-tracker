@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-10-21",
+  "last_updated": "2026-10-22",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -1683,6 +1683,25 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-10-21T10:58:07.448826+00:00"
+    },
+    {
+      "id": "facetec-partners-with-police-sheriffs-press-to-fight-law-enforcement-impersonati",
+      "title": "FaceTec partners with Police & Sheriffs Press to fight law enforcement impersonation",
+      "date": "2026-10-22",
+      "companies": [
+        "facetec"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: FaceTec partners with Police & Sheriffs Press to fight law enforcement impersonation",
+      "details": "This entry was discovered by the automated pipeline via https://identityweek.net/feed/ and matched the keyword(s) FaceTec. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://identityweek.net/facetec-partners-with-police-sheriffs-press-to-fight-law-enforcement-impersonation/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-10-22T10:57:29.776616+00:00"
     }
   ]
 }
