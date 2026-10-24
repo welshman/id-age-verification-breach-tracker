@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "dual-bios-the-laptop-security-feature-smbs-don-t-know-they-need",
+      "created_breach_id": "dual-bios-the-laptop-security-feature-smbs-don-t-know-they-need",
+      "source": "https://www.csoonline.com/article/4239779/dual-bios-the-laptop-security-feature-smbs-dont-know-they-need.html"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "dual-bios-the-laptop-security-feature-smbs-don-t-know-they-need",
+      "title": "Dual BIOS: The laptop security feature SMBs don’t know they need",
+      "source_url": "https://www.csoonline.com/article/4239779/dual-bios-the-laptop-security-feature-smbs-dont-know-they-need.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "Verizon"
+      ],
+      "discovered_at": "2026-10-24T10:04:38.315090+00:00"
+    }
+  ]
+}
