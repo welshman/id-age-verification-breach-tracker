@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "synthetic-identities-leave-us-lenders-with-2-4-billion-in-fraud-exposure",
+      "created_breach_id": "synthetic-identities-leave-us-lenders-with-2-4-billion-in-fraud-exposure",
+      "source": "https://www.helpnetsecurity.com/2026/10/26/transunion-synthetic-identity-fraud-risks-report/"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "synthetic-identities-leave-us-lenders-with-2-4-billion-in-fraud-exposure",
+      "title": "Synthetic identities leave US lenders with $2.4 billion in fraud exposure",
+      "source_url": "https://www.helpnetsecurity.com/2026/10/26/transunion-synthetic-identity-fraud-risks-report/",
+      "feed": "https://www.helpnetsecurity.com/feed/",
+      "matched_keywords": [
+        "TransUnion"
+      ],
+      "discovered_at": "2026-10-26T12:02:18.588757+00:00"
+    }
+  ]
+}

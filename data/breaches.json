@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-10-24",
+  "last_updated": "2026-10-26",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -1721,6 +1721,25 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-10-24T10:04:38.315090+00:00"
+    },
+    {
+      "id": "synthetic-identities-leave-us-lenders-with-2-4-billion-in-fraud-exposure",
+      "title": "Synthetic identities leave US lenders with $2.4 billion in fraud exposure",
+      "date": "2026-10-26",
+      "companies": [
+        "transunion"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Synthetic identities leave US lenders with $2.4 billion in fraud exposure",
+      "details": "This entry was discovered by the automated pipeline via https://www.helpnetsecurity.com/feed/ and matched the keyword(s) TransUnion. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.helpnetsecurity.com/2026/10/26/transunion-synthetic-identity-fraud-risks-report/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-10-26T12:02:18.588757+00:00"
     }
   ]
 }
