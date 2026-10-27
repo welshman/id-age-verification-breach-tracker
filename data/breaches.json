@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-10-26",
+  "last_updated": "2026-10-27",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -1740,6 +1740,25 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-10-26T12:02:18.588757+00:00"
+    },
+    {
+      "id": "the-days-of-assuming-another-company-s-breach-is-someone-else-s-problem-are-over",
+      "title": "The days of assuming another company’s breach is someone else’s problem are over",
+      "date": "2026-10-27",
+      "companies": [
+        "incode"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: The days of assuming another company’s breach is someone else’s problem are over",
+      "details": "This entry was discovered by the automated pipeline via https://www.csoonline.com/feed/ and matched the keyword(s) Incode. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.csoonline.com/article/4240612/the-days-of-assuming-another-companys-breach-is-someone-elses-problem-are-over.html"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-10-27T11:22:09.941590+00:00"
     }
   ]
 }
