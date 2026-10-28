@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-28",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -1759,6 +1759,44 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-10-27T11:22:09.941590+00:00"
+    },
+    {
+      "id": "attackers-built-a-skynet-ai-agent-that-hijacks-exposed-models-to-run-cyberattack",
+      "title": "Attackers built a ‘Skynet’ AI agent that hijacks exposed models to run cyberattacks",
+      "date": "2026-10-28",
+      "companies": [
+        "persona"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Attackers built a ‘Skynet’ AI agent that hijacks exposed models to run cyberattacks",
+      "details": "This entry was discovered by the automated pipeline via https://www.csoonline.com/feed/ and matched the keyword(s) Persona. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.csoonline.com/article/4241421/attackers-built-a-skynet-ai-agent-that-hijacks-exposed-models-to-run-cyberattacks.html"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-10-28T11:55:48.381459+00:00"
+    },
+    {
+      "id": "socure-links-ai-agents-to-verified-people-and-businesses",
+      "title": "Socure links AI agents to verified people and businesses",
+      "date": "2026-10-28",
+      "companies": [
+        "socure"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Socure links AI agents to verified people and businesses",
+      "details": "This entry was discovered by the automated pipeline via https://www.helpnetsecurity.com/feed/ and matched the keyword(s) Socure. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.helpnetsecurity.com/2026/10/27/socure-agent-intelligence/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-10-28T11:55:48.692390+00:00"
     }
   ]
 }

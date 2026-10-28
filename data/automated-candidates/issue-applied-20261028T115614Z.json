@@ -1,0 +1,39 @@
+{
+  "applied": [
+    {
+      "candidate_id": "attackers-built-a-skynet-ai-agent-that-hijacks-exposed-models-to-run-cyberattack",
+      "created_breach_id": "attackers-built-a-skynet-ai-agent-that-hijacks-exposed-models-to-run-cyberattack",
+      "source": "https://www.csoonline.com/article/4241421/attackers-built-a-skynet-ai-agent-that-hijacks-exposed-models-to-run-cyberattacks.html"
+    },
+    {
+      "candidate_id": "socure-links-ai-agents-to-verified-people-and-businesses",
+      "created_breach_id": "socure-links-ai-agents-to-verified-people-and-businesses",
+      "source": "https://www.helpnetsecurity.com/2026/10/27/socure-agent-intelligence/"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "attackers-built-a-skynet-ai-agent-that-hijacks-exposed-models-to-run-cyberattack",
+      "title": "Attackers built a ‘Skynet’ AI agent that hijacks exposed models to run cyberattacks",
+      "source_url": "https://www.csoonline.com/article/4241421/attackers-built-a-skynet-ai-agent-that-hijacks-exposed-models-to-run-cyberattacks.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "Persona"
+      ],
+      "discovered_at": "2026-10-28T11:55:48.381459+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "socure-links-ai-agents-to-verified-people-and-businesses",
+      "title": "Socure links AI agents to verified people and businesses",
+      "source_url": "https://www.helpnetsecurity.com/2026/10/27/socure-agent-intelligence/",
+      "feed": "https://www.helpnetsecurity.com/feed/",
+      "matched_keywords": [
+        "Socure"
+      ],
+      "discovered_at": "2026-10-28T11:55:48.692390+00:00"
+    }
+  ]
+}
