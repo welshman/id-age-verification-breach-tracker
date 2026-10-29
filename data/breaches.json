@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-10-28",
+  "last_updated": "2026-10-29",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -1797,6 +1797,25 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-10-28T11:55:48.692390+00:00"
+    },
+    {
+      "id": "vulnerability-exploitation-rising-as-the-root-cause-of-many-breaches",
+      "title": "Vulnerability exploitation rising as the root cause of many breaches",
+      "date": "2026-10-29",
+      "companies": [
+        "verizon"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Vulnerability exploitation rising as the root cause of many breaches",
+      "details": "This entry was discovered by the automated pipeline via https://www.csoonline.com/feed/ and matched the keyword(s) Verizon. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.csoonline.com/article/4241912/vulnerability-exploitation-rising-as-the-root-cause-of-many-breaches.html"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-10-29T12:04:02.791758+00:00"
     }
   ]
 }

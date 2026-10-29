@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "vulnerability-exploitation-rising-as-the-root-cause-of-many-breaches",
+      "created_breach_id": "vulnerability-exploitation-rising-as-the-root-cause-of-many-breaches",
+      "source": "https://www.csoonline.com/article/4241912/vulnerability-exploitation-rising-as-the-root-cause-of-many-breaches.html"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "vulnerability-exploitation-rising-as-the-root-cause-of-many-breaches",
+      "title": "Vulnerability exploitation rising as the root cause of many breaches",
+      "source_url": "https://www.csoonline.com/article/4241912/vulnerability-exploitation-rising-as-the-root-cause-of-many-breaches.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "Verizon"
+      ],
+      "discovered_at": "2026-10-29T12:04:02.791758+00:00"
+    }
+  ]
+}
