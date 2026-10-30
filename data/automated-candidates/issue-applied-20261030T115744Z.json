@@ -1,0 +1,135 @@
+{
+  "applied": [
+    {
+      "candidate_id": "binance-links-6-3-billion-crypto-theft-to-compromised-devops-laptop",
+      "created_breach_id": "binance-links-6-3-billion-crypto-theft-to-compromised-devops-laptop",
+      "source": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/"
+    },
+    {
+      "candidate_id": "binance-probes-potential-5-8-billion-crypto-theft-hack",
+      "created_breach_id": "binance-probes-potential-5-8-billion-crypto-theft-hack",
+      "source": "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/"
+    },
+    {
+      "candidate_id": "binance-hit-by-record-6-3-billion-crypto-hack-scrambles-to-freeze-funds",
+      "created_breach_id": "binance-hit-by-record-6-3-billion-crypto-hack-scrambles-to-freeze-funds",
+      "source": "https://therecord.media/binance-hit-by-record-6-billion-crypto-hack"
+    },
+    {
+      "candidate_id": "binance-suffers-security-breach-affecting-6-3-billion-in-assets-nearly-3-billion",
+      "created_breach_id": "binance-suffers-security-breach-affecting-6-3-billion-in-assets-nearly-3-billion",
+      "source": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html"
+    },
+    {
+      "candidate_id": "6-billion-binance-hack-bears-hallmarks-of-north-korea-s-tradertraitor",
+      "created_breach_id": "6-billion-binance-hack-bears-hallmarks-of-north-korea-s-tradertraitor",
+      "source": "https://www.securityweek.com/6-billion-binance-hack-bears-hallmarks-of-north-koreas-tradertraitor/"
+    },
+    {
+      "candidate_id": "in-the-year-ai-re-wrote-the-infosec-rulebook-it-s-comforting-to-know-crypto-exch",
+      "created_breach_id": "in-the-year-ai-re-wrote-the-infosec-rulebook-it-s-comforting-to-know-crypto-exch",
+      "source": "https://www.theregister.com/security/2026/10/30/in-the-year-ai-re-wrote-the-infosec-rulebook-its-comforting-to-know-crypto-exchanges-still-have-bad-security/5306539"
+    },
+    {
+      "candidate_id": "binance-hit-by-record-breaking-6-3bn-hack-in-largest-cryptocurrency-heist-in-his",
+      "created_breach_id": "binance-hit-by-record-breaking-6-3bn-hack-in-largest-cryptocurrency-heist-in-his",
+      "source": "https://www.infosecurity-magazine.com/news/binance-record-hack-crypto-heist/"
+    },
+    {
+      "candidate_id": "binance-hit-by-6-3-billion-theft-in-what-could-be-the-biggest-crypto-heist-on-re",
+      "created_breach_id": "binance-hit-by-6-3-billion-theft-in-what-could-be-the-biggest-crypto-heist-on-re",
+      "source": "https://www.helpnetsecurity.com/2026/10/30/binance-crypto-hack/"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "binance-links-6-3-billion-crypto-theft-to-compromised-devops-laptop",
+      "title": "Binance links $6.3 billion crypto theft to compromised DevOps laptop",
+      "source_url": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/",
+      "feed": "https://www.bleepingcomputer.com/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-10-30T11:57:10.180613+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "binance-probes-potential-5-8-billion-crypto-theft-hack",
+      "title": "Binance probes potential $5.8 billion crypto-theft hack",
+      "source_url": "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/",
+      "feed": "https://www.bleepingcomputer.com/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-10-30T11:57:10.181362+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "binance-hit-by-record-6-3-billion-crypto-hack-scrambles-to-freeze-funds",
+      "title": "Binance hit by record $6.3 billion crypto hack, scrambles to freeze funds",
+      "source_url": "https://therecord.media/binance-hit-by-record-6-billion-crypto-hack",
+      "feed": "https://therecord.media/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-10-30T11:57:10.948246+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "binance-suffers-security-breach-affecting-6-3-billion-in-assets-nearly-3-billion",
+      "title": "Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen",
+      "source_url": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html",
+      "feed": "https://feeds.feedburner.com/TheHackersNews",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-10-30T11:57:13.126765+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "6-billion-binance-hack-bears-hallmarks-of-north-korea-s-tradertraitor",
+      "title": "$6 Billion Binance Hack Bears Hallmarks of North Korea’s TraderTraitor",
+      "source_url": "https://www.securityweek.com/6-billion-binance-hack-bears-hallmarks-of-north-koreas-tradertraitor/",
+      "feed": "https://www.securityweek.com/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-10-30T11:57:13.250491+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "in-the-year-ai-re-wrote-the-infosec-rulebook-it-s-comforting-to-know-crypto-exch",
+      "title": "In the year AI re-wrote the infosec rulebook, it’s comforting to know crypto exchanges still have bad security",
+      "source_url": "https://www.theregister.com/security/2026/10/30/in-the-year-ai-re-wrote-the-infosec-rulebook-its-comforting-to-know-crypto-exchanges-still-have-bad-security/5306539",
+      "feed": "https://www.theregister.com/security/headlines.atom",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-10-30T11:57:18.096425+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "binance-hit-by-record-breaking-6-3bn-hack-in-largest-cryptocurrency-heist-in-his",
+      "title": "Binance Hit by Record-Breaking $6.3bn Hack in Largest Cryptocurrency Heist in History",
+      "source_url": "https://www.infosecurity-magazine.com/news/binance-record-hack-crypto-heist/",
+      "feed": "https://www.infosecurity-magazine.com/rss/news/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-10-30T11:57:19.097581+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "binance-hit-by-6-3-billion-theft-in-what-could-be-the-biggest-crypto-heist-on-re",
+      "title": "Binance hit by $6.3 billion theft in what could be the biggest crypto heist on record",
+      "source_url": "https://www.helpnetsecurity.com/2026/10/30/binance-crypto-hack/",
+      "feed": "https://www.helpnetsecurity.com/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-10-30T11:57:19.222859+00:00"
+    }
+  ]
+}

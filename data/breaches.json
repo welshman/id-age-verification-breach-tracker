@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-10-29",
+  "last_updated": "2026-10-30",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -1816,6 +1816,158 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-10-29T12:04:02.791758+00:00"
+    },
+    {
+      "id": "binance-links-6-3-billion-crypto-theft-to-compromised-devops-laptop",
+      "title": "Binance links $6.3 billion crypto theft to compromised DevOps laptop",
+      "date": "2026-10-30",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Binance links $6.3 billion crypto theft to compromised DevOps laptop",
+      "details": "This entry was discovered by the automated pipeline via https://www.bleepingcomputer.com/feed/ and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-10-30T11:57:10.180613+00:00"
+    },
+    {
+      "id": "binance-probes-potential-5-8-billion-crypto-theft-hack",
+      "title": "Binance probes potential $5.8 billion crypto-theft hack",
+      "date": "2026-10-30",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Binance probes potential $5.8 billion crypto-theft hack",
+      "details": "This entry was discovered by the automated pipeline via https://www.bleepingcomputer.com/feed/ and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-10-30T11:57:10.181362+00:00"
+    },
+    {
+      "id": "binance-hit-by-record-6-3-billion-crypto-hack-scrambles-to-freeze-funds",
+      "title": "Binance hit by record $6.3 billion crypto hack, scrambles to freeze funds",
+      "date": "2026-10-30",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Binance hit by record $6.3 billion crypto hack, scrambles to freeze funds",
+      "details": "This entry was discovered by the automated pipeline via https://therecord.media/feed/ and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://therecord.media/binance-hit-by-record-6-billion-crypto-hack"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-10-30T11:57:10.948246+00:00"
+    },
+    {
+      "id": "binance-suffers-security-breach-affecting-6-3-billion-in-assets-nearly-3-billion",
+      "title": "Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen",
+      "date": "2026-10-30",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen",
+      "details": "This entry was discovered by the automated pipeline via https://feeds.feedburner.com/TheHackersNews and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://thehackernews.com/2026/10/binance-suffers-security-breach.html"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-10-30T11:57:13.126765+00:00"
+    },
+    {
+      "id": "6-billion-binance-hack-bears-hallmarks-of-north-korea-s-tradertraitor",
+      "title": "$6 Billion Binance Hack Bears Hallmarks of North Korea’s TraderTraitor",
+      "date": "2026-10-30",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: $6 Billion Binance Hack Bears Hallmarks of North Korea’s TraderTraitor",
+      "details": "This entry was discovered by the automated pipeline via https://www.securityweek.com/feed/ and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.securityweek.com/6-billion-binance-hack-bears-hallmarks-of-north-koreas-tradertraitor/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-10-30T11:57:13.250491+00:00"
+    },
+    {
+      "id": "in-the-year-ai-re-wrote-the-infosec-rulebook-it-s-comforting-to-know-crypto-exch",
+      "title": "In the year AI re-wrote the infosec rulebook, it’s comforting to know crypto exchanges still have bad security",
+      "date": "2026-10-30",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: In the year AI re-wrote the infosec rulebook, it’s comforting to know crypto exchanges still have bad security",
+      "details": "This entry was discovered by the automated pipeline via https://www.theregister.com/security/headlines.atom and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.theregister.com/security/2026/10/30/in-the-year-ai-re-wrote-the-infosec-rulebook-its-comforting-to-know-crypto-exchanges-still-have-bad-security/5306539"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-10-30T11:57:18.096425+00:00"
+    },
+    {
+      "id": "binance-hit-by-record-breaking-6-3bn-hack-in-largest-cryptocurrency-heist-in-his",
+      "title": "Binance Hit by Record-Breaking $6.3bn Hack in Largest Cryptocurrency Heist in History",
+      "date": "2026-10-30",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Binance Hit by Record-Breaking $6.3bn Hack in Largest Cryptocurrency Heist in History",
+      "details": "This entry was discovered by the automated pipeline via https://www.infosecurity-magazine.com/rss/news/ and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.infosecurity-magazine.com/news/binance-record-hack-crypto-heist/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-10-30T11:57:19.097581+00:00"
+    },
+    {
+      "id": "binance-hit-by-6-3-billion-theft-in-what-could-be-the-biggest-crypto-heist-on-re",
+      "title": "Binance hit by $6.3 billion theft in what could be the biggest crypto heist on record",
+      "date": "2026-10-30",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Binance hit by $6.3 billion theft in what could be the biggest crypto heist on record",
+      "details": "This entry was discovered by the automated pipeline via https://www.helpnetsecurity.com/feed/ and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.helpnetsecurity.com/2026/10/30/binance-crypto-hack/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-10-30T11:57:19.222859+00:00"
     }
   ]
 }

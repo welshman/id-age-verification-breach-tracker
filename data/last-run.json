@@ -1,9 +1,9 @@
 {
-  "last_run_at": "2026-10-29T12:04:33.820102+00:00",
+  "last_run_at": "2026-10-30T11:57:44.423868+00:00",
   "configured_rss_feeds": 32,
   "configured_api_sources": 6,
-  "candidates_found": 1,
-  "new_candidates_this_run": 1,
-  "total_pending_review": 1,
+  "candidates_found": 8,
+  "new_candidates_this_run": 8,
+  "total_pending_review": 8,
   "source_policy": "Candidates require review before publication."
 }
