@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "choosing-a-waap-in-2026-3-questions-that-separate-the-shortlist",
+      "created_breach_id": "choosing-a-waap-in-2026-3-questions-that-separate-the-shortlist",
+      "source": "https://www.csoonline.com/article/4242913/choosing-a-waap-in-2026-3-questions-that-separate-the-shortlist.html"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "choosing-a-waap-in-2026-3-questions-that-separate-the-shortlist",
+      "title": "Choosing a WAAP in 2026: 3 questions that separate the shortlist",
+      "source_url": "https://www.csoonline.com/article/4242913/choosing-a-waap-in-2026-3-questions-that-separate-the-shortlist.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "Thales"
+      ],
+      "discovered_at": "2026-10-31T11:30:24.755843+00:00"
+    }
+  ]
+}
