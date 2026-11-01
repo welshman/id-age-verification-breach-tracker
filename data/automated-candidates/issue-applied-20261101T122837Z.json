@@ -1,0 +1,39 @@
+{
+  "applied": [
+    {
+      "candidate_id": "fbi-links-north-korea-s-tradertraitor-to-record-6-43-billion-binance-crypto-heis",
+      "created_breach_id": "fbi-links-north-korea-s-tradertraitor-to-record-6-43-billion-binance-crypto-heis",
+      "source": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html"
+    },
+    {
+      "candidate_id": "week-in-review-binance-hit-by-6-3-billion-theft-impact-of-brotli-vulnerability",
+      "created_breach_id": "week-in-review-binance-hit-by-6-3-billion-theft-impact-of-brotli-vulnerability",
+      "source": "https://www.helpnetsecurity.com/2026/11/01/week-in-review-binance-hit-by-6-3-billion-theft-impact-of-brotli-vulnerability/"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "fbi-links-north-korea-s-tradertraitor-to-record-6-43-billion-binance-crypto-heis",
+      "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
+      "source_url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
+      "feed": "https://feeds.feedburner.com/TheHackersNews",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-01T12:28:19.790345+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "week-in-review-binance-hit-by-6-3-billion-theft-impact-of-brotli-vulnerability",
+      "title": "Week in review: Binance hit by $6.3 billion theft, impact of Brotli vulnerability",
+      "source_url": "https://www.helpnetsecurity.com/2026/11/01/week-in-review-binance-hit-by-6-3-billion-theft-impact-of-brotli-vulnerability/",
+      "feed": "https://www.helpnetsecurity.com/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-01T12:28:25.361483+00:00"
+    }
+  ]
+}

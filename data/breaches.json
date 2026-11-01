@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-10-31",
+  "last_updated": "2026-11-01",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -1987,6 +1987,44 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-10-31T11:30:24.755843+00:00"
+    },
+    {
+      "id": "fbi-links-north-korea-s-tradertraitor-to-record-6-43-billion-binance-crypto-heis",
+      "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
+      "date": "2026-11-01",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
+      "details": "This entry was discovered by the automated pipeline via https://feeds.feedburner.com/TheHackersNews and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-01T12:28:19.790345+00:00"
+    },
+    {
+      "id": "week-in-review-binance-hit-by-6-3-billion-theft-impact-of-brotli-vulnerability",
+      "title": "Week in review: Binance hit by $6.3 billion theft, impact of Brotli vulnerability",
+      "date": "2026-11-01",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Week in review: Binance hit by $6.3 billion theft, impact of Brotli vulnerability",
+      "details": "This entry was discovered by the automated pipeline via https://www.helpnetsecurity.com/feed/ and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.helpnetsecurity.com/2026/11/01/week-in-review-binance-hit-by-6-3-billion-theft-impact-of-brotli-vulnerability/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-01T12:28:25.361483+00:00"
     }
   ]
 }
