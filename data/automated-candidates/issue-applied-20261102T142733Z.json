@@ -1,0 +1,168 @@
+{
+  "applied": [
+    {
+      "candidate_id": "fbi-links-6-3-billion-binance-crypto-heist-to-north-korean-hackers",
+      "created_breach_id": "fbi-links-6-3-billion-binance-crypto-heist-to-north-korean-hackers",
+      "source": "https://www.bleepingcomputer.com/news/security/fbi-links-63-billion-binance-crypto-heist-to-north-korean-hackers/"
+    },
+    {
+      "candidate_id": "fbi-blames-n-korea-s-tradertraitor-for-binance-theft-urges-crypto-industry-to-bl",
+      "created_breach_id": "fbi-blames-n-korea-s-tradertraitor-for-binance-theft-urges-crypto-industry-to-bl",
+      "source": "https://therecord.media/fbi-blames-tradertraitor-for-binance-hack"
+    },
+    {
+      "candidate_id": "fbi-flags-over-600-addresses-tied-to-north-korea-s-binance-heist",
+      "created_breach_id": "fbi-flags-over-600-addresses-tied-to-north-korea-s-binance-heist",
+      "source": "https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/"
+    },
+    {
+      "candidate_id": "idemia-secure-transactions-enables-banks-to-prepare-cards-for-the-quantum-era-wi",
+      "created_breach_id": "idemia-secure-transactions-enables-banks-to-prepare-cards-for-the-quantum-era-wi",
+      "source": "https://identityweek.net/idemia-secure-transactions-enables-banks-to-prepare-cards-for-the-quantum-era-with-industry-first-certification/"
+    },
+    {
+      "candidate_id": "fbi-pins-6-3b-binance-crypto-heist-on-north-korean-hackers",
+      "created_breach_id": "fbi-pins-6-3b-binance-crypto-heist-on-north-korean-hackers",
+      "source": "https://www.theregister.com/security/2026/11/02/fbi-pins-63b-binance-crypto-heist-on-north-korean-hackers/5306889"
+    },
+    {
+      "candidate_id": "a-compromised-devops-laptop-caused-the-6-3b-binance-breach",
+      "created_breach_id": "a-compromised-devops-laptop-caused-the-6-3b-binance-breach",
+      "source": "https://www.csoonline.com/article/4243225/a-compromised-devops-laptop-caused-the-6-3b-binance-breach.html"
+    },
+    {
+      "candidate_id": "what-a-security-strategy-that-survives-2027-looks-like",
+      "created_breach_id": "what-a-security-strategy-that-survives-2027-looks-like",
+      "source": "https://www.csoonline.com/article/4240618/what-a-security-strategy-that-survives-2027-looks-like.html"
+    },
+    {
+      "candidate_id": "fbi-attributes-binance-heist-to-north-korea-s-tradertraitor",
+      "created_breach_id": "fbi-attributes-binance-heist-to-north-korea-s-tradertraitor",
+      "source": "https://www.infosecurity-magazine.com/news/fbi-attributes-binance-north/"
+    },
+    {
+      "candidate_id": "chainalysis-breached-using-offensive-agentic-techniques",
+      "created_breach_id": "chainalysis-breached-using-offensive-agentic-techniques",
+      "source": "https://www.helpnetsecurity.com/2026/11/02/chainalysis-breached-using-offensive-agentic-techniques/"
+    },
+    {
+      "candidate_id": "fbi-pins-6-3-billion-binance-crypto-heist-on-north-korea-while-scammers-circle-a",
+      "created_breach_id": "fbi-pins-6-3-billion-binance-crypto-heist-on-north-korea-while-scammers-circle-a",
+      "source": "https://www.helpnetsecurity.com/2026/11/02/fbi-north-korea-binance-hack/"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "fbi-links-6-3-billion-binance-crypto-heist-to-north-korean-hackers",
+      "title": "FBI links $6.3 billion Binance crypto heist to North Korean hackers",
+      "source_url": "https://www.bleepingcomputer.com/news/security/fbi-links-63-billion-binance-crypto-heist-to-north-korean-hackers/",
+      "feed": "https://www.bleepingcomputer.com/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-02T14:26:22.073981+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "fbi-blames-n-korea-s-tradertraitor-for-binance-theft-urges-crypto-industry-to-bl",
+      "title": "FBI blames N. Korea’s TraderTraitor for Binance theft, urges crypto industry to block transactions",
+      "source_url": "https://therecord.media/fbi-blames-tradertraitor-for-binance-hack",
+      "feed": "https://therecord.media/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-02T14:26:22.779589+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "fbi-flags-over-600-addresses-tied-to-north-korea-s-binance-heist",
+      "title": "FBI Flags Over 600 Addresses Tied to North Korea’s Binance Heist",
+      "source_url": "https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/",
+      "feed": "https://www.securityweek.com/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-02T14:26:25.524041+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "idemia-secure-transactions-enables-banks-to-prepare-cards-for-the-quantum-era-wi",
+      "title": "IDEMIA secure transactions enables banks to prepare cards for the quantum era with industry-first certification",
+      "source_url": "https://identityweek.net/idemia-secure-transactions-enables-banks-to-prepare-cards-for-the-quantum-era-with-industry-first-certification/",
+      "feed": "https://identityweek.net/feed/",
+      "matched_keywords": [
+        "IDEMIA"
+      ],
+      "discovered_at": "2026-11-02T14:26:25.830389+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "fbi-pins-6-3b-binance-crypto-heist-on-north-korean-hackers",
+      "title": "FBI pins $6.3B Binance crypto heist on North Korean hackers",
+      "source_url": "https://www.theregister.com/security/2026/11/02/fbi-pins-63b-binance-crypto-heist-on-north-korean-hackers/5306889",
+      "feed": "https://www.theregister.com/security/headlines.atom",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-02T14:26:31.812115+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "a-compromised-devops-laptop-caused-the-6-3b-binance-breach",
+      "title": "A compromised DevOps laptop caused the $6.3B Binance breach",
+      "source_url": "https://www.csoonline.com/article/4243225/a-compromised-devops-laptop-caused-the-6-3b-binance-breach.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-02T14:26:32.159286+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "what-a-security-strategy-that-survives-2027-looks-like",
+      "title": "What a security strategy that survives 2027 looks like",
+      "source_url": "https://www.csoonline.com/article/4240618/what-a-security-strategy-that-survives-2027-looks-like.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "Equifax",
+        "Verizon"
+      ],
+      "discovered_at": "2026-11-02T14:26:32.208207+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "fbi-attributes-binance-heist-to-north-korea-s-tradertraitor",
+      "title": "FBI Attributes Binance Heist to North Korea’s TraderTraitor",
+      "source_url": "https://www.infosecurity-magazine.com/news/fbi-attributes-binance-north/",
+      "feed": "https://www.infosecurity-magazine.com/rss/news/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-02T14:26:32.656212+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "chainalysis-breached-using-offensive-agentic-techniques",
+      "title": "Chainalysis breached using “offensive agentic techniques”",
+      "source_url": "https://www.helpnetsecurity.com/2026/11/02/chainalysis-breached-using-offensive-agentic-techniques/",
+      "feed": "https://www.helpnetsecurity.com/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-02T14:26:32.755935+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "fbi-pins-6-3-billion-binance-crypto-heist-on-north-korea-while-scammers-circle-a",
+      "title": "FBI pins $6.3 billion Binance crypto heist on North Korea while scammers circle anxious users",
+      "source_url": "https://www.helpnetsecurity.com/2026/11/02/fbi-north-korea-binance-hack/",
+      "feed": "https://www.helpnetsecurity.com/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-02T14:26:32.757409+00:00"
+    }
+  ]
+}
