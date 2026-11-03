@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "one-compromised-laptop-billions-lost-the-binance-attack-path-warning",
+      "created_breach_id": "one-compromised-laptop-billions-lost-the-binance-attack-path-warning",
+      "source": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "one-compromised-laptop-billions-lost-the-binance-attack-path-warning",
+      "title": "One Compromised Laptop, Billions Lost: The Binance Attack-Path Warning",
+      "source_url": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths",
+      "feed": "https://www.darkreading.com/rss.xml",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-03T13:24:53.901138+00:00"
+    }
+  ]
+}

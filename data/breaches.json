@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-02",
+  "last_updated": "2026-11-03",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -2216,6 +2216,25 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-11-02T14:26:32.757409+00:00"
+    },
+    {
+      "id": "one-compromised-laptop-billions-lost-the-binance-attack-path-warning",
+      "title": "One Compromised Laptop, Billions Lost: The Binance Attack-Path Warning",
+      "date": "2026-11-03",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: One Compromised Laptop, Billions Lost: The Binance Attack-Path Warning",
+      "details": "This entry was discovered by the automated pipeline via https://www.darkreading.com/rss.xml and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-03T13:24:53.901138+00:00"
     }
   ]
 }
