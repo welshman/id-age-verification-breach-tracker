@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-03",
+  "last_updated": "2026-11-04",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -2235,6 +2235,158 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-11-03T13:24:53.901138+00:00"
+    },
+    {
+      "id": "binance-says-fake-job-interview-led-to-6-3-billion-crypto-heist",
+      "title": "Binance says fake job interview led to $6.3 billion crypto heist",
+      "date": "2026-11-04",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Binance says fake job interview led to $6.3 billion crypto heist",
+      "details": "This entry was discovered by the automated pipeline via https://www.bleepingcomputer.com/feed/ and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-04T13:35:55.497524+00:00"
+    },
+    {
+      "id": "binance-ceo-says-months-long-campaign-led-to-6-3-billion-theft-as-n-korea-denies",
+      "title": "Binance CEO says ‘months-long campaign’ led to $6.3 billion theft as N. Korea denies responsibility",
+      "date": "2026-11-04",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Binance CEO says ‘months-long campaign’ led to $6.3 billion theft as N. Korea denies responsibility",
+      "details": "This entry was discovered by the automated pipeline via https://therecord.media/feed/ and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://therecord.media/binance-cryptocurrency-theft-months-long-campaign-nkorea"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-04T13:35:56.285965+00:00"
+    },
+    {
+      "id": "binance-reveals-how-fake-job-interviews-and-ai-tool-abuse-led-to-6-43-billion-th",
+      "title": "Binance Reveals How Fake Job Interviews and AI Tool Abuse Led to $6.43 Billion Theft",
+      "date": "2026-11-04",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Binance Reveals How Fake Job Interviews and AI Tool Abuse Led to $6.43 Billion Theft",
+      "details": "This entry was discovered by the automated pipeline via https://feeds.feedburner.com/TheHackersNews and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-04T13:35:59.238777+00:00"
+    },
+    {
+      "id": "rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist",
+      "title": "Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist",
+      "date": "2026-11-04",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist",
+      "details": "This entry was discovered by the automated pipeline via https://www.securityweek.com/feed/ and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-04T13:35:59.359684+00:00"
+    },
+    {
+      "id": "north-korea-launches-missiles-toward-the-sea-as-pyongyang-protests-against-us-cl",
+      "title": "North Korea Launches Missiles Toward the Sea as Pyongyang Protests Against US Claims on Binance Hack",
+      "date": "2026-11-04",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: North Korea Launches Missiles Toward the Sea as Pyongyang Protests Against US Claims on Binance Hack",
+      "details": "This entry was discovered by the automated pipeline via https://www.securityweek.com/feed/ and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.securityweek.com/north-korea-launches-missiles-toward-the-sea-as-pyongyang-protests-against-us-claims-on-binance-hack/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-04T13:35:59.360737+00:00"
+    },
+    {
+      "id": "north-korean-fake-job-interview-led-to-6-3b-binance-heist",
+      "title": "North Korean fake job interview led to $6.3B Binance heist",
+      "date": "2026-11-04",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: North Korean fake job interview led to $6.3B Binance heist",
+      "details": "This entry was discovered by the automated pipeline via https://www.theregister.com/security/headlines.atom and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-04T13:36:05.404673+00:00"
+    },
+    {
+      "id": "fake-interview-of-software-engineer-led-to-binance-mega-heist",
+      "title": "Fake Interview of Software Engineer Led to Binance Mega-Heist",
+      "date": "2026-11-04",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Fake Interview of Software Engineer Led to Binance Mega-Heist",
+      "details": "This entry was discovered by the automated pipeline via https://www.infosecurity-magazine.com/rss/news/ and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.infosecurity-magazine.com/news/fake-interview-software-engineer/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-04T13:36:06.481470+00:00"
+    },
+    {
+      "id": "fake-job-interview-opened-the-door-to-6-34-billion-binance-heist",
+      "title": "Fake job interview opened the door to $6.34 billion Binance heist",
+      "date": "2026-11-04",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Fake job interview opened the door to $6.34 billion Binance heist",
+      "details": "This entry was discovered by the automated pipeline via https://www.helpnetsecurity.com/feed/ and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.helpnetsecurity.com/2026/11/04/binance-hack-north-korea-fake-job-interview/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-04T13:36:06.595799+00:00"
     }
   ]
 }

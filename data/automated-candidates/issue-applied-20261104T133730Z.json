@@ -1,0 +1,135 @@
+{
+  "applied": [
+    {
+      "candidate_id": "binance-says-fake-job-interview-led-to-6-3-billion-crypto-heist",
+      "created_breach_id": "binance-says-fake-job-interview-led-to-6-3-billion-crypto-heist",
+      "source": "https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/"
+    },
+    {
+      "candidate_id": "binance-ceo-says-months-long-campaign-led-to-6-3-billion-theft-as-n-korea-denies",
+      "created_breach_id": "binance-ceo-says-months-long-campaign-led-to-6-3-billion-theft-as-n-korea-denies",
+      "source": "https://therecord.media/binance-cryptocurrency-theft-months-long-campaign-nkorea"
+    },
+    {
+      "candidate_id": "binance-reveals-how-fake-job-interviews-and-ai-tool-abuse-led-to-6-43-billion-th",
+      "created_breach_id": "binance-reveals-how-fake-job-interviews-and-ai-tool-abuse-led-to-6-43-billion-th",
+      "source": "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html"
+    },
+    {
+      "candidate_id": "rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist",
+      "created_breach_id": "rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist",
+      "source": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/"
+    },
+    {
+      "candidate_id": "north-korea-launches-missiles-toward-the-sea-as-pyongyang-protests-against-us-cl",
+      "created_breach_id": "north-korea-launches-missiles-toward-the-sea-as-pyongyang-protests-against-us-cl",
+      "source": "https://www.securityweek.com/north-korea-launches-missiles-toward-the-sea-as-pyongyang-protests-against-us-claims-on-binance-hack/"
+    },
+    {
+      "candidate_id": "north-korean-fake-job-interview-led-to-6-3b-binance-heist",
+      "created_breach_id": "north-korean-fake-job-interview-led-to-6-3b-binance-heist",
+      "source": "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398"
+    },
+    {
+      "candidate_id": "fake-interview-of-software-engineer-led-to-binance-mega-heist",
+      "created_breach_id": "fake-interview-of-software-engineer-led-to-binance-mega-heist",
+      "source": "https://www.infosecurity-magazine.com/news/fake-interview-software-engineer/"
+    },
+    {
+      "candidate_id": "fake-job-interview-opened-the-door-to-6-34-billion-binance-heist",
+      "created_breach_id": "fake-job-interview-opened-the-door-to-6-34-billion-binance-heist",
+      "source": "https://www.helpnetsecurity.com/2026/11/04/binance-hack-north-korea-fake-job-interview/"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "binance-says-fake-job-interview-led-to-6-3-billion-crypto-heist",
+      "title": "Binance says fake job interview led to $6.3 billion crypto heist",
+      "source_url": "https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/",
+      "feed": "https://www.bleepingcomputer.com/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-04T13:35:55.497524+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "binance-ceo-says-months-long-campaign-led-to-6-3-billion-theft-as-n-korea-denies",
+      "title": "Binance CEO says ‘months-long campaign’ led to $6.3 billion theft as N. Korea denies responsibility",
+      "source_url": "https://therecord.media/binance-cryptocurrency-theft-months-long-campaign-nkorea",
+      "feed": "https://therecord.media/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-04T13:35:56.285965+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "binance-reveals-how-fake-job-interviews-and-ai-tool-abuse-led-to-6-43-billion-th",
+      "title": "Binance Reveals How Fake Job Interviews and AI Tool Abuse Led to $6.43 Billion Theft",
+      "source_url": "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html",
+      "feed": "https://feeds.feedburner.com/TheHackersNews",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-04T13:35:59.238777+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist",
+      "title": "Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist",
+      "source_url": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/",
+      "feed": "https://www.securityweek.com/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-04T13:35:59.359684+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "north-korea-launches-missiles-toward-the-sea-as-pyongyang-protests-against-us-cl",
+      "title": "North Korea Launches Missiles Toward the Sea as Pyongyang Protests Against US Claims on Binance Hack",
+      "source_url": "https://www.securityweek.com/north-korea-launches-missiles-toward-the-sea-as-pyongyang-protests-against-us-claims-on-binance-hack/",
+      "feed": "https://www.securityweek.com/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-04T13:35:59.360737+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "north-korean-fake-job-interview-led-to-6-3b-binance-heist",
+      "title": "North Korean fake job interview led to $6.3B Binance heist",
+      "source_url": "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398",
+      "feed": "https://www.theregister.com/security/headlines.atom",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-04T13:36:05.404673+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "fake-interview-of-software-engineer-led-to-binance-mega-heist",
+      "title": "Fake Interview of Software Engineer Led to Binance Mega-Heist",
+      "source_url": "https://www.infosecurity-magazine.com/news/fake-interview-software-engineer/",
+      "feed": "https://www.infosecurity-magazine.com/rss/news/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-04T13:36:06.481470+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "fake-job-interview-opened-the-door-to-6-34-billion-binance-heist",
+      "title": "Fake job interview opened the door to $6.34 billion Binance heist",
+      "source_url": "https://www.helpnetsecurity.com/2026/11/04/binance-hack-north-korea-fake-job-interview/",
+      "feed": "https://www.helpnetsecurity.com/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-04T13:36:06.595799+00:00"
+    }
+  ]
+}
