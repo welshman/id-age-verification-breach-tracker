@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-04",
+  "last_updated": "2026-11-06",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -2387,6 +2387,44 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-11-04T13:36:06.595799+00:00"
+    },
+    {
+      "id": "ninth-circuit-breach-of-confidence-confers-standing-in-health-data-security-case",
+      "title": "Ninth Circuit: Breach Of Confidence Confers Standing In Health Data Security Case",
+      "date": "2026-11-06",
+      "companies": [
+        "transunion"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Ninth Circuit: Breach Of Confidence Confers Standing In Health Data Security Case",
+      "details": "This entry was discovered by the automated pipeline via https://www.databreaches.net/feed/ and matched the keyword(s) TransUnion. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://databreaches.net/2026/11/05/ninth-circuit-breach-of-confidence-confers-standing-in-health-data-security-case/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-06T13:33:32.669435+00:00"
+    },
+    {
+      "id": "binance-heist-is-stark-example-of-ai-governance-gaps-and-basic-security-failures",
+      "title": "Binance heist is stark example of AI governance gaps and basic security failures",
+      "date": "2026-11-06",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Binance heist is stark example of AI governance gaps and basic security failures",
+      "details": "This entry was discovered by the automated pipeline via https://www.csoonline.com/feed/ and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.csoonline.com/article/4245354/binance-heist-is-stark-example-of-ai-governance-gaps-and-basic-security-failures.html"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-06T13:33:40.924618+00:00"
     }
   ]
 }
