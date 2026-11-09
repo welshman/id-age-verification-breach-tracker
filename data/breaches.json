@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-06",
+  "last_updated": "2026-11-09",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -2425,6 +2425,25 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-11-06T13:33:40.924618+00:00"
+    },
+    {
+      "id": "the-code-and-the-court-why-your-email-security-thinks-like-napoleon",
+      "title": "The code and the court: Why your email security thinks like Napoleon",
+      "date": "2026-11-09",
+      "companies": [
+        "verizon"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: The code and the court: Why your email security thinks like Napoleon",
+      "details": "This entry was discovered by the automated pipeline via https://www.csoonline.com/feed/ and matched the keyword(s) Verizon. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.csoonline.com/article/4245807/the-code-and-the-court-why-your-email-security-thinks-like-napoleon.html"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-09T14:51:44.342600+00:00"
     }
   ]
 }

@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "the-code-and-the-court-why-your-email-security-thinks-like-napoleon",
+      "created_breach_id": "the-code-and-the-court-why-your-email-security-thinks-like-napoleon",
+      "source": "https://www.csoonline.com/article/4245807/the-code-and-the-court-why-your-email-security-thinks-like-napoleon.html"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "the-code-and-the-court-why-your-email-security-thinks-like-napoleon",
+      "title": "The code and the court: Why your email security thinks like Napoleon",
+      "source_url": "https://www.csoonline.com/article/4245807/the-code-and-the-court-why-your-email-security-thinks-like-napoleon.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "Verizon"
+      ],
+      "discovered_at": "2026-11-09T14:51:44.342600+00:00"
+    }
+  ]
+}
