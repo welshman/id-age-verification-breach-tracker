@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-09",
+  "last_updated": "2026-11-10",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -2444,6 +2444,82 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-11-09T14:51:44.342600+00:00"
+    },
+    {
+      "id": "binance-denies-data-breach-after-alleged-shinyhunters-claims",
+      "title": "Binance denies data breach after alleged ShinyHunters claims",
+      "date": "2026-11-10",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Binance denies data breach after alleged ShinyHunters claims",
+      "details": "This entry was discovered by the automated pipeline via https://www.bleepingcomputer.com/feed/ and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.bleepingcomputer.com/news/security/binance-denies-data-breach-after-alleged-shinyhunters-claims/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-10T14:04:03.619205+00:00"
+    },
+    {
+      "id": "binance-calls-alleged-shinyhunters-post-a-scam-attempt",
+      "title": "Binance calls alleged “ShinyHunters” post a scam attempt",
+      "date": "2026-11-10",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Binance calls alleged “ShinyHunters” post a scam attempt",
+      "details": "This entry was discovered by the automated pipeline via https://www.databreaches.net/feed/ and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://databreaches.net/2026/11/09/binance-calls-alleged-shinyhunters-post-a-scam-attempt/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-10T14:04:04.050960+00:00"
+    },
+    {
+      "id": "binance-warns-of-ios-sandbox-escape-that-could-expose-crypto-wallet-keys-no-fix",
+      "title": "Binance Warns of iOS Sandbox Escape That Could Expose Crypto Wallet Keys, No Fix Confirmed",
+      "date": "2026-11-10",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Binance Warns of iOS Sandbox Escape That Could Expose Crypto Wallet Keys, No Fix Confirmed",
+      "details": "This entry was discovered by the automated pipeline via https://feeds.feedburner.com/TheHackersNews and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-10T14:04:06.606807+00:00"
+    },
+    {
+      "id": "binance-investigates-shinyhunters-breach-claims",
+      "title": "Binance Investigates ShinyHunters Breach Claims",
+      "date": "2026-11-10",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Binance Investigates ShinyHunters Breach Claims",
+      "details": "This entry was discovered by the automated pipeline via https://www.infosecurity-magazine.com/rss/news/ and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.infosecurity-magazine.com/news/binance-investigates-shinyhunters/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-10T14:04:12.668091+00:00"
     }
   ]
 }

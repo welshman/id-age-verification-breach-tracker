@@ -1,0 +1,71 @@
+{
+  "applied": [
+    {
+      "candidate_id": "binance-denies-data-breach-after-alleged-shinyhunters-claims",
+      "created_breach_id": "binance-denies-data-breach-after-alleged-shinyhunters-claims",
+      "source": "https://www.bleepingcomputer.com/news/security/binance-denies-data-breach-after-alleged-shinyhunters-claims/"
+    },
+    {
+      "candidate_id": "binance-calls-alleged-shinyhunters-post-a-scam-attempt",
+      "created_breach_id": "binance-calls-alleged-shinyhunters-post-a-scam-attempt",
+      "source": "https://databreaches.net/2026/11/09/binance-calls-alleged-shinyhunters-post-a-scam-attempt/"
+    },
+    {
+      "candidate_id": "binance-warns-of-ios-sandbox-escape-that-could-expose-crypto-wallet-keys-no-fix-",
+      "created_breach_id": "binance-warns-of-ios-sandbox-escape-that-could-expose-crypto-wallet-keys-no-fix",
+      "source": "https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html"
+    },
+    {
+      "candidate_id": "binance-investigates-shinyhunters-breach-claims",
+      "created_breach_id": "binance-investigates-shinyhunters-breach-claims",
+      "source": "https://www.infosecurity-magazine.com/news/binance-investigates-shinyhunters/"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "binance-denies-data-breach-after-alleged-shinyhunters-claims",
+      "title": "Binance denies data breach after alleged ShinyHunters claims",
+      "source_url": "https://www.bleepingcomputer.com/news/security/binance-denies-data-breach-after-alleged-shinyhunters-claims/",
+      "feed": "https://www.bleepingcomputer.com/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-10T14:04:03.619205+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "binance-calls-alleged-shinyhunters-post-a-scam-attempt",
+      "title": "Binance calls alleged “ShinyHunters” post a scam attempt",
+      "source_url": "https://databreaches.net/2026/11/09/binance-calls-alleged-shinyhunters-post-a-scam-attempt/",
+      "feed": "https://www.databreaches.net/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-10T14:04:04.050960+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "binance-warns-of-ios-sandbox-escape-that-could-expose-crypto-wallet-keys-no-fix-",
+      "title": "Binance Warns of iOS Sandbox Escape That Could Expose Crypto Wallet Keys, No Fix Confirmed",
+      "source_url": "https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html",
+      "feed": "https://feeds.feedburner.com/TheHackersNews",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-10T14:04:06.606807+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "binance-investigates-shinyhunters-breach-claims",
+      "title": "Binance Investigates ShinyHunters Breach Claims",
+      "source_url": "https://www.infosecurity-magazine.com/news/binance-investigates-shinyhunters/",
+      "feed": "https://www.infosecurity-magazine.com/rss/news/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-10T14:04:12.668091+00:00"
+    }
+  ]
+}
