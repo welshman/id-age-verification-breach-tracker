@@ -1,0 +1,39 @@
+{
+  "applied": [
+    {
+      "candidate_id": "binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets",
+      "created_breach_id": "binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets",
+      "source": "https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/"
+    },
+    {
+      "candidate_id": "why-does-old-access-outlive-the-job",
+      "created_breach_id": "why-does-old-access-outlive-the-job",
+      "source": "https://www.csoonline.com/article/4246971/why-does-old-access-outlive-the-job.html"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets",
+      "title": "Binance warns of iOS flaw that could leak crypto wallet secrets",
+      "source_url": "https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/",
+      "feed": "https://www.bleepingcomputer.com/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-11T13:21:06.124266+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "why-does-old-access-outlive-the-job",
+      "title": "Why does old access outlive the job?",
+      "source_url": "https://www.csoonline.com/article/4246971/why-does-old-access-outlive-the-job.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "Verizon"
+      ],
+      "discovered_at": "2026-11-11T13:21:13.777460+00:00"
+    }
+  ]
+}

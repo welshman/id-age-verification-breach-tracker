@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-10",
+  "last_updated": "2026-11-11",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -2520,6 +2520,44 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-11-10T14:04:12.668091+00:00"
+    },
+    {
+      "id": "binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets",
+      "title": "Binance warns of iOS flaw that could leak crypto wallet secrets",
+      "date": "2026-11-11",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Binance warns of iOS flaw that could leak crypto wallet secrets",
+      "details": "This entry was discovered by the automated pipeline via https://www.bleepingcomputer.com/feed/ and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-11T13:21:06.124266+00:00"
+    },
+    {
+      "id": "why-does-old-access-outlive-the-job",
+      "title": "Why does old access outlive the job?",
+      "date": "2026-11-11",
+      "companies": [
+        "verizon"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Why does old access outlive the job?",
+      "details": "This entry was discovered by the automated pipeline via https://www.csoonline.com/feed/ and matched the keyword(s) Verizon. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.csoonline.com/article/4246971/why-does-old-access-outlive-the-job.html"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-11T13:21:13.777460+00:00"
     }
   ]
 }
