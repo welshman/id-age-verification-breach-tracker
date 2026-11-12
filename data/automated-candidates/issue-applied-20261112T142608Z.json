@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "the-developer-laptop-just-became-production-now-what",
+      "created_breach_id": "the-developer-laptop-just-became-production-now-what",
+      "source": "https://www.csoonline.com/article/4247458/the-developer-laptop-just-became-production-now-what.html"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "the-developer-laptop-just-became-production-now-what",
+      "title": "The developer laptop just became production. Now what?",
+      "source_url": "https://www.csoonline.com/article/4247458/the-developer-laptop-just-became-production-now-what.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-12T14:25:54.978313+00:00"
+    }
+  ]
+}

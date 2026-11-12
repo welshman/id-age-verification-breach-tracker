@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-11",
+  "last_updated": "2026-11-12",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -2558,6 +2558,25 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-11-11T13:21:13.777460+00:00"
+    },
+    {
+      "id": "the-developer-laptop-just-became-production-now-what",
+      "title": "The developer laptop just became production. Now what?",
+      "date": "2026-11-12",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: The developer laptop just became production. Now what?",
+      "details": "This entry was discovered by the automated pipeline via https://www.csoonline.com/feed/ and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.csoonline.com/article/4247458/the-developer-laptop-just-became-production-now-what.html"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-12T14:25:54.978313+00:00"
     }
   ]
 }
