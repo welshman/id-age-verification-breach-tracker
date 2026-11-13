@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-12",
+  "last_updated": "2026-11-13",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -2577,6 +2577,82 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-11-12T14:25:54.978313+00:00"
+    },
+    {
+      "id": "feds-announce-seizure-of-1-2-billion-from-binance-theft-also-takedown-of-faceste",
+      "title": "Feds announce seizure of $1.2 billion from Binance theft; also takedown of ‘FaceStealer’ tools",
+      "date": "2026-11-13",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Feds announce seizure of $1.2 billion from Binance theft; also takedown of ‘FaceStealer’ tools",
+      "details": "This entry was discovered by the automated pipeline via https://therecord.media/feed/ and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-13T13:44:18.866691+00:00"
+    },
+    {
+      "id": "attackers-in-binance-breach-targeted-known-weakness-missing-controls",
+      "title": "Attackers in Binance Breach Targeted Known Weakness, Missing Controls",
+      "date": "2026-11-13",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Attackers in Binance Breach Targeted Known Weakness, Missing Controls",
+      "details": "This entry was discovered by the automated pipeline via https://www.darkreading.com/rss.xml and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-13T13:44:20.866970+00:00"
+    },
+    {
+      "id": "fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance",
+      "title": "FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance",
+      "date": "2026-11-13",
+      "companies": [
+        "binance"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance",
+      "details": "This entry was discovered by the automated pipeline via https://www.securityweek.com/feed/ and matched the keyword(s) Binance. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.securityweek.com/fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-13T13:44:21.241391+00:00"
+    },
+    {
+      "id": "suspected-north-korean-it-workers-reached-onboarding-at-companies-with-open-data",
+      "title": "Suspected North Korean IT workers reached onboarding at companies with open data",
+      "date": "2026-11-13",
+      "companies": [
+        "persona"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Suspected North Korean IT workers reached onboarding at companies with open data",
+      "details": "This entry was discovered by the automated pipeline via https://www.helpnetsecurity.com/feed/ and matched the keyword(s) Persona. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.helpnetsecurity.com/2026/11/13/north-korean-it-workers-onboarding/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-13T13:44:27.054921+00:00"
     }
   ]
 }

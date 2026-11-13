@@ -1,0 +1,71 @@
+{
+  "applied": [
+    {
+      "candidate_id": "feds-announce-seizure-of-1-2-billion-from-binance-theft-also-takedown-of-faceste",
+      "created_breach_id": "feds-announce-seizure-of-1-2-billion-from-binance-theft-also-takedown-of-faceste",
+      "source": "https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted"
+    },
+    {
+      "candidate_id": "attackers-in-binance-breach-targeted-known-weakness-missing-controls",
+      "created_breach_id": "attackers-in-binance-breach-targeted-known-weakness-missing-controls",
+      "source": "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls"
+    },
+    {
+      "candidate_id": "fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance",
+      "created_breach_id": "fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance",
+      "source": "https://www.securityweek.com/fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance/"
+    },
+    {
+      "candidate_id": "suspected-north-korean-it-workers-reached-onboarding-at-companies-with-open-data",
+      "created_breach_id": "suspected-north-korean-it-workers-reached-onboarding-at-companies-with-open-data",
+      "source": "https://www.helpnetsecurity.com/2026/11/13/north-korean-it-workers-onboarding/"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "feds-announce-seizure-of-1-2-billion-from-binance-theft-also-takedown-of-faceste",
+      "title": "Feds announce seizure of $1.2 billion from Binance theft; also takedown of ‘FaceStealer’ tools",
+      "source_url": "https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted",
+      "feed": "https://therecord.media/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-13T13:44:18.866691+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "attackers-in-binance-breach-targeted-known-weakness-missing-controls",
+      "title": "Attackers in Binance Breach Targeted Known Weakness, Missing Controls",
+      "source_url": "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls",
+      "feed": "https://www.darkreading.com/rss.xml",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-13T13:44:20.866970+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance",
+      "title": "FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance",
+      "source_url": "https://www.securityweek.com/fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance/",
+      "feed": "https://www.securityweek.com/feed/",
+      "matched_keywords": [
+        "Binance"
+      ],
+      "discovered_at": "2026-11-13T13:44:21.241391+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "suspected-north-korean-it-workers-reached-onboarding-at-companies-with-open-data",
+      "title": "Suspected North Korean IT workers reached onboarding at companies with open data",
+      "source_url": "https://www.helpnetsecurity.com/2026/11/13/north-korean-it-workers-onboarding/",
+      "feed": "https://www.helpnetsecurity.com/feed/",
+      "matched_keywords": [
+        "Persona"
+      ],
+      "discovered_at": "2026-11-13T13:44:27.054921+00:00"
+    }
+  ]
+}
