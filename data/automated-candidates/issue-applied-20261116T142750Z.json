@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "the-medibank-data-breach-complete-timeline-of-events",
+      "created_breach_id": "the-medibank-data-breach-complete-timeline-of-events",
+      "source": "https://www.upguard.com/labs/commentary/medibank-data-leak"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "the-medibank-data-breach-complete-timeline-of-events",
+      "title": "The Medibank Data Breach (Complete Timeline of Events)",
+      "source_url": "https://www.upguard.com/labs/commentary/medibank-data-leak",
+      "feed": "https://upguard.com/breaches/rss.xml",
+      "matched_keywords": [
+        "Medibank"
+      ],
+      "discovered_at": "2026-11-16T14:27:30.660621+00:00"
+    }
+  ]
+}

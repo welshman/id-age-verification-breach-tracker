@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-13",
+  "last_updated": "2026-11-16",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -2653,6 +2653,25 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-11-13T13:44:27.054921+00:00"
+    },
+    {
+      "id": "the-medibank-data-breach-complete-timeline-of-events",
+      "title": "The Medibank Data Breach (Complete Timeline of Events)",
+      "date": "2026-11-16",
+      "companies": [
+        "medibank"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: The Medibank Data Breach (Complete Timeline of Events)",
+      "details": "This entry was discovered by the automated pipeline via https://upguard.com/breaches/rss.xml and matched the keyword(s) Medibank. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.upguard.com/labs/commentary/medibank-data-leak"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-16T14:27:30.660621+00:00"
     }
   ]
 }
