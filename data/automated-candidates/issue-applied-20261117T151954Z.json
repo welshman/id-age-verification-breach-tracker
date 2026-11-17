@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "optimizely-vulnerability-exploited-to-serve-malware-on-major-websites",
+      "created_breach_id": "optimizely-vulnerability-exploited-to-serve-malware-on-major-websites",
+      "source": "https://www.securityweek.com/optimizely-vulnerability-exploited-to-serve-malware-on-major-websites/"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "optimizely-vulnerability-exploited-to-serve-malware-on-major-websites",
+      "title": "Optimizely Vulnerability Exploited to Serve Malware on Major Websites",
+      "source_url": "https://www.securityweek.com/optimizely-vulnerability-exploited-to-serve-malware-on-major-websites/",
+      "feed": "https://www.securityweek.com/feed/",
+      "matched_keywords": [
+        "Equifax"
+      ],
+      "discovered_at": "2026-11-17T15:19:10.539907+00:00"
+    }
+  ]
+}

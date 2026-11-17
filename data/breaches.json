@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-16",
+  "last_updated": "2026-11-17",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -2672,6 +2672,25 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-11-16T14:27:30.660621+00:00"
+    },
+    {
+      "id": "optimizely-vulnerability-exploited-to-serve-malware-on-major-websites",
+      "title": "Optimizely Vulnerability Exploited to Serve Malware on Major Websites",
+      "date": "2026-11-17",
+      "companies": [
+        "equifax"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Optimizely Vulnerability Exploited to Serve Malware on Major Websites",
+      "details": "This entry was discovered by the automated pipeline via https://www.securityweek.com/feed/ and matched the keyword(s) Equifax. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.securityweek.com/optimizely-vulnerability-exploited-to-serve-malware-on-major-websites/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-17T15:19:10.539907+00:00"
     }
   ]
 }
