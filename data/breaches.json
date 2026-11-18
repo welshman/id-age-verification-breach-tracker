@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-17",
+  "last_updated": "2026-11-18",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -2691,6 +2691,44 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-11-17T15:19:10.539907+00:00"
+    },
+    {
+      "id": "attackers-used-optimizely-to-a-b-test-malware-on-top-websites",
+      "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
+      "date": "2026-11-18",
+      "companies": [
+        "equifax"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Attackers Used Optimizely to A/B Test Malware on Top Websites",
+      "details": "This entry was discovered by the automated pipeline via https://krebsonsecurity.com/feed/ and matched the keyword(s) Equifax. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-18T14:54:57.957225+00:00"
+    },
+    {
+      "id": "optimizely-confirms-massive-cyberattack-on-customer-websites-injected-stealer-ma",
+      "title": "Optimizely confirms massive cyberattack on customer websites injected stealer malware",
+      "date": "2026-11-18",
+      "companies": [
+        "equifax"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Optimizely confirms massive cyberattack on customer websites injected stealer malware",
+      "details": "This entry was discovered by the automated pipeline via https://www.csoonline.com/feed/ and matched the keyword(s) Equifax. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.csoonline.com/article/4249925/optimizely-confirms-massive-cyberattack-on-customer-websites-injected-stealer-malware.html"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-18T14:55:06.403316+00:00"
     }
   ]
 }

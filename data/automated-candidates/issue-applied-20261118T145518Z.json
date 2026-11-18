@@ -1,0 +1,39 @@
+{
+  "applied": [
+    {
+      "candidate_id": "attackers-used-optimizely-to-a-b-test-malware-on-top-websites",
+      "created_breach_id": "attackers-used-optimizely-to-a-b-test-malware-on-top-websites",
+      "source": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/"
+    },
+    {
+      "candidate_id": "optimizely-confirms-massive-cyberattack-on-customer-websites-injected-stealer-ma",
+      "created_breach_id": "optimizely-confirms-massive-cyberattack-on-customer-websites-injected-stealer-ma",
+      "source": "https://www.csoonline.com/article/4249925/optimizely-confirms-massive-cyberattack-on-customer-websites-injected-stealer-malware.html"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "attackers-used-optimizely-to-a-b-test-malware-on-top-websites",
+      "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
+      "source_url": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/",
+      "feed": "https://krebsonsecurity.com/feed/",
+      "matched_keywords": [
+        "Equifax"
+      ],
+      "discovered_at": "2026-11-18T14:54:57.957225+00:00"
+    },
+    {
+      "type": "rss_candidate",
+      "suggested_id": "optimizely-confirms-massive-cyberattack-on-customer-websites-injected-stealer-ma",
+      "title": "Optimizely confirms massive cyberattack on customer websites injected stealer malware",
+      "source_url": "https://www.csoonline.com/article/4249925/optimizely-confirms-massive-cyberattack-on-customer-websites-injected-stealer-malware.html",
+      "feed": "https://www.csoonline.com/feed/",
+      "matched_keywords": [
+        "Equifax"
+      ],
+      "discovered_at": "2026-11-18T14:55:06.403316+00:00"
+    }
+  ]
+}
