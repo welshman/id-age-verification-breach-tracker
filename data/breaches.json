@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-18",
+  "last_updated": "2026-11-19",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -2729,6 +2729,25 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-11-18T14:55:06.403316+00:00"
+    },
+    {
+      "id": "coinbase-blocks-4-7-million-in-transfers-to-elon-musk-deepfake-scam",
+      "title": "Coinbase blocks $4.7 million in transfers to Elon Musk deepfake scam",
+      "date": "2026-11-19",
+      "companies": [
+        "coinbase"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Coinbase blocks $4.7 million in transfers to Elon Musk deepfake scam",
+      "details": "This entry was discovered by the automated pipeline via https://www.bleepingcomputer.com/feed/ and matched the keyword(s) Coinbase. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-19T15:00:11.830310+00:00"
     }
   ]
 }

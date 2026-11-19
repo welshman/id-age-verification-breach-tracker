@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "coinbase-blocks-4-7-million-in-transfers-to-elon-musk-deepfake-scam",
+      "created_breach_id": "coinbase-blocks-4-7-million-in-transfers-to-elon-musk-deepfake-scam",
+      "source": "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "coinbase-blocks-4-7-million-in-transfers-to-elon-musk-deepfake-scam",
+      "title": "Coinbase blocks $4.7 million in transfers to Elon Musk deepfake scam",
+      "source_url": "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/",
+      "feed": "https://www.bleepingcomputer.com/feed/",
+      "matched_keywords": [
+        "Coinbase"
+      ],
+      "discovered_at": "2026-11-19T15:00:11.830310+00:00"
+    }
+  ]
+}
