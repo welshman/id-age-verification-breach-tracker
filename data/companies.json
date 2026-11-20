@@ -1225,6 +1225,14 @@
       "region": "",
       "type": "unknown",
       "description": "Auto-created from automated candidate; please verify and expand."
+    },
+    {
+      "id": "android-developer-verification",
+      "name": "android-developer-verification",
+      "website": "",
+      "region": "",
+      "type": "unknown",
+      "description": "Auto-created from automated candidate; please verify and expand."
     }
   ]
 }

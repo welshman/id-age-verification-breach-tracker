@@ -1,0 +1,25 @@
+{
+  "applied": [
+    {
+      "candidate_id": "android-developer-verification-will-reach-every-install-source-with-a-side-door-",
+      "created_breach_id": "android-developer-verification-will-reach-every-install-source-with-a-side-door",
+      "source": "https://www.helpnetsecurity.com/2026/11/20/android-developer-verification-power-users/"
+    }
+  ],
+  "created_companies": [
+    "android-developer-verification"
+  ],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "android-developer-verification-will-reach-every-install-source-with-a-side-door-",
+      "title": "Android developer verification will reach every install source, with a side door for power users",
+      "source_url": "https://www.helpnetsecurity.com/2026/11/20/android-developer-verification-power-users/",
+      "feed": "https://www.helpnetsecurity.com/feed/",
+      "matched_keywords": [
+        "Android Developer Verification"
+      ],
+      "discovered_at": "2026-11-20T14:43:04.338930+00:00"
+    }
+  ]
+}

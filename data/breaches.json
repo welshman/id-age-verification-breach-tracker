@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-19",
+  "last_updated": "2026-11-20",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -2748,6 +2748,25 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-11-19T15:00:11.830310+00:00"
+    },
+    {
+      "id": "android-developer-verification-will-reach-every-install-source-with-a-side-door",
+      "title": "Android developer verification will reach every install source, with a side door for power users",
+      "date": "2026-11-20",
+      "companies": [
+        "android-developer-verification"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Android developer verification will reach every install source, with a side door for power users",
+      "details": "This entry was discovered by the automated pipeline via https://www.helpnetsecurity.com/feed/ and matched the keyword(s) Android Developer Verification. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://www.helpnetsecurity.com/2026/11/20/android-developer-verification-power-users/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-20T14:43:04.338930+00:00"
     }
   ]
 }
