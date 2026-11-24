@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "wultra-led-consortium-wins-tender-to-deliver-and-operate-the-czech-european-digi",
+      "created_breach_id": "wultra-led-consortium-wins-tender-to-deliver-and-operate-the-czech-european-digi",
+      "source": "https://identityweek.net/wultra-led-consortium-wins-tender-to-deliver-and-operate-the-czech-european-digital-id-wallet/"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "wultra-led-consortium-wins-tender-to-deliver-and-operate-the-czech-european-digi",
+      "title": "Wultra-led Consortium wins tender to deliver and operate the Czech European digital ID wallet",
+      "source_url": "https://identityweek.net/wultra-led-consortium-wins-tender-to-deliver-and-operate-the-czech-european-digital-id-wallet/",
+      "feed": "https://identityweek.net/feed/",
+      "matched_keywords": [
+        "iProov"
+      ],
+      "discovered_at": "2026-11-24T16:49:11.471007+00:00"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-20",
+  "last_updated": "2026-11-24",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -2767,6 +2767,25 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-11-20T14:43:04.338930+00:00"
+    },
+    {
+      "id": "wultra-led-consortium-wins-tender-to-deliver-and-operate-the-czech-european-digi",
+      "title": "Wultra-led Consortium wins tender to deliver and operate the Czech European digital ID wallet",
+      "date": "2026-11-24",
+      "companies": [
+        "iproov"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: Wultra-led Consortium wins tender to deliver and operate the Czech European digital ID wallet",
+      "details": "This entry was discovered by the automated pipeline via https://identityweek.net/feed/ and matched the keyword(s) iProov. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://identityweek.net/wultra-led-consortium-wins-tender-to-deliver-and-operate-the-czech-european-digital-id-wallet/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-24T16:49:11.471007+00:00"
     }
   ]
 }
