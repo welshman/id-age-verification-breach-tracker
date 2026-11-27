@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-24",
+  "last_updated": "2026-11-27",
   "breaches": [
     {
       "id": "au10tix-2024-credential-exposure",
@@ -2786,6 +2786,25 @@
       "verification_type": "unverified_automated",
       "added_by": "automated-pipeline",
       "discovered_at": "2026-11-24T16:49:11.471007+00:00"
+    },
+    {
+      "id": "british-firm-iproov-wins-gov-uk-one-login-contract-worth-up-to-45-million",
+      "title": "British firm iProov wins GOV.UK One Login contract worth up to £45 million",
+      "date": "2026-11-27",
+      "companies": [
+        "iproov"
+      ],
+      "data_types": [],
+      "severity": "unverified",
+      "summary": "Automatically discovered candidate pending human verification: British firm iProov wins GOV.UK One Login contract worth up to £45 million",
+      "details": "This entry was discovered by the automated pipeline via https://identityweek.net/feed/ and matched the keyword(s) iProov. It has not been independently verified and should be checked against the source link before being treated as a confirmed breach.",
+      "sources": [
+        "https://identityweek.net/british-firm-iproov-wins-gov-uk-one-login-contract-worth-up-to-45-million/"
+      ],
+      "affected_regions": [],
+      "verification_type": "unverified_automated",
+      "added_by": "automated-pipeline",
+      "discovered_at": "2026-11-27T15:56:11.868960+00:00"
     }
   ]
 }

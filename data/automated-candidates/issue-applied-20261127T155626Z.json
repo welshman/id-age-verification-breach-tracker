@@ -1,0 +1,23 @@
+{
+  "applied": [
+    {
+      "candidate_id": "british-firm-iproov-wins-gov-uk-one-login-contract-worth-up-to-45-million",
+      "created_breach_id": "british-firm-iproov-wins-gov-uk-one-login-contract-worth-up-to-45-million",
+      "source": "https://identityweek.net/british-firm-iproov-wins-gov-uk-one-login-contract-worth-up-to-45-million/"
+    }
+  ],
+  "created_companies": [],
+  "original_candidates": [
+    {
+      "type": "rss_candidate",
+      "suggested_id": "british-firm-iproov-wins-gov-uk-one-login-contract-worth-up-to-45-million",
+      "title": "British firm iProov wins GOV.UK One Login contract worth up to £45 million",
+      "source_url": "https://identityweek.net/british-firm-iproov-wins-gov-uk-one-login-contract-worth-up-to-45-million/",
+      "feed": "https://identityweek.net/feed/",
+      "matched_keywords": [
+        "iProov"
+      ],
+      "discovered_at": "2026-11-27T15:56:11.868960+00:00"
+    }
+  ]
+}
